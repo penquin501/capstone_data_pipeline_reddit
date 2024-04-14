@@ -38,19 +38,6 @@ x-airflow-common:
       condition: service_healthy
 
 services:
-  # เกิดปัญหา ต้องมาเปลี่ยนทุกอัน เราเลยเปลี่ยนไปใช้ที่ x-airflow-common แทน
-  # myairflow-webserver:
-  #   environment:
-  #     - AIRFLOW__SMTP__SMTP_PORT=30
-
-  # myairflow-scheduler:
-  #   environment:
-  #     - AIRFLOW__SMTP__SMTP_PORT=30
-
-  # myairflow-worker:
-  #   environment:
-  #     - AIRFLOW__SMTP__SMTP_PORT=30
-
   airflow-metastore:
     image: postgres:13
     environment:

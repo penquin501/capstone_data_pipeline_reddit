@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "capstone-data-pipeline-reddit"
+version = "0.1.0"
+description = ""
+authors = ["penquin501 <48145677+penquin501@users.noreply.github.com>","66130047@dpu.ac.th"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+praw = "^7.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
