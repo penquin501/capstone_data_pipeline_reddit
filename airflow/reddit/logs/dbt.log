@@ -1,0 +1,80 @@
+[0m08:50:45.309056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7d6053100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7d44a3160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7d44a3100>]}
+
+
+============================== 08:50:45.313165 | beaa2d09-d338-4f53-a1df-3cb517f95d72 ==============================
+[0m08:50:45.313165 [info ] [MainThread]: Running with dbt=1.7.11
+[0m08:50:45.313993 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/codespace/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m08:50:45.314770 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/codespace/.dbt')}
+[0m08:50:45.315422 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m08:51:20.399622 [info ] [MainThread]: A project called reddit already exists here.
+[0m08:51:20.401994 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 35.09708, "process_user_time": 2.816666, "process_kernel_time": 0.196046, "process_mem_max_rss": "86848", "process_out_blocks": "16", "process_in_blocks": "0"}
+[0m08:51:20.403533 [debug] [MainThread]: Command `dbt init` succeeded at 08:51:20.403135 after 35.10 seconds
+[0m08:51:20.404751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7d6053100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7d85199f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe7d44a3550>]}
+[0m08:51:20.406134 [debug] [MainThread]: Flushing usage events
+[0m09:04:23.799684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41032f7100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41038cb160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41038cb100>]}
+
+
+============================== 09:04:23.803479 | 60b8a244-ab0c-446c-ba44-7b4a1fc9a208 ==============================
+[0m09:04:23.803479 [info ] [MainThread]: Running with dbt=1.7.11
+[0m09:04:23.804323 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/codespace/.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m09:04:23.805179 [info ] [MainThread]: dbt version: 1.7.11
+[0m09:04:23.805840 [info ] [MainThread]: python version: 3.10.13
+[0m09:04:23.806515 [info ] [MainThread]: python path: /home/codespace/.cache/pypoetry/virtualenvs/reddit-4D4r8zT8-py3.10/bin/python
+[0m09:04:23.807150 [info ] [MainThread]: os info: Linux-6.2.0-1019-azure-x86_64-with-glibc2.31
+[0m09:04:23.807879 [info ] [MainThread]: Using profiles dir at /home/codespace/.dbt
+[0m09:04:23.808618 [info ] [MainThread]: Using profiles.yml file at /home/codespace/.dbt/profiles.yml
+[0m09:04:23.809267 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/capstone_data_pipeline_reddit/airflow/reddit/dbt_project.yml
+[0m09:04:23.810105 [info ] [MainThread]: Configuration:
+[0m09:04:23.810766 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m09:04:23.811396 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:04:23.812048 [info ] [MainThread]: Required dependencies:
+[0m09:04:23.812700 [debug] [MainThread]: Executing "git --help"
+[0m09:04:23.815505 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:04:23.816193 [debug] [MainThread]: STDERR: "b''"
+[0m09:04:23.816776 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:04:23.817416 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m09:04:23.818102 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m09:04:23.818753 [info ] [MainThread]: dbt looked for a profiles.yml file in /home/codespace/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m09:04:23.819409 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </workspaces/capstone_data_pipeline_reddit/airflow/reddit/dbt_project.yml> not found
+
+[0m09:04:23.820572 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.025073579, "process_user_time": 2.890635, "process_kernel_time": 0.232533, "process_mem_max_rss": "86724", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m09:04:23.821401 [debug] [MainThread]: Command `dbt debug` failed at 09:04:23.821175 after 0.03 seconds
+[0m09:04:23.822255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41032f7100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41038cb1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41038cb4f0>]}
+[0m09:04:23.823435 [debug] [MainThread]: Flushing usage events
+[0m09:50:14.912099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd85deab100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd85c2fb100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd85c2fb0a0>]}
+
+
+============================== 09:50:14.915900 | 6399c4d6-3390-4c31-916d-7b57040800ef ==============================
+[0m09:50:14.915900 [info ] [MainThread]: Running with dbt=1.7.11
+[0m09:50:14.916759 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/codespace/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:50:39.121038 [debug] [MainThread]: Starter project path: /home/codespace/.cache/pypoetry/virtualenvs/reddit-4D4r8zT8-py3.10/lib/python3.10/site-packages/dbt/include/starter_project
+[0m09:50:39.125818 [info ] [MainThread]: 
+Your new dbt project "reddit" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:50:39.126582 [info ] [MainThread]: Setting up your profile.
+[0m09:52:40.274176 [info ] [MainThread]: Profile reddit written to /home/codespace/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:52:40.275624 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 145.36774, "process_user_time": 2.840123, "process_kernel_time": 0.216401, "process_mem_max_rss": "91256", "process_out_blocks": "88", "process_in_blocks": "0"}
+[0m09:52:40.276507 [debug] [MainThread]: Command `dbt init` succeeded at 09:52:40.276275 after 145.37 seconds
+[0m09:52:40.277180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd85deab100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd8603719f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd85c2fb0a0>]}
+[0m09:52:40.277925 [debug] [MainThread]: Flushing usage events

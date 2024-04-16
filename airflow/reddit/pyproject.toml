@@ -1,15 +1,14 @@
 [tool.poetry]
-name = "capstone-data-pipeline-reddit"
+name = "reddit"
 version = "0.1.0"
 description = ""
-authors = ["penquin501 <48145677+penquin501@users.noreply.github.com>","66130047@dpu.ac.th"]
+authors = ["penquin501 <48145677+penquin501@users.noreply.github.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-requests = "^2.31.0"
-praw = "^7.7.1"
 dbt-postgres = "^1.7.11"
+dbt-core = "^1.7.11"
 
 
 [build-system]

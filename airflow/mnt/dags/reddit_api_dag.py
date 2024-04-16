@@ -51,6 +51,7 @@ def _create_reddit_table(**context):
             selftext TEXT,
             url TEXT,
             num_comments INTEGER,
+            score INTEGER,
             created_utc TIMESTAMP
         )
     """
@@ -66,11 +67,11 @@ def _save_to_database(data):
     cursor = connection.cursor()
 
     insert_query = """
-    INSERT INTO reddit_posts (post_id, title, ups, author_fullname, subreddit, selftext, url, num_comments, created_utc)
-    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s) ON CONFLICT (post_id) DO NOTHING;
+    INSERT INTO reddit_posts (post_id, title, ups, author_fullname, subreddit, selftext, url, num_comments, score, created_utc)
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s) ON CONFLICT (post_id) DO NOTHING;
     """
     for post in data:
-        print(f"title: {post.title}")
+        print(f"Title: {post.title}")
         data_tuple = (
             post.id, 
             post.title, 
@@ -80,6 +81,7 @@ def _save_to_database(data):
             post.selftext, 
             post.url,
             post.num_comments, 
+            post.score,
             datetime.fromtimestamp(post.created_utc)
         )
         cursor.execute(insert_query, data_tuple)

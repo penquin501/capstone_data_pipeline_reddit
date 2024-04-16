@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: reddit_eng_posts
+    schema: public
+    database: postgres
+
+    tables:
+      - name: reddit_posts
