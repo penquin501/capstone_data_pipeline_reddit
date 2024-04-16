@@ -26,6 +26,8 @@ docker compose down
 ```
 
 Navigate to the directory containing the HTML files
-``` cd airflow/mnt/dags/output/ ```
+```sh cd airflow/mnt/dags/output/ ```
 Start a simple HTTP server; use the appropriate Python command
-``` poetry run python -m http.server 8000 ```
+```sh poetry run python -m http.server 8000 ```
+
+Need to use ``` streamlit ``` for visualization 
