@@ -1,0 +1,41 @@
+[2024-04-14T14:28:08.385+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_api_dag.get_reddit_data manual__2024-04-14T14:22:58.929834+00:00 [queued]>
+[2024-04-14T14:28:08.391+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_api_dag.get_reddit_data manual__2024-04-14T14:22:58.929834+00:00 [queued]>
+[2024-04-14T14:28:08.391+0000] {taskinstance.py:2171} INFO - Starting attempt 2 of 2
+[2024-04-14T14:28:08.406+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): get_reddit_data> on 2024-04-14 14:22:58.929834+00:00
+[2024-04-14T14:28:08.415+0000] {standard_task_runner.py:60} INFO - Started process 557 to run task
+[2024-04-14T14:28:08.417+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'reddit_api_dag', 'get_reddit_data', 'manual__2024-04-14T14:22:58.929834+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/reddit_api_dag.py', '--cfg-path', '/tmp/tmp_f7re4jh']
+[2024-04-14T14:28:08.418+0000] {standard_task_runner.py:88} INFO - Job 11: Subtask get_reddit_data
+[2024-04-14T14:28:08.458+0000] {task_command.py:423} INFO - Running <TaskInstance: reddit_api_dag.get_reddit_data manual__2024-04-14T14:22:58.929834+00:00 [running]> on host f383f10413fd
+[2024-04-14T14:28:08.528+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='66130047@dpu.ac.th' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='reddit_api_dag' AIRFLOW_CTX_TASK_ID='get_reddit_data' AIRFLOW_CTX_EXECUTION_DATE='2024-04-14T14:22:58.929834+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-14T14:22:58.929834+00:00'
+[2024-04-14T14:28:09.509+0000] {warnings.py:109} WARNING - /opt/***/dags/reddit_api_dag.py:73: AirflowProviderDeprecationWarning: The "schema" arg has been renamed to "database" as it contained the database name.Please use "database" to set the database name.
+  pg_hook = PostgresHook(postgres_conn_id="my_postgres_conn", schema="postgres")
+
+[2024-04-14T14:28:09.522+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/reddit_api_dag.py", line 45, in _get_reddit_data
+    _save_to_database(post)
+  File "/opt/airflow/dags/reddit_api_dag.py", line 74, in _save_to_database
+    connection = pg_hook.get_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/postgres/hooks/postgres.py", line 128, in get_conn
+    conn = deepcopy(self.connection or self.get_connection(conn_id))
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/hooks/base.py", line 82, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/connection.py", line 479, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `my_postgres_conn` isn't defined
+[2024-04-14T14:28:09.526+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=reddit_api_dag, task_id=get_reddit_data, execution_date=20240414T142258, start_date=20240414T142808, end_date=20240414T142809
+[2024-04-14T14:28:09.540+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154: RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+  send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+
+[2024-04-14T14:28:09.540+0000] {configuration.py:1046} WARNING - section/key [smtp/smtp_user] not found in config
+[2024-04-14T14:28:09.540+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-04-14T14:28:09.541+0000] {email.py:281} INFO - Sent an alert email to ['66130047@dpu.ac.th']
+[2024-04-14T14:28:09.561+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 11 for task get_reddit_data (The conn_id `my_postgres_conn` isn't defined; 557)
+[2024-04-14T14:28:09.591+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-14T14:28:09.609+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

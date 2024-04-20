@@ -1,0 +1,1016 @@
+[2024-04-15T17:55:18.759+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_api_dag.get_reddit_data manual__2024-04-15T17:55:10.899585+00:00 [queued]>
+[2024-04-15T17:55:18.764+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_api_dag.get_reddit_data manual__2024-04-15T17:55:10.899585+00:00 [queued]>
+[2024-04-15T17:55:18.765+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2024-04-15T17:55:18.780+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): get_reddit_data> on 2024-04-15 17:55:10.899585+00:00
+[2024-04-15T17:55:18.789+0000] {standard_task_runner.py:60} INFO - Started process 10259 to run task
+[2024-04-15T17:55:18.792+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'reddit_api_dag', 'get_reddit_data', 'manual__2024-04-15T17:55:10.899585+00:00', '--job-id', '125', '--raw', '--subdir', 'DAGS_FOLDER/reddit_api_dag.py', '--cfg-path', '/tmp/tmp675bvfmk']
+[2024-04-15T17:55:18.793+0000] {standard_task_runner.py:88} INFO - Job 125: Subtask get_reddit_data
+[2024-04-15T17:55:18.833+0000] {task_command.py:423} INFO - Running <TaskInstance: reddit_api_dag.get_reddit_data manual__2024-04-15T17:55:10.899585+00:00 [running]> on host ec3d883e7b78
+[2024-04-15T17:55:18.905+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='66130047@dpu.ac.th' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='reddit_api_dag' AIRFLOW_CTX_TASK_ID='get_reddit_data' AIRFLOW_CTX_EXECUTION_DATE='2024-04-15T17:55:10.899585+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-15T17:55:10.899585+00:00'
+[2024-04-15T17:55:18.966+0000] {warnings.py:109} WARNING - /opt/***/dags/reddit_api_dag.py:62: AirflowProviderDeprecationWarning: The "schema" arg has been renamed to "database" as it contained the database name.Please use "database" to set the database name.
+  pg_hook = PostgresHook(
+
+[2024-04-15T17:55:18.973+0000] {base.py:83} INFO - Using connection ID 'my_***_conn' for task execution.
+[2024-04-15T17:55:21.529+0000] {logging_mixin.py:188} INFO - Title: Facts
+[2024-04-15T17:55:21.540+0000] {logging_mixin.py:188} INFO - Title: "We have great datasets"
+[2024-04-15T17:55:21.540+0000] {logging_mixin.py:188} INFO - Title: i just want sleep
+[2024-04-15T17:55:21.561+0000] {logging_mixin.py:188} INFO - Title: I've finally built the perfect data pipeline!
+[2024-04-15T17:55:21.562+0000] {logging_mixin.py:188} INFO - Title: PSA: Learn Vendor Agnostic Technologies!
+[2024-04-15T17:55:21.562+0000] {logging_mixin.py:188} INFO - Title: Had an onsite interview with one of FAANG, all 6 interviewers were Indian 
+[2024-04-15T17:55:21.563+0000] {logging_mixin.py:188} INFO - Title: The data engineer came to me... tears in his eyes
+[2024-04-15T17:55:21.563+0000] {logging_mixin.py:188} INFO - Title: Exporting to excel is always a people pleaser...
+[2024-04-15T17:55:21.563+0000] {logging_mixin.py:188} INFO - Title: It’s happening guys
+[2024-04-15T17:55:21.563+0000] {logging_mixin.py:188} INFO - Title: 2022 Mood
+[2024-04-15T17:55:21.564+0000] {logging_mixin.py:188} INFO - Title: Data driven organisations
+[2024-04-15T17:55:21.564+0000] {logging_mixin.py:188} INFO - Title: Is this chart accurate?
+[2024-04-15T17:55:21.564+0000] {logging_mixin.py:188} INFO - Title: Who owns data quality?
+[2024-04-15T17:55:21.565+0000] {logging_mixin.py:188} INFO - Title: How true is this!
+[2024-04-15T17:55:21.565+0000] {logging_mixin.py:188} INFO - Title: DataEngineering 2021 in one pic
+[2024-04-15T17:55:21.565+0000] {logging_mixin.py:188} INFO - Title: I wrote a children's book / illustrated guide to Apache Kafka
+[2024-04-15T17:55:21.566+0000] {logging_mixin.py:188} INFO - Title: I’ve had the definition wrong this entire time…
+[2024-04-15T17:55:21.566+0000] {logging_mixin.py:188} INFO - Title: I've been a big data engineer since 2015. I've worked at FAANG for 6 years and grew from L3 to L6. AMA
+[2024-04-15T17:55:21.566+0000] {logging_mixin.py:188} INFO - Title: Data Scientists -- Ok, now I get it.
+[2024-04-15T17:55:21.567+0000] {logging_mixin.py:188} INFO - Title: ELI5: what is "Self-service Analytics" (comic)
+[2024-04-15T17:55:21.567+0000] {logging_mixin.py:188} INFO - Title: Your Snowflake credits at work.
+[2024-04-15T17:55:21.568+0000] {logging_mixin.py:188} INFO - Title: It's amazing how many organizations workflows still revolve around Excel. I've seen CFOs and COOs folders filled with 20 different versions of the same Excel file.
+[2024-04-15T17:55:21.568+0000] {logging_mixin.py:188} INFO - Title: The struggle is real.
+[2024-04-15T17:55:21.568+0000] {logging_mixin.py:188} INFO - Title: The current data landscape
+[2024-04-15T17:55:21.569+0000] {logging_mixin.py:188} INFO - Title: I Was Happier Being a Bartender Compared to Being a 6 Figure DE
+[2024-04-15T17:55:21.569+0000] {logging_mixin.py:188} INFO - Title: Guess the data type ಠ_ಠ
+[2024-04-15T17:55:21.569+0000] {logging_mixin.py:188} INFO - Title: My company just put out 3 data engineering jobs last year, guess who we got?
+[2024-04-15T17:55:21.570+0000] {logging_mixin.py:188} INFO - Title: {"null"}
+[2024-04-15T17:55:21.570+0000] {logging_mixin.py:188} INFO - Title: How Netflix does Data Engineering
+[2024-04-15T17:55:21.571+0000] {logging_mixin.py:188} INFO - Title: Happy (or not so happy) Wednesday! What part of your technical work do you dread the most? What are you doing about it?
+[2024-04-15T17:55:21.571+0000] {logging_mixin.py:188} INFO - Title: Was the data clean??
+[2024-04-15T17:55:21.571+0000] {logging_mixin.py:188} INFO - Title: Yep
+[2024-04-15T17:55:21.572+0000] {logging_mixin.py:188} INFO - Title: Completed my first Data Engineering project with Kafka, Spark, GCP, Airflow, dbt, Terraform, Docker and more!
+[2024-04-15T17:55:21.572+0000] {logging_mixin.py:188} INFO - Title: Data engineering projects with template: Airflow, dbt, Docker, Terraform (IAC), Github actions (CI/CD) & more
+[2024-04-15T17:55:21.572+0000] {logging_mixin.py:188} INFO - Title: Barbenheimer, Data Engineering edition
+[2024-04-15T17:55:21.573+0000] {logging_mixin.py:188} INFO - Title: When my prof asks me to “find information on every person whose been pardoned ever for the past 4 presidencies”
+[2024-04-15T17:55:21.573+0000] {logging_mixin.py:188} INFO - Title: Expectation from junior engineer 
+[2024-04-15T17:55:21.573+0000] {logging_mixin.py:188} INFO - Title: If data engineering did Spotify Wrapped
+[2024-04-15T17:55:21.574+0000] {logging_mixin.py:188} INFO - Title: State of Data Engineering 2022
+[2024-04-15T17:55:21.574+0000] {logging_mixin.py:188} INFO - Title: Follow up on that Google Drive question...
+[2024-04-15T17:55:21.574+0000] {logging_mixin.py:188} INFO - Title: Data Scientist: building a fabulous AI out of garbage
+[2024-04-15T17:55:21.575+0000] {logging_mixin.py:188} INFO - Title: Anyone read this book? It came out in 2022 so it's very modern and up to date.
+[2024-04-15T17:55:21.575+0000] {logging_mixin.py:188} INFO - Title: Common DE pipelines and their tech stacks on AWS, GCP and Azure
+[2024-04-15T17:55:21.575+0000] {logging_mixin.py:188} INFO - Title: How I feel in the coding interview when I get asked about BSTs and I damn well know all I’m going to do is call apis, parse json, and copy to Redshift.
+[2024-04-15T17:55:21.576+0000] {logging_mixin.py:188} INFO - Title: What’s your process for deploying a data pipeline from a notebook, running it, and managing it in production?
+[2024-04-15T17:55:21.576+0000] {logging_mixin.py:188} INFO - Title: How I feel today
+[2024-04-15T17:55:21.576+0000] {logging_mixin.py:188} INFO - Title: Ladies and gentlemen, I have good news and I wouldn't have been able to do it without this wholesome and helpful community
+[2024-04-15T17:55:21.577+0000] {logging_mixin.py:188} INFO - Title: This nice illustration or visualization of the Data Pipeline by semantix (https://semantix.com.br/data-platform/). Hope it may some insights for new DE friends.
+[2024-04-15T17:55:21.577+0000] {logging_mixin.py:188} INFO - Title: Just getting into Apache Airflow...this is the first thing that came to mind
+[2024-04-15T17:55:21.577+0000] {logging_mixin.py:188} INFO - Title: Just do a quick 30min to 1hr take home test. 🤡 🤡
+[2024-04-15T17:55:21.578+0000] {logging_mixin.py:188} INFO - Title: Finally got a job
+[2024-04-15T17:55:21.578+0000] {logging_mixin.py:188} INFO - Title: I'm Leaving FAANG After Only 4 Months
+[2024-04-15T17:55:21.578+0000] {logging_mixin.py:188} INFO - Title: Got a flight this weekend, which do I read first?
+[2024-04-15T17:55:21.579+0000] {logging_mixin.py:188} INFO - Title: What are your favourite GitHub repos that shows how data engineering should be done?
+[2024-04-15T17:55:21.579+0000] {logging_mixin.py:188} INFO - Title: 53+ years of experience in data engineering…
+[2024-04-15T17:55:21.579+0000] {logging_mixin.py:188} INFO - Title: Is there a DE equivalent to this?
+[2024-04-15T17:55:21.579+0000] {logging_mixin.py:188} INFO - Title: Data engineering with ChatGPT
+[2024-04-15T17:55:21.580+0000] {logging_mixin.py:188} INFO - Title: It's not always Old Man Jenkins...
+[2024-04-15T17:55:21.580+0000] {logging_mixin.py:188} INFO - Title: An actual post in my company Slack today 
+[2024-04-15T17:55:21.580+0000] {logging_mixin.py:188} INFO - Title: I’m releasing a free data engineering boot camp in March
+[2024-04-15T17:55:21.581+0000] {logging_mixin.py:188} INFO - Title: It's not a glamorous life, but we all know who really drives the bus
+[2024-04-15T17:55:21.581+0000] {logging_mixin.py:188} INFO - Title: Big Data Pipelines on AWS, Azure & GCP (associated blog in comments)
+[2024-04-15T17:55:21.581+0000] {logging_mixin.py:188} INFO - Title: Free Data engineering bootcamp - Data Engineering Zoomcamp - starts in 10 days
+[2024-04-15T17:55:21.582+0000] {logging_mixin.py:188} INFO - Title: It is a recession after all, isn't it?
+[2024-04-15T17:55:21.582+0000] {logging_mixin.py:188} INFO - Title: The "Big Three's" Data Storage Offerings
+[2024-04-15T17:55:21.582+0000] {logging_mixin.py:188} INFO - Title: And so it begins. Databricks just couldn't help themselves. Get your wallets out.
+[2024-04-15T17:55:21.583+0000] {logging_mixin.py:188} INFO - Title: How are you exporting your prod DB tables to your data warehouse?
+[2024-04-15T17:55:21.583+0000] {logging_mixin.py:188} INFO - Title: What opinion about data engineering would you defend like this?
+[2024-04-15T17:55:21.583+0000] {logging_mixin.py:188} INFO - Title: Now in Snowflake: GROUP BY ALL
+[2024-04-15T17:55:21.584+0000] {logging_mixin.py:188} INFO - Title: New DE advice from a Principal
+[2024-04-15T17:55:21.584+0000] {logging_mixin.py:188} INFO - Title: Is there any interest in a collection of DE interview practice questions (Data Modeling/Architecture/SQL)
+[2024-04-15T17:55:21.584+0000] {logging_mixin.py:188} INFO - Title: Happened in the making of this meme as well
+[2024-04-15T17:55:21.585+0000] {logging_mixin.py:188} INFO - Title: How are you monitoring your data pipelines and what are you using to debug production issues?
+[2024-04-15T17:55:21.585+0000] {logging_mixin.py:188} INFO - Title: Fancy dashboards with volatile data pipelines!
+[2024-04-15T17:55:21.585+0000] {logging_mixin.py:188} INFO - Title: I didn’t know you guys were paid THIS well
+[2024-04-15T17:55:21.586+0000] {logging_mixin.py:188} INFO - Title: I like caravans more.
+[2024-04-15T17:55:21.586+0000] {logging_mixin.py:188} INFO - Title: yes, I really said it
+[2024-04-15T17:55:21.586+0000] {logging_mixin.py:188} INFO - Title: worried about the transition from data engineering to big data engineer
+[2024-04-15T17:55:21.587+0000] {logging_mixin.py:188} INFO - Title: Free data engineering course starts tomorrow!
+[2024-04-15T17:55:21.587+0000] {logging_mixin.py:188} INFO - Title: r/dataengineering will be joining the blackout from June 12-14 to protest the proposed API changes which will end 3rd party apps.
+[2024-04-15T17:55:21.587+0000] {logging_mixin.py:188} INFO - Title: ETL using pandas
+[2024-04-15T17:55:21.587+0000] {logging_mixin.py:188} INFO - Title: just got laid off (FAANG)
+[2024-04-15T17:55:21.588+0000] {logging_mixin.py:188} INFO - Title: I created a pipeline extracting Reddit data using Airflow, Docker, Terraform, S3, dbt, Redshift, and Google Data Studio
+[2024-04-15T17:55:21.588+0000] {logging_mixin.py:188} INFO - Title: Typical interview with Airflow enjoyer
+[2024-04-15T17:55:21.588+0000] {logging_mixin.py:188} INFO - Title: DBT lays off 15% of their staff
+[2024-04-15T17:55:21.589+0000] {logging_mixin.py:188} INFO - Title: "You wouldn't understand, it is not SQL!!" - An advice for upcoming data engineers.
+[2024-04-15T17:55:21.589+0000] {logging_mixin.py:188} INFO - Title: Data engineers processing data access requests
+[2024-04-15T17:55:21.589+0000] {logging_mixin.py:188} INFO - Title: This job at Chewy looks very interesting.
+[2024-04-15T17:55:21.590+0000] {logging_mixin.py:188} INFO - Title: Me when the DAG run fails
+[2024-04-15T17:55:21.590+0000] {logging_mixin.py:188} INFO - Title: So I watched a few videos about Fabric, and started to cry a little...
+[2024-04-15T17:55:21.590+0000] {logging_mixin.py:188} INFO - Title: If you know, you know
+[2024-04-15T17:55:21.591+0000] {logging_mixin.py:188} INFO - Title: Data Engineering project for beginners V2
+[2024-04-15T17:55:21.591+0000] {logging_mixin.py:188} INFO - Title: Pathway from Data Analyst to Data Engineer: Tips & Takeaways
+[2024-04-15T17:55:21.591+0000] {logging_mixin.py:188} INFO - Title: I got the job!
+[2024-04-15T17:55:21.592+0000] {logging_mixin.py:188} INFO - Title: 1 year of must-read articles
+[2024-04-15T17:55:21.592+0000] {logging_mixin.py:188} INFO - Title: Why are there so many ETL tools when we have SQL and Python?
+[2024-04-15T17:55:21.592+0000] {logging_mixin.py:188} INFO - Title: The only insightful venn diagram I've ever made
+[2024-04-15T17:55:21.593+0000] {logging_mixin.py:188} INFO - Title: Don't Fall for the Hype: A Data Professional's Perspective on Familiar Concepts Rebranded as Innovations
+[2024-04-15T17:55:21.593+0000] {logging_mixin.py:188} INFO - Title: Job search for Data Engineering in Stockholm (2yoe)
+[2024-04-15T17:55:21.593+0000] {logging_mixin.py:188} INFO - Title: can't wait for an end to end python stack with no JVM
+[2024-04-15T17:55:23.450+0000] {logging_mixin.py:188} INFO - Title: My Job Search as a Mid-Level Data Engineer since March 2022
+[2024-04-15T17:55:23.450+0000] {logging_mixin.py:188} INFO - Title: One day we’ll get the respect we deserve 🥲
+[2024-04-15T17:55:23.451+0000] {logging_mixin.py:188} INFO - Title: Is this fear-mongering, or is this actually truthful?
+[2024-04-15T17:55:23.451+0000] {logging_mixin.py:188} INFO - Title: Why does nothing ever get used?
+[2024-04-15T17:55:23.451+0000] {logging_mixin.py:188} INFO - Title: Worst Data Engineering Mistake youve seen?
+[2024-04-15T17:55:23.452+0000] {logging_mixin.py:188} INFO - Title: The problem with data industry is hiring roles instead of people
+[2024-04-15T17:55:23.452+0000] {logging_mixin.py:188} INFO - Title: 2nd time this week and it's Wednesday
+[2024-04-15T17:55:23.452+0000] {logging_mixin.py:188} INFO - Title: Python library for automating data normalisation, schema creation and loading to db
+[2024-04-15T17:55:23.453+0000] {logging_mixin.py:188} INFO - Title: Is data at every company still an absolute mess?
+[2024-04-15T17:55:23.453+0000] {logging_mixin.py:188} INFO - Title: What's your favorite data quality horror story?
+[2024-04-15T17:55:23.453+0000] {logging_mixin.py:188} INFO - Title: Snowflake pushing snowpark really hard
+[2024-04-15T17:55:23.454+0000] {logging_mixin.py:188} INFO - Title: The ecosystem be like that sometimes
+[2024-04-15T17:55:23.454+0000] {logging_mixin.py:188} INFO - Title: Now that Snowflake can store and analyze unstructured data, Padme is in for a great surprise
+[2024-04-15T17:55:23.454+0000] {logging_mixin.py:188} INFO - Title: The state of data content on LinkedIn: you can reduce costs by just doing less! Game changing
+[2024-04-15T17:55:23.455+0000] {logging_mixin.py:188} INFO - Title: Getting tired of “How do I break into DE posts”
+[2024-04-15T17:55:23.455+0000] {logging_mixin.py:188} INFO - Title: Airflow homies be like...
+[2024-04-15T17:55:23.455+0000] {logging_mixin.py:188} INFO - Title: Well guys, this is the end
+[2024-04-15T17:55:23.455+0000] {logging_mixin.py:188} INFO - Title: It's cron all the way down
+[2024-04-15T17:55:23.456+0000] {logging_mixin.py:188} INFO - Title: MLOps is 98% Data Engineering
+[2024-04-15T17:55:23.456+0000] {logging_mixin.py:188} INFO - Title: A must-read data engineering collection
+[2024-04-15T17:55:23.456+0000] {logging_mixin.py:188} INFO - Title: Databricks and Snowflake: Stop fighting on social
+[2024-04-15T17:55:23.457+0000] {logging_mixin.py:188} INFO - Title: Data pipeline design patterns
+[2024-04-15T17:55:23.457+0000] {logging_mixin.py:188} INFO - Title: We (Dagster) are throwing a party
+[2024-04-15T17:55:23.458+0000] {logging_mixin.py:188} INFO - Title: F1 team Williams used Excel as their database to track the car components (hundreds of thousands of different components)
+[2024-04-15T17:55:23.458+0000] {logging_mixin.py:188} INFO - Title: Be aware of the AI snake salesman
+[2024-04-15T17:55:23.459+0000] {logging_mixin.py:188} INFO - Title: Me around Customer Success
+[2024-04-15T17:55:23.459+0000] {logging_mixin.py:188} INFO - Title: Just got certified! - Databricks Certified Data Engineer Professional
+[2024-04-15T17:55:23.460+0000] {logging_mixin.py:188} INFO - Title: Built and automated a complete end-to-end ELT pipeline using AWS, Airflow, dbt, Terraform, Metabase and more as a beginner project!
+[2024-04-15T17:55:23.460+0000] {logging_mixin.py:188} INFO - Title: Seems like dbt's the solution to everything
+[2024-04-15T17:55:23.460+0000] {logging_mixin.py:188} INFO - Title: STAY FAR AWAY FROM UDACITY's DATA ENGINEERING COURSE
+[2024-04-15T17:55:23.461+0000] {logging_mixin.py:188} INFO - Title: Microsoft data products - merry-go-round of mediocrity
+[2024-04-15T17:55:23.461+0000] {logging_mixin.py:188} INFO - Title: So today I learned Data Swamps exist. Anyone ever have to deal with one in a production environment?
+[2024-04-15T17:55:23.462+0000] {logging_mixin.py:188} INFO - Title: Fact
+[2024-04-15T17:55:23.462+0000] {logging_mixin.py:188} INFO - Title: Is it normal for data engineers to be lacking basic technical skills?
+[2024-04-15T17:55:23.462+0000] {logging_mixin.py:188} INFO - Title: Airflow DAG with 150 tasks dynamically generated from a single module file
+[2024-04-15T17:55:23.463+0000] {logging_mixin.py:188} INFO - Title: Lecture Notes on Data Engineering Basics - Stanford CS 329S
+[2024-04-15T17:55:23.463+0000] {logging_mixin.py:188} INFO - Title: Accepted an offer, 2 weeks later got dream offer from another company
+[2024-04-15T17:55:23.463+0000] {logging_mixin.py:188} INFO - Title: Is it normal to not remember Pandas commands and need to constantly Google them?
+[2024-04-15T17:55:23.463+0000] {logging_mixin.py:188} INFO - Title: Data lovers!
+[2024-04-15T17:55:23.464+0000] {logging_mixin.py:188} INFO - Title: Every Freaking Time
+[2024-04-15T17:55:23.464+0000] {logging_mixin.py:188} INFO - Title: Step-by-step tutorial: Building a Kimball dimensional model with dbt
+[2024-04-15T17:55:23.465+0000] {logging_mixin.py:188} INFO - Title: Tencent Data Engineer: Why We Went from ClickHouse to Apache Doris?
+[2024-04-15T17:55:23.465+0000] {logging_mixin.py:188} INFO - Title: How I got a Data Engineering position in less than two months of applying
+[2024-04-15T17:55:23.466+0000] {logging_mixin.py:188} INFO - Title: Apache Airflow for Beginners Tutorial Series
+[2024-04-15T17:55:23.466+0000] {logging_mixin.py:188} INFO - Title: Any interest in DE interview questions & experience material ?
+[2024-04-15T17:55:23.467+0000] {logging_mixin.py:188} INFO - Title: How I interview data engineers
+[2024-04-15T17:55:23.467+0000] {logging_mixin.py:188} INFO - Title: I've had 7 interviews this week alone and more due next week, here is what I learned
+[2024-04-15T17:55:23.467+0000] {logging_mixin.py:188} INFO - Title: Forreal though
+[2024-04-15T17:55:23.468+0000] {logging_mixin.py:188} INFO - Title: Seems like astronomer quietly laid off 20%
+[2024-04-15T17:55:23.468+0000] {logging_mixin.py:188} INFO - Title: For the love of god please use consistent formatting and descriptive aliases in your SQL
+[2024-04-15T17:55:23.468+0000] {logging_mixin.py:188} INFO - Title: 2022 data buzzwords translated to their actual meaning
+[2024-04-15T17:55:23.469+0000] {logging_mixin.py:188} INFO - Title: Modern Data Engineer Roadmap 2020
+[2024-04-15T17:55:23.469+0000] {logging_mixin.py:188} INFO - Title: Building a Data Engineering Project in 20 Minutes
+[2024-04-15T17:55:23.470+0000] {logging_mixin.py:188} INFO - Title: DE's when a new job uses a different cloud platform
+[2024-04-15T17:55:23.470+0000] {logging_mixin.py:188} INFO - Title: Thanks to everyone here that contributes
+[2024-04-15T17:55:23.470+0000] {logging_mixin.py:188} INFO - Title: Did I get bamboozled into a data engineering job?
+[2024-04-15T17:55:23.471+0000] {logging_mixin.py:188} INFO - Title: 5 Beginner Data Engineering Exercises - all ready to go!
+[2024-04-15T17:55:23.471+0000] {logging_mixin.py:188} INFO - Title: How Data Engineering Works
+[2024-04-15T17:55:23.471+0000] {logging_mixin.py:188} INFO - Title: PARTITION BY whatever
+[2024-04-15T17:55:23.472+0000] {logging_mixin.py:188} INFO - Title: New to Data engineering and wanted to learn more about it and hoping this is the right way to go about it. Done with steps 1 and 2 for this and just wanted to know is GoogleBigQuery or Snowflake free ? and could anyone just explain step 5. Didnt understand what to do there. Thanks
+[2024-04-15T17:55:23.472+0000] {logging_mixin.py:188} INFO - Title: Data engineering project, with a live dashboard
+[2024-04-15T17:55:23.472+0000] {logging_mixin.py:188} INFO - Title: Data Engineering Zoomcamp - free data engineering course comes back!
+[2024-04-15T17:55:23.473+0000] {logging_mixin.py:188} INFO - Title: Finding the perfect identifier for entity matching
+[2024-04-15T17:55:23.473+0000] {logging_mixin.py:188} INFO - Title: The API I created as an intern surprisingly made it to production!
+[2024-04-15T17:55:23.473+0000] {logging_mixin.py:188} INFO - Title: Me as an ETL engineer watching people build data tables with no regard to what goes in them.
+[2024-04-15T17:55:23.474+0000] {logging_mixin.py:188} INFO - Title: the devs chose mongo again smh
+[2024-04-15T17:55:23.474+0000] {logging_mixin.py:188} INFO - Title: What is the hardest you have ever seen someone work manually?
+[2024-04-15T17:55:23.474+0000] {logging_mixin.py:188} INFO - Title: Does the DE community want to join the Reddit protest?
+[2024-04-15T17:55:23.475+0000] {logging_mixin.py:188} INFO - Title: If I have to run this data pipeline one more time I'm going to lose my mind
+[2024-04-15T17:55:23.475+0000] {logging_mixin.py:188} INFO - Title: How I landed a $287k offer for entry-level Data Engineer at FAANG+
+[2024-04-15T17:55:23.476+0000] {logging_mixin.py:188} INFO - Title: Tools that seemed cool at first but you've grown to loathe?
+[2024-04-15T17:55:23.476+0000] {logging_mixin.py:188} INFO - Title: Is cloud a big scam?
+[2024-04-15T17:55:23.477+0000] {logging_mixin.py:188} INFO - Title: Welcome to JOIN hell
+[2024-04-15T17:55:23.477+0000] {logging_mixin.py:188} INFO - Title: What do you do when your data pipeline depends on someone else’s pipeline and that upstream pipeline fails?
+[2024-04-15T17:55:23.477+0000] {logging_mixin.py:188} INFO - Title: Impact of DQ on AI
+[2024-04-15T17:55:23.478+0000] {logging_mixin.py:188} INFO - Title: Stack Overflow Will Charge AI Giants for Training Data
+[2024-04-15T17:55:23.478+0000] {logging_mixin.py:188} INFO - Title: TIL
+[2024-04-15T17:55:23.478+0000] {logging_mixin.py:188} INFO - Title: Thanking my plumber every time
+[2024-04-15T17:55:23.479+0000] {logging_mixin.py:188} INFO - Title: Skills to Learn for $200k - $300k Position?
+[2024-04-15T17:55:23.479+0000] {logging_mixin.py:188} INFO - Title: U.K. gov consider this a decent package for a Lead DE…
+[2024-04-15T17:55:23.479+0000] {logging_mixin.py:188} INFO - Title: I've been a DE at FAANG for over 4 years, gone from L4 to L6, AMA
+[2024-04-15T17:55:23.480+0000] {logging_mixin.py:188} INFO - Title: Great on-prem open source source modern data stack
+[2024-04-15T17:55:23.480+0000] {logging_mixin.py:188} INFO - Title: Controversial and blunt guide for why you can't get a DE job.
+[2024-04-15T17:55:23.480+0000] {logging_mixin.py:188} INFO - Title: I got a data engineering horror story, what is yours?
+[2024-04-15T17:55:23.481+0000] {logging_mixin.py:188} INFO - Title: I feel like I won the job lottery and it has sent my imposter syndrome into the stratosphere
+[2024-04-15T17:55:23.481+0000] {logging_mixin.py:188} INFO - Title: Created my First Data Engineering Project a Surf Report
+[2024-04-15T17:55:23.481+0000] {logging_mixin.py:188} INFO - Title: Hold the line fellow data engineers
+[2024-04-15T17:55:23.482+0000] {logging_mixin.py:188} INFO - Title: Why can I not understand what DataBricks is? Can someone explain slowly?!
+[2024-04-15T17:55:23.482+0000] {logging_mixin.py:188} INFO - Title: I made a pipeline that integrates London bike journeys with weather data using Google Cloud, Airflow, Spark, BigQuery and Data Studio
+[2024-04-15T17:55:23.482+0000] {logging_mixin.py:188} INFO - Title: The State of Data Engineering 2022
+[2024-04-15T17:55:23.483+0000] {logging_mixin.py:188} INFO - Title: Secret To Optimizing SQL Queries - Understand The SQL Execution Order
+[2024-04-15T17:55:23.483+0000] {logging_mixin.py:188} INFO - Title: Wtf is a datalake?
+[2024-04-15T17:55:23.483+0000] {logging_mixin.py:188} INFO - Title: DataBricks is providing top notch learning material for Data Engineers and Data Scientists Worth 2000USD(1.45 Lakh Rs) for Free. Verified June 22, 2021.
+[2024-04-15T17:55:23.484+0000] {logging_mixin.py:188} INFO - Title: Some Data Scientists write bad Python code and are stubborn in code reviews
+[2024-04-15T17:55:23.484+0000] {logging_mixin.py:188} INFO - Title: Data Testing Cheat Sheet: 12 Essential Rules
+[2024-04-15T17:55:23.484+0000] {logging_mixin.py:188} INFO - Title: What is the Leetcode equivalent for Data Engineering?
+[2024-04-15T17:55:23.484+0000] {logging_mixin.py:188} INFO - Title: Cloud Comparison by simonholdorf
+[2024-04-15T17:55:23.485+0000] {logging_mixin.py:188} INFO - Title: Name that Title.. I’ll go first, Analytics Project Manager
+[2024-04-15T17:55:23.485+0000] {logging_mixin.py:188} INFO - Title: PSA: Don't apply for Data Engineering positions at FAANG
+[2024-04-15T17:55:23.486+0000] {logging_mixin.py:188} INFO - Title: What we learned after running Airflow on Kubernetes for 2 years
+[2024-04-15T17:55:25.506+0000] {logging_mixin.py:188} INFO - Title: What the Hell is a Data Lake?
+[2024-04-15T17:55:25.506+0000] {logging_mixin.py:188} INFO - Title: Does anyone else hate Pandas?
+[2024-04-15T17:55:25.507+0000] {logging_mixin.py:188} INFO - Title: Just got hired as a DE in FAANG
+[2024-04-15T17:55:25.507+0000] {logging_mixin.py:188} INFO - Title: Educational project I built: ETL Pipeline with Airflow, Spark, s3 and MongoDB.
+[2024-04-15T17:55:25.507+0000] {logging_mixin.py:188} INFO - Title: "We have so many challenging projects!" 
+[2024-04-15T17:55:25.508+0000] {logging_mixin.py:188} INFO - Title: I am a 10 YOE (SSIS/low-code) DE preparing to transition into tier 1 tech companies. Here's my study plan in case it helps someone else.
+[2024-04-15T17:55:25.508+0000] {logging_mixin.py:188} INFO - Title: I started a new DE job in Dec and I suck at git.
+[2024-04-15T17:55:25.508+0000] {logging_mixin.py:188} INFO - Title: Data Engineering Jargon
+[2024-04-15T17:55:25.509+0000] {logging_mixin.py:188} INFO - Title: Microsoft has a ton of free courses for data engineering. Here is one with 10 hours of content for DataBricks
+[2024-04-15T17:55:25.509+0000] {logging_mixin.py:188} INFO - Title: Data Engineering from the Ground Up - Part 1 - Baby's First Data Pipeline
+[2024-04-15T17:55:25.509+0000] {logging_mixin.py:188} INFO - Title: Apache Iceberg: SQL and ACID semantics in the front, scalable object storage in the back
+[2024-04-15T17:55:25.510+0000] {logging_mixin.py:188} INFO - Title: Can someone explain the job of data engineer like I'm a baboon?
+[2024-04-15T17:55:25.510+0000] {logging_mixin.py:188} INFO - Title: Reddit Sentiment Analysis Real-Time* Data Pipeline
+[2024-04-15T17:55:25.510+0000] {logging_mixin.py:188} INFO - Title: How do you guys ace your SQL skills?
+[2024-04-15T17:55:25.511+0000] {logging_mixin.py:188} INFO - Title: First Data Pipeline - Looking to gain insight on Rust Cheaters
+[2024-04-15T17:55:25.511+0000] {logging_mixin.py:188} INFO - Title: I messed up today…
+[2024-04-15T17:55:25.511+0000] {logging_mixin.py:188} INFO - Title: My attempt to explain the Cloud to my daughters
+[2024-04-15T17:55:25.512+0000] {logging_mixin.py:188} INFO - Title: The most shared resources from r/dataengineering
+[2024-04-15T17:55:25.512+0000] {logging_mixin.py:188} INFO - Title: After exactly one month and three days of starting my Azure Data Engineer preparation, I have good news!
+[2024-04-15T17:55:25.512+0000] {logging_mixin.py:188} INFO - Title: Giving up data engineering
+[2024-04-15T17:55:25.513+0000] {logging_mixin.py:188} INFO - Title: Influencers in data are doing no justice to the industry
+[2024-04-15T17:55:25.513+0000] {logging_mixin.py:188} INFO - Title: Cool ML Engineering diagram.
+[2024-04-15T17:55:25.513+0000] {logging_mixin.py:188} INFO - Title: Apache Airflow 2.0 Released
+[2024-04-15T17:55:25.514+0000] {logging_mixin.py:188} INFO - Title: Long time Opensource users? Start contributing to Open Source projects, if you know Python (knowing Airflow is a plus), I can help you contribute your first commit to Airflow :) -- I am Apache Airflow Committer, PMC Member and Release Manager.
+[2024-04-15T17:55:25.514+0000] {logging_mixin.py:188} INFO - Title: Can We Stop Using Marketing Terms to Define Data Warehouses?
+[2024-04-15T17:55:25.514+0000] {logging_mixin.py:188} INFO - Title: Finnhub streaming data pipeline using Spark, Kafka, Kubernetes and more - Github repo & more info in the comments
+[2024-04-15T17:55:25.515+0000] {logging_mixin.py:188} INFO - Title: New open-source notebook
+[2024-04-15T17:55:25.515+0000] {logging_mixin.py:188} INFO - Title: MySQL Deadlocks, Basically
+[2024-04-15T17:55:25.515+0000] {logging_mixin.py:188} INFO - Title: I wrote a tutorial on PySpark basics, how to use it in Google Colab, and some fine-tuning tips
+[2024-04-15T17:55:25.516+0000] {logging_mixin.py:188} INFO - Title: Anyone noticing a trend where Data Engineer jobs are advertised but the role is really BI or Analyst work?
+[2024-04-15T17:55:25.516+0000] {logging_mixin.py:188} INFO - Title: Why does everyone want to work at FAANG?
+[2024-04-15T17:55:25.516+0000] {logging_mixin.py:188} INFO - Title: If you could only recommend one book to enhance your knowledge of data engineering, what would it be?
+[2024-04-15T17:55:25.516+0000] {logging_mixin.py:188} INFO - Title: What data engineering tools are popular right now?
+[2024-04-15T17:55:25.517+0000] {logging_mixin.py:188} INFO - Title: How to become a good Data Engineer?
+[2024-04-15T17:55:25.517+0000] {logging_mixin.py:188} INFO - Title: Awesome data engineering learning path
+[2024-04-15T17:55:25.517+0000] {logging_mixin.py:188} INFO - Title: My top 14 tips for Snowflake Data Engineers. What would you add?
+[2024-04-15T17:55:25.518+0000] {logging_mixin.py:188} INFO - Title: How do you handle junior people who are better than you in terms of technical ability?
+[2024-04-15T17:55:25.518+0000] {logging_mixin.py:188} INFO - Title: Open source DBT core alternative written in Rust (30x faster)
+[2024-04-15T17:55:25.519+0000] {logging_mixin.py:188} INFO - Title: Why do all my BI initiatives end up like this? 😩
+[2024-04-15T17:55:25.519+0000] {logging_mixin.py:188} INFO - Title: All-in-one tool for data pipelines!
+[2024-04-15T17:55:25.519+0000] {logging_mixin.py:188} INFO - Title: To my data engineers: why do you like working as a data engineer?
+[2024-04-15T17:55:25.519+0000] {logging_mixin.py:188} INFO - Title: Polars gets seed round of $4 million to build a compute platform
+[2024-04-15T17:55:25.520+0000] {logging_mixin.py:188} INFO - Title: explaining what the data modeler on the team does
+[2024-04-15T17:55:25.520+0000] {logging_mixin.py:188} INFO - Title: Apache Airflow 2.3.0 is out !
+[2024-04-15T17:55:25.521+0000] {logging_mixin.py:188} INFO - Title: I did it!
+[2024-04-15T17:55:25.521+0000] {logging_mixin.py:188} INFO - Title: Data engineers who've cracked FAANG and other top tech companies (Adobe, Microsoft etc)..how did you do it?
+[2024-04-15T17:55:25.521+0000] {logging_mixin.py:188} INFO - Title: Data Engineering project for beginners
+[2024-04-15T17:55:25.522+0000] {logging_mixin.py:188} INFO - Title: Keep in mind the following when reading about anything tech online lol
+[2024-04-15T17:55:25.522+0000] {logging_mixin.py:188} INFO - Title: Why use Spark at all?
+[2024-04-15T17:55:25.522+0000] {logging_mixin.py:188} INFO - Title: Instacart, Databricks and Snowflake drama
+[2024-04-15T17:55:25.523+0000] {logging_mixin.py:188} INFO - Title: Snowflake SELECT * EXCLUDE
+[2024-04-15T17:55:25.523+0000] {logging_mixin.py:188} INFO - Title: Anyone here being let go by Meta?
+[2024-04-15T17:55:25.523+0000] {logging_mixin.py:188} INFO - Title: I deleted data from production
+[2024-04-15T17:55:25.523+0000] {logging_mixin.py:188} INFO - Title: Brace yourselves... "professional" Data Mesh developer job ads incoming!
+[2024-04-15T17:55:25.524+0000] {logging_mixin.py:188} INFO - Title: today I started in my new role as an ETL Developer after 5 years as a data analyst
+[2024-04-15T17:55:25.524+0000] {logging_mixin.py:188} INFO - Title: I bombed the interviuw and feel like the dumbest person in the world
+[2024-04-15T17:55:25.524+0000] {logging_mixin.py:188} INFO - Title: Why don't a lot of data engineers consider themselves software engineers?
+[2024-04-15T17:55:25.525+0000] {logging_mixin.py:188} INFO - Title: What do Data Engineers do after the data platform is completely setup and automated?
+[2024-04-15T17:55:25.525+0000] {logging_mixin.py:188} INFO - Title: I'm sorry but is that low end of the salary range a joke? Especially for a big company like CVS .I made more at my very first analyst job which was all Excel/Access
+[2024-04-15T17:55:25.525+0000] {logging_mixin.py:188} INFO - Title: 5 Data Engineering Projects To Add To Your Resume - Seattle Data Guy
+[2024-04-15T17:55:25.526+0000] {logging_mixin.py:188} INFO - Title: A senior engineer's experience in the current job market
+[2024-04-15T17:55:25.526+0000] {logging_mixin.py:188} INFO - Title: Has anyone else moved into data engineering just to discover they hate it?
+[2024-04-15T17:55:25.526+0000] {logging_mixin.py:188} INFO - Title: « What is an ETL? » and other hard questions.
+[2024-04-15T17:55:25.527+0000] {logging_mixin.py:188} INFO - Title: Some of these job postings out there are absolutely hilarious. WTF is this jumbled mess of shit?
+[2024-04-15T17:55:25.527+0000] {logging_mixin.py:188} INFO - Title: Should I learn data engineering? Got shamed in a team meeting.
+[2024-04-15T17:55:25.529+0000] {logging_mixin.py:188} INFO - Title: Free "dbt for beginners" course
+[2024-04-15T17:55:25.529+0000] {logging_mixin.py:188} INFO - Title: What is the most unproductive task you have to do as a data engineer?
+[2024-04-15T17:55:25.530+0000] {logging_mixin.py:188} INFO - Title: Are SQL Query optimization skills important and demanded for data scientists/data engineers?
+[2024-04-15T17:55:25.530+0000] {logging_mixin.py:188} INFO - Title: What is in your Data Stack? - Thread
+[2024-04-15T17:55:25.530+0000] {logging_mixin.py:188} INFO - Title: Data Engineering Handbook
+[2024-04-15T17:55:25.531+0000] {logging_mixin.py:188} INFO - Title: Data Engineering Zoomcamp - free Data Engineering course starting in January
+[2024-04-15T17:55:25.531+0000] {logging_mixin.py:188} INFO - Title: Spark learning resource that I have been maintaining with care. Use for learning new concepts/preparing for interviews. (Recommendations are welcome)
+[2024-04-15T17:55:25.531+0000] {logging_mixin.py:188} INFO - Title: Which tools helps you make such animated gif for data pipelines?
+[2024-04-15T17:55:25.532+0000] {logging_mixin.py:188} INFO - Title: Who uses DuckDB for real?
+[2024-04-15T17:55:25.532+0000] {logging_mixin.py:188} INFO - Title: Better way to query a large (15TB) dataset that does not cost $40,000
+[2024-04-15T17:55:25.532+0000] {logging_mixin.py:188} INFO - Title: Are data engineers really just "software engineers"?
+[2024-04-15T17:55:25.533+0000] {logging_mixin.py:188} INFO - Title: r/dataengineering wrapped
+[2024-04-15T17:55:25.533+0000] {logging_mixin.py:188} INFO - Title: Google Cloud Data Engineer Certification available for free for a month on Coursera (till Nov 6).
+[2024-04-15T17:55:25.533+0000] {logging_mixin.py:188} INFO - Title: Just got certified! - Databricks certified associate developer for apache spark 3.0 in Python
+[2024-04-15T17:55:25.534+0000] {logging_mixin.py:188} INFO - Title: Learning SQL, beyond the basics
+[2024-04-15T17:55:25.534+0000] {logging_mixin.py:188} INFO - Title: Everyone on this subreddit should be aware of market salaries
+[2024-04-15T17:55:25.535+0000] {logging_mixin.py:188} INFO - Title: Created my first Data Engineering Project which integrates F1 data using Prefect, Terraform, dbt, BigQuery and Looker Studio
+[2024-04-15T17:55:25.535+0000] {logging_mixin.py:188} INFO - Title: Apache Spark™ for Dummies
+[2024-04-15T17:55:25.535+0000] {logging_mixin.py:188} INFO - Title: The data architecture "pyramid of doom" according to Dremio. This has lit up quite a discussion in my team's chat 😆 What do you think?
+[2024-04-15T17:55:25.536+0000] {logging_mixin.py:188} INFO - Title: Data engineering project: Apache Spark, Delta Lake, & Great Expectations running on Docker; Explaining some best practices!
+[2024-04-15T17:55:25.536+0000] {logging_mixin.py:188} INFO - Title: Discussion: Star schema and dimensional modeling is still the foundation of data engineering
+[2024-04-15T17:55:25.537+0000] {logging_mixin.py:188} INFO - Title: What articles are must reads for data engineers?
+[2024-04-15T17:55:25.537+0000] {logging_mixin.py:188} INFO - Title: what do people mean when they say stuff like "ETL" and "building pipelines"?
+[2024-04-15T17:55:25.538+0000] {logging_mixin.py:188} INFO - Title: What are some good publicly available real-time data sources?
+[2024-04-15T17:55:25.538+0000] {logging_mixin.py:188} INFO - Title: Master's thesis finished - Thank you
+[2024-04-15T17:55:25.538+0000] {logging_mixin.py:188} INFO - Title: Got my first Data Engineer job
+[2024-04-15T17:55:25.539+0000] {logging_mixin.py:188} INFO - Title: SMBC-comics.com "now squeeze your points together to make your results look big"
+[2024-04-15T17:55:25.539+0000] {logging_mixin.py:188} INFO - Title: Discuss a data pipeline that you've worked on
+[2024-04-15T17:55:25.539+0000] {logging_mixin.py:188} INFO - Title: Gitlab's Data Team Platform (in depth look at their stack)
+[2024-04-15T17:55:25.540+0000] {logging_mixin.py:188} INFO - Title: Saw this on Twitter. Is the specialization of data teams a bad thing, and will that change going forward?
+[2024-04-15T17:55:25.540+0000] {logging_mixin.py:188} INFO - Title: Introduction to Databases for Data Engineers
+[2024-04-15T17:55:25.541+0000] {logging_mixin.py:188} INFO - Title: Finding a new job, ridiculous 
+[2024-04-15T17:55:25.541+0000] {logging_mixin.py:188} INFO - Title: Python Pareto Principle - what is the 20% (algos, functions, libraries) that lets you develop 80% of code related to Data Engineering?
+[2024-04-15T17:55:25.541+0000] {logging_mixin.py:188} INFO - Title: Is it worth learning Apache Spark in 2023?
+[2024-04-15T17:55:25.542+0000] {logging_mixin.py:188} INFO - Title: Starting A Data Engineering Project Series
+[2024-04-15T17:55:27.529+0000] {logging_mixin.py:188} INFO - Title: We don't need data scientists, we need data engineers
+[2024-04-15T17:55:27.529+0000] {logging_mixin.py:188} INFO - Title: How are you lowering your data platform costs?
+[2024-04-15T17:55:27.530+0000] {logging_mixin.py:188} INFO - Title: What exactly is a data brick?
+[2024-04-15T17:55:27.530+0000] {logging_mixin.py:188} INFO - Title: Dont understand this job post no pyspark but extensive experience of spark jobs with python?
+[2024-04-15T17:55:27.530+0000] {logging_mixin.py:188} INFO - Title: Who are the GOATS of DE?
+[2024-04-15T17:55:27.531+0000] {logging_mixin.py:188} INFO - Title: What is the hottest tech stack in Data Engineering world now?
+[2024-04-15T17:55:27.531+0000] {logging_mixin.py:188} INFO - Title: I built an LLM-powered tool that can understand the structure of any website and extract the desired data in the format you want.
+[2024-04-15T17:55:27.531+0000] {logging_mixin.py:188} INFO - Title: (Almost) OpenSource data stack for a personal DE project. Before jumping on the project I would have liked to have some advice on things to fix or improve in this structure! do you think that this stack could work?
+[2024-04-15T17:55:27.532+0000] {logging_mixin.py:188} INFO - Title: Does anyone think the cost of Snowflake is a problem?
+[2024-04-15T17:55:27.532+0000] {logging_mixin.py:188} INFO - Title: Apparently 90% of all the Azure Data products are 7 years old in 2022. This is the job desc for a DE of a billion dollar pharma. It looks pointless to me to have 5+ yrs of exp into something that is just turning 7this year. Unrealistic tech expectations!
+[2024-04-15T17:55:27.532+0000] {logging_mixin.py:188} INFO - Title: What resources do you use for staying up to date with the data engineering landscape?
+[2024-04-15T17:55:27.533+0000] {logging_mixin.py:188} INFO - Title: Microsoft announces Fabric data platform
+[2024-04-15T17:55:27.533+0000] {logging_mixin.py:188} INFO - Title: How Instagram handles data?
+[2024-04-15T17:55:27.533+0000] {logging_mixin.py:188} INFO - Title: Out of work for 8 months, trying something new with my resume. I have to imagine this is easier for hiring managers to look at. And much easier to have in front of anyone conducting your interview. But then again, I'm not a hiring manager. What are people's thoughts on this format?
+[2024-04-15T17:55:27.534+0000] {logging_mixin.py:188} INFO - Title: /r/dataengineering hit 30k subscribers yesterday
+[2024-04-15T17:55:27.534+0000] {logging_mixin.py:188} INFO - Title: Where can I find online projects end-to-end?
+[2024-04-15T17:55:27.534+0000] {logging_mixin.py:188} INFO - Title: After Airflow. Where next for DE?
+[2024-04-15T17:55:27.535+0000] {logging_mixin.py:188} INFO - Title: Great Resource! YouTube walkthrough of 50+ Leetcode SQL problems
+[2024-04-15T17:55:27.535+0000] {logging_mixin.py:188} INFO - Title: O’Reilly data engineering reference books on sale! (Includes reference books on pyspark and scaling up pipelines)
+[2024-04-15T17:55:27.535+0000] {logging_mixin.py:188} INFO - Title: Pandas 2.0 and its Ecosystem (Arrow, Polars, DuckDB)
+[2024-04-15T17:55:27.536+0000] {logging_mixin.py:188} INFO - Title: Any other DEs here not involved in data warehousing / data modeling? Where's the love for the infrastructure and ingestion guys?
+[2024-04-15T17:55:27.536+0000] {logging_mixin.py:188} INFO - Title: Pandas-like library to build SQL models
+[2024-04-15T17:55:27.536+0000] {logging_mixin.py:188} INFO - Title: How do you develop proficiency in Apache Spark?
+[2024-04-15T17:55:27.537+0000] {logging_mixin.py:188} INFO - Title: Why is Data Build Tool (DBT) is so popular? What are some other alternatives?
+[2024-04-15T17:55:27.537+0000] {logging_mixin.py:188} INFO - Title: Doom predictions for Data Engineering
+[2024-04-15T17:55:27.537+0000] {logging_mixin.py:188} INFO - Title: Why does dbt have so much hype/ metions in this subreddit?
+[2024-04-15T17:55:27.538+0000] {logging_mixin.py:188} INFO - Title: Will Dbt just taker over the world ?
+[2024-04-15T17:55:27.538+0000] {logging_mixin.py:188} INFO - Title: Magic: The Gathering dashboard | First complete DE project ever | Feedback welcome
+[2024-04-15T17:55:27.538+0000] {logging_mixin.py:188} INFO - Title: Valentine's for your data sweetheart 🫶
+[2024-04-15T17:55:27.539+0000] {logging_mixin.py:188} INFO - Title: World's Simplest Data Pipeline - I wrote a post about data engineering fundamentals. What do you think?
+[2024-04-15T17:55:27.539+0000] {logging_mixin.py:188} INFO - Title: We Don’t Need Data Scientists, We Need Data Engineers - KDnuggets
+[2024-04-15T17:55:27.539+0000] {logging_mixin.py:188} INFO - Title: Something for fun, what abilities would you give this card?
+[2024-04-15T17:55:27.540+0000] {logging_mixin.py:188} INFO - Title: Is it true that Apache Spark (especially with Python) skills are in very high demand and paying well?
+[2024-04-15T17:55:27.540+0000] {logging_mixin.py:188} INFO - Title: How did you become a SQL pro?
+[2024-04-15T17:55:27.540+0000] {logging_mixin.py:188} INFO - Title: Dagster University | Dagster & dbt
+[2024-04-15T17:55:27.541+0000] {logging_mixin.py:188} INFO - Title: I built my first end to end data project to compare US cities for affordability against walk, transit and biking score. Plus, built a cost of living calculator to discover ideal city and relocate!
+[2024-04-15T17:55:27.541+0000] {logging_mixin.py:188} INFO - Title: Don't fall for the "Data is Beautiful" post with the mug. It is an ad. Mods, is there anything we can do about shit like this?
+[2024-04-15T17:55:27.541+0000] {logging_mixin.py:188} INFO - Title: COVID-19 data pipeline on AWS feat. Glue/PySpark, Docker, Great Expectations, Airflow, and Redshift, templated in CF/CDK, deployable via Github Actions
+[2024-04-15T17:55:27.542+0000] {logging_mixin.py:188} INFO - Title: hmmm
+[2024-04-15T17:55:27.542+0000] {logging_mixin.py:188} INFO - Title: Data engineering blogs worth reading
+[2024-04-15T17:55:27.542+0000] {logging_mixin.py:188} INFO - Title: GlareDB: An open source SQL database to query and analyze distributed data
+[2024-04-15T17:55:27.543+0000] {logging_mixin.py:188} INFO - Title: Live coding interview hatred
+[2024-04-15T17:55:27.543+0000] {logging_mixin.py:188} INFO - Title: Zillacode Premium finally done, Leetcode for PySpark, Spark and Pandas at Zillacode.com
+[2024-04-15T17:55:27.543+0000] {logging_mixin.py:188} INFO - Title: What's "wrong" with dbt ?
+[2024-04-15T17:55:27.544+0000] {logging_mixin.py:188} INFO - Title: Scaled to 1M cores in EKS
+[2024-04-15T17:55:27.544+0000] {logging_mixin.py:188} INFO - Title: Rant: Frustrating employer and salaries
+[2024-04-15T17:55:27.544+0000] {logging_mixin.py:188} INFO - Title: Data Science is like playing with Chiellini
+[2024-04-15T17:55:27.545+0000] {logging_mixin.py:188} INFO - Title: Graduating from ETL Developer to Data Engineer
+[2024-04-15T17:55:27.545+0000] {logging_mixin.py:188} INFO - Title: Please Critique my Resume: Data Analyst transitioning to Data Engineer
+[2024-04-15T17:55:27.545+0000] {logging_mixin.py:188} INFO - Title: 8 Data Engineering Evangelists to Follow
+[2024-04-15T17:55:27.546+0000] {logging_mixin.py:188} INFO - Title: I don't understand DuckDB
+[2024-04-15T17:55:27.546+0000] {logging_mixin.py:188} INFO - Title: Rewriting the data pipeline
+[2024-04-15T17:55:27.546+0000] {logging_mixin.py:188} INFO - Title: Definition of the Data Engineer role, IMHO.
+[2024-04-15T17:55:27.547+0000] {logging_mixin.py:188} INFO - Title: This is actually what broke her heart.
+[2024-04-15T17:55:27.547+0000] {logging_mixin.py:188} INFO - Title: Is it normal to feel completely lost during initial months of your data engineering job ?
+[2024-04-15T17:55:27.547+0000] {logging_mixin.py:188} INFO - Title: Is there something wrong with me, I hate dbt, what am I missing ?
+[2024-04-15T17:55:27.548+0000] {logging_mixin.py:188} INFO - Title: Beware of Fivetran and other ELT tools.
+[2024-04-15T17:55:27.548+0000] {logging_mixin.py:188} INFO - Title: Azure Synapse Analytics is absolute trash for anything bigger than a few extractions
+[2024-04-15T17:55:27.548+0000] {logging_mixin.py:188} INFO - Title: ELT of my own Strava data using the Strava API, MySQL, Python, S3, Redshift, and Airflow
+[2024-04-15T17:55:27.549+0000] {logging_mixin.py:188} INFO - Title: Couldn't find a good comprehensive article on setting up Airflow 6 months ago. I wrote one here: a setup using docker-compose, and included instructions on setting up PyCharm too! Hope you could get something out of it!
+[2024-04-15T17:55:27.549+0000] {logging_mixin.py:188} INFO - Title: Anyone Else Seeing Salaries Collapse?
+[2024-04-15T17:55:27.549+0000] {logging_mixin.py:188} INFO - Title: I missed you guys
+[2024-04-15T17:55:27.550+0000] {logging_mixin.py:188} INFO - Title: The best SQL question you have been asked in a DE/DS interview?
+[2024-04-15T17:55:27.550+0000] {logging_mixin.py:188} INFO - Title: Trying to architect a new dataset be like...
+[2024-04-15T17:55:27.550+0000] {logging_mixin.py:188} INFO - Title: Why do data engineers have so much to learn?
+[2024-04-15T17:55:27.551+0000] {logging_mixin.py:188} INFO - Title: Orchestration: Thoughts on Dagster, Airflow and Prefect?
+[2024-04-15T17:55:27.551+0000] {logging_mixin.py:188} INFO - Title: What dataset would you pay good money to get your hands on?
+[2024-04-15T17:55:27.551+0000] {logging_mixin.py:188} INFO - Title: me irl: "I've been using SQL for fifteen years! How hard could python be?"
+[2024-04-15T17:55:27.552+0000] {logging_mixin.py:188} INFO - Title: Why is learning data engineering so opaque
+[2024-04-15T17:55:27.552+0000] {logging_mixin.py:188} INFO - Title: questions asked at Amazon's L4-L5 Data Engineering
+[2024-04-15T17:55:27.552+0000] {logging_mixin.py:188} INFO - Title: Feel like an absolute loser
+[2024-04-15T17:55:27.553+0000] {logging_mixin.py:188} INFO - Title: What are your Top SQL Query Optimization tips?
+[2024-04-15T17:55:27.553+0000] {logging_mixin.py:188} INFO - Title: I’m organizing an AMA with Joe Reis (Co-author of fundamentals of data engineering). Feel free to send in your questions!
+[2024-04-15T17:55:27.553+0000] {logging_mixin.py:188} INFO - Title: Can you share some of the best software engineering practices you can apply to data pipelines?
+[2024-04-15T17:55:27.554+0000] {logging_mixin.py:188} INFO - Title: Guide to read The Data Warehouse Toolkit to save you from reading cover-cover and outdated topics.
+[2024-04-15T17:55:27.554+0000] {logging_mixin.py:188} INFO - Title: One Trillion Row Challenge (1TRC)
+[2024-04-15T17:55:27.554+0000] {logging_mixin.py:188} INFO - Title: Love you guys!
+[2024-04-15T17:55:27.555+0000] {logging_mixin.py:188} INFO - Title: My Path to Becoming a Data Engineer in FAANG
+[2024-04-15T17:55:27.555+0000] {logging_mixin.py:188} INFO - Title: Why this subreddit dislikes the so-called Modern Data Stack?
+[2024-04-15T17:55:27.555+0000] {logging_mixin.py:188} INFO - Title: Is Python our fate?
+[2024-04-15T17:55:27.556+0000] {logging_mixin.py:188} INFO - Title: Data Engineers overcomplicate things
+[2024-04-15T17:55:27.556+0000] {logging_mixin.py:188} INFO - Title: How do you handle increasing stress?
+[2024-04-15T17:55:27.556+0000] {logging_mixin.py:188} INFO - Title: Apache Iceberg Reduced Our Amazon S3 Cost by 90%
+[2024-04-15T17:55:27.557+0000] {logging_mixin.py:188} INFO - Title: Requirements Gathering is terrible. What is your best method.
+[2024-04-15T17:55:27.557+0000] {logging_mixin.py:188} INFO - Title: The inflated world of data: have you actually seen a business decision taken based on your analytics work?
+[2024-04-15T17:55:27.557+0000] {logging_mixin.py:188} INFO - Title: Got a job!
+[2024-04-15T17:55:27.558+0000] {logging_mixin.py:188} INFO - Title: Really Detailed Company Interview Guide for DE and Other Data Jobs
+[2024-04-15T17:55:27.558+0000] {logging_mixin.py:188} INFO - Title: So now dbt is worth $4.2b! Yes, that's a "b" for billion.
+[2024-04-15T17:55:27.558+0000] {logging_mixin.py:188} INFO - Title: Just had a technical interview, got roasted on streaming, distributed computing and k8s 😬
+[2024-04-15T17:55:27.559+0000] {logging_mixin.py:188} INFO - Title: What's the best strategy to merge 5500 excel files?
+[2024-04-15T17:55:27.559+0000] {logging_mixin.py:188} INFO - Title: DBT: Interactive search and selection of dbt models directly in your terminal
+[2024-04-15T17:55:27.559+0000] {logging_mixin.py:188} INFO - Title: Facebook's reputation is so bad, the company must pay even more now to hire and retain talent. Some are calling it a 'brand tax' as tech workers fear a 'black mark' on their careers.
+[2024-04-15T17:55:27.560+0000] {logging_mixin.py:188} INFO - Title: How Taco Bell Updates Over 7,000 Restaurant Menus Daily
+[2024-04-15T17:55:27.560+0000] {logging_mixin.py:188} INFO - Title: I'm Officially a Data Engineer!!!
+[2024-04-15T17:55:27.560+0000] {logging_mixin.py:188} INFO - Title: 150$ Coupon for Airflow certification 
+[2024-04-15T17:55:27.561+0000] {logging_mixin.py:188} INFO - Title: Am I overdressed? Met engineers from our parent company and they were all in heavy metal t-shirts on Zoo.
+[2024-04-15T17:55:27.561+0000] {logging_mixin.py:188} INFO - Title: Just got a LC Hard in an interview
+[2024-04-15T17:55:27.561+0000] {logging_mixin.py:188} INFO - Title: What are they looking for with title data science full stack engineer 😂
+[2024-04-15T17:55:27.562+0000] {logging_mixin.py:188} INFO - Title: Best books or material to learn the basics of data engineering.
+[2024-04-15T17:55:27.562+0000] {logging_mixin.py:188} INFO - Title: What can I do at home to become a better data engineer?
+[2024-04-15T17:55:29.371+0000] {logging_mixin.py:188} INFO - Title: What’s An OLAP Cube
+[2024-04-15T17:55:29.372+0000] {logging_mixin.py:188} INFO - Title: 100% OFF Udemy Databricks & Apache Spark 3.0.0 Course
+[2024-04-15T17:55:29.373+0000] {logging_mixin.py:188} INFO - Title: Are take-home assignments for Data Engineering roles getting out of hand?
+[2024-04-15T17:55:29.373+0000] {logging_mixin.py:188} INFO - Title: Data Engineer vs Data Analyst Salary
+[2024-04-15T17:55:29.374+0000] {logging_mixin.py:188} INFO - Title: Who has worked with both Snowflake and Databricks and what do you enjoy/dislike about each?
+[2024-04-15T17:55:29.374+0000] {logging_mixin.py:188} INFO - Title: What are some books that had an impact on your career?
+[2024-04-15T17:55:29.375+0000] {logging_mixin.py:188} INFO - Title: What are the most advanced DE frameworks skills that DE employers value the most?
+[2024-04-15T17:55:29.376+0000] {logging_mixin.py:188} INFO - Title: Another data project, this time with Python, Go, (some SQL), Docker, Google Cloud Services, Streamlit, and GitHub Actions
+[2024-04-15T17:55:29.376+0000] {logging_mixin.py:188} INFO - Title: Quarterly Salary Discussion
+[2024-04-15T17:55:29.377+0000] {logging_mixin.py:188} INFO - Title: How come so many people seem to think DE is incredibly easy? Is my perspective skewed due to my experiences?
+[2024-04-15T17:55:29.378+0000] {logging_mixin.py:188} INFO - Title: If anyone is wondering what it's like working for a garbage company, then read this
+[2024-04-15T17:55:29.378+0000] {logging_mixin.py:188} INFO - Title: How good is Databricks?
+[2024-04-15T17:55:29.379+0000] {logging_mixin.py:188} INFO - Title: Weekend Data Engineering Project-Building Spotify pipeline using Python and Airflow. Est.Time:[4–7 Hours]
+[2024-04-15T17:55:29.380+0000] {logging_mixin.py:188} INFO - Title: Meta fined $276 million over Facebook data leak involving more than 533 million users
+[2024-04-15T17:55:29.380+0000] {logging_mixin.py:188} INFO - Title: Anyone else having trouble finding data engineers?
+[2024-04-15T17:55:29.381+0000] {logging_mixin.py:188} INFO - Title: To my data engineers: what do you *not* like about being a data engineer?
+[2024-04-15T17:55:29.381+0000] {logging_mixin.py:188} INFO - Title: Data engineers in Europe
+[2024-04-15T17:55:29.382+0000] {logging_mixin.py:188} INFO - Title: What are some highly recommended courses for data engineers (that are already working in this field so not "from zero")?
+[2024-04-15T17:55:29.383+0000] {logging_mixin.py:188} INFO - Title: How to approach an long SQL query with no documentation?
+[2024-04-15T17:55:29.383+0000] {logging_mixin.py:188} INFO - Title: How do you feel about the return to SQL?
+[2024-04-15T17:55:29.384+0000] {logging_mixin.py:188} INFO - Title: What we learned after I deleted the main production database by mistake
+[2024-04-15T17:55:29.384+0000] {logging_mixin.py:188} INFO - Title: Experts found 10 malicious packages on PyPI used to steal developers’ data
+[2024-04-15T17:55:29.385+0000] {logging_mixin.py:188} INFO - Title: How to stay up to date with latest advances in data engineering?
+[2024-04-15T17:55:29.386+0000] {logging_mixin.py:188} INFO - Title: What's your data engineering stack at your company?
+[2024-04-15T17:55:29.386+0000] {logging_mixin.py:188} INFO - Title: Just got fired.
+[2024-04-15T17:55:29.387+0000] {logging_mixin.py:188} INFO - Title: The State of Data Engineering in 2021
+[2024-04-15T17:55:29.388+0000] {logging_mixin.py:188} INFO - Title: Finally landed my first DE role
+[2024-04-15T17:55:29.388+0000] {logging_mixin.py:188} INFO - Title: What distinguishes production-grade data pipelines from amateur setups?
+[2024-04-15T17:55:29.389+0000] {logging_mixin.py:188} INFO - Title: Big news! LambdaConf returns Sept 16-19th and is better than ever! 🔥
+[2024-04-15T17:55:29.389+0000] {logging_mixin.py:188} INFO - Title: Any really good end-to-end walkthroughs?
+[2024-04-15T17:55:29.390+0000] {logging_mixin.py:188} INFO - Title: University of Helsinki is providing Big Data Platforms Mooc (https://big-data-platforms-21.mooc.fi/)
+[2024-04-15T17:55:29.391+0000] {logging_mixin.py:188} INFO - Title: What happened recently with Snowflake?
+[2024-04-15T17:55:29.391+0000] {logging_mixin.py:188} INFO - Title: Follow up on my previous post! Who are some of the no-fluff, not clickbaity data influencers you like and follow?
+[2024-04-15T17:55:29.392+0000] {logging_mixin.py:188} INFO - Title: Is there a list of SQL "patterns" or problem types for interview questions?
+[2024-04-15T17:55:29.392+0000] {logging_mixin.py:188} INFO - Title: Data Engineering Jargon - Part 2
+[2024-04-15T17:55:29.393+0000] {logging_mixin.py:188} INFO - Title: The deck we used to raise our Seed round for our open-source EL(T) platform
+[2024-04-15T17:55:29.394+0000] {logging_mixin.py:188} INFO - Title: How to recover a deleted dataset from BigQuery? (Urgent)
+[2024-04-15T17:55:29.394+0000] {logging_mixin.py:188} INFO - Title: One of a brainy friend of mine told me, redditors gives the best advice. So, here I am seeking advice/suggestions/feedbacks on my Backend/Data Engineer Resume.
+[2024-04-15T17:55:29.395+0000] {logging_mixin.py:188} INFO - Title: What are great books that helped you to become a better data engineer?
+[2024-04-15T17:55:29.396+0000] {logging_mixin.py:188} INFO - Title: Data-Ops-ish Design and Workflow Walkthrough
+[2024-04-15T17:55:29.397+0000] {logging_mixin.py:188} INFO - Title: What's your prod, open source stack?
+[2024-04-15T17:55:29.397+0000] {logging_mixin.py:188} INFO - Title: Are we entering a boom time for Data Engineering?
+[2024-04-15T17:55:29.398+0000] {logging_mixin.py:188} INFO - Title: A takedown of Alteryx, no-code data as a concept and the people who force it on talented data folks.
+[2024-04-15T17:55:29.398+0000] {logging_mixin.py:188} INFO - Title: Why is dbt popular for the transformation step?
+[2024-04-15T17:55:29.399+0000] {logging_mixin.py:188} INFO - Title: Free copy of "Fundamentals of Data Engineering" to learn DE
+[2024-04-15T17:55:29.400+0000] {logging_mixin.py:188} INFO - Title: Dates are hard—we can relate to that, can't we r/dataengineering?
+[2024-04-15T17:55:29.400+0000] {logging_mixin.py:188} INFO - Title: FAANG Interview question styles for DEs
+[2024-04-15T17:55:29.401+0000] {logging_mixin.py:188} INFO - Title: Does anyone know where to find jobs for companies doing good in the world?
+[2024-04-15T17:55:29.401+0000] {logging_mixin.py:188} INFO - Title: Recruiter reached out to me about a potential Data Engineer position. 1 hour later she sent her Robinhood affiliate link?
+[2024-04-15T17:55:29.402+0000] {logging_mixin.py:188} INFO - Title: How to present your data engineering work to 300+ persons from the whole company
+[2024-04-15T17:55:29.403+0000] {logging_mixin.py:188} INFO - Title: ‘Data’ is essentially a consulting field in most companies ? Thoughts?
+[2024-04-15T17:55:29.403+0000] {logging_mixin.py:188} INFO - Title: Is there a great book on design patterns in data engineering?
+[2024-04-15T17:55:29.404+0000] {logging_mixin.py:188} INFO - Title: Thoughts on "Databricks ❤️ IDEs"?
+[2024-04-15T17:55:29.405+0000] {logging_mixin.py:188} INFO - Title: Big Data is Dead
+[2024-04-15T17:55:29.405+0000] {logging_mixin.py:188} INFO - Title: Background conversation in a CIA safehouse in the last Jason Bourne Movie 😆 Does the CIA pay well? Asking for a friend…
+[2024-04-15T17:55:29.406+0000] {logging_mixin.py:188} INFO - Title: One thing that irks me about the software field: Many companies are not willing to give a candidate a chance if they do not know their specific tech.
+[2024-04-15T17:55:29.407+0000] {logging_mixin.py:188} INFO - Title: Please suggest a book for Data Engineering concepts.
+[2024-04-15T17:55:29.407+0000] {logging_mixin.py:188} INFO - Title: What DBT hacks do you wish you knew sooner?
+[2024-04-15T17:55:29.408+0000] {logging_mixin.py:188} INFO - Title: How to make these diagrams
+[2024-04-15T17:55:29.409+0000] {logging_mixin.py:188} INFO - Title: Which ETL/ELT tools do you think have future in data engineering space?
+[2024-04-15T17:55:29.409+0000] {logging_mixin.py:188} INFO - Title: What problems does the “modern data stack” actually solve that have not been solved already?
+[2024-04-15T17:55:29.410+0000] {logging_mixin.py:188} INFO - Title: How much software engineering knowledge should a data engineer know?
+[2024-04-15T17:55:29.410+0000] {logging_mixin.py:188} INFO - Title: Anyone currently using an Operational Data Store?
+[2024-04-15T17:55:29.411+0000] {logging_mixin.py:188} INFO - Title: What is ideal or perfect ETL/ELT pipeline in data engineering? An interviewer ask this questions and here is my answer
+[2024-04-15T17:55:29.412+0000] {logging_mixin.py:188} INFO - Title: Introducing Kestra, infinitely scalable open source orchestration and scheduling platform.
+[2024-04-15T17:55:29.412+0000] {logging_mixin.py:188} INFO - Title: changing your attitude
+[2024-04-15T17:55:29.413+0000] {logging_mixin.py:188} INFO - Title: Read/Filter a 1.7 TB CSV File in Python
+[2024-04-15T17:55:29.414+0000] {logging_mixin.py:188} INFO - Title: PySpark Tutorial in Jupyter Notebook
+[2024-04-15T17:55:29.414+0000] {logging_mixin.py:188} INFO - Title: Why did DE go the vendor tooling (hell) route for most things vs SWE where the solution is language frameworks/libraries and do less (or more) code.
+[2024-04-15T17:55:29.415+0000] {logging_mixin.py:188} INFO - Title: Every other post in this sub seems to be “going from DA to DE?” or “should I learn X?”.
+[2024-04-15T17:55:29.416+0000] {logging_mixin.py:188} INFO - Title: What does dbt Labs get wrong about dbt best practices?
+[2024-04-15T17:55:29.416+0000] {logging_mixin.py:188} INFO - Title: Is it me, or does blockchain have zero use cases in data infrastructure?
+[2024-04-15T17:55:29.417+0000] {logging_mixin.py:188} INFO - Title: r/DataEngineering Buzzwords - Details in comments
+[2024-04-15T17:55:29.417+0000] {logging_mixin.py:188} INFO - Title: What are some intermediate to advanced level SQL and Python topics that someone starting in Data Engineering should know?
+[2024-04-15T17:55:29.418+0000] {logging_mixin.py:188} INFO - Title: Writing effective SQL
+[2024-04-15T17:55:29.419+0000] {logging_mixin.py:188} INFO - Title: How do these companies make money?
+[2024-04-15T17:55:29.419+0000] {logging_mixin.py:188} INFO - Title: What's the coolest data you've worked with
+[2024-04-15T17:55:29.420+0000] {logging_mixin.py:188} INFO - Title: Are these terms irrelevant in the industry anymore?
+[2024-04-15T17:55:29.420+0000] {logging_mixin.py:188} INFO - Title: Most companies are rushing to build or incorporate #gpt in their value chain. #genai. Do you agree?
+[2024-04-15T17:55:29.421+0000] {logging_mixin.py:188} INFO - Title: Does data engineering not have as much interesting career progression as other areas of engineering?
+[2024-04-15T17:55:29.422+0000] {logging_mixin.py:188} INFO - Title: Remote data engineers deserve salaries based on the market where the company performs primary operations
+[2024-04-15T17:55:29.422+0000] {logging_mixin.py:188} INFO - Title: If leetcode is for software engineers, what's it then for data engineers?
+[2024-04-15T17:55:29.423+0000] {logging_mixin.py:188} INFO - Title: Stretching the truth about being a "Data Engineer"
+[2024-04-15T17:55:29.423+0000] {logging_mixin.py:188} INFO - Title: Quarterly Salary Discussion - Mar 2024
+[2024-04-15T17:55:29.424+0000] {logging_mixin.py:188} INFO - Title: Is the Data Space really this Complicated or am I just overthinking?
+[2024-04-15T17:55:29.425+0000] {logging_mixin.py:188} INFO - Title: Quarterly Salary Discussion - Sep 2023
+[2024-04-15T17:55:29.425+0000] {logging_mixin.py:188} INFO - Title: (RANT) I think I'll die trying to setup and run Spark with Python in my local environment
+[2024-04-15T17:55:29.426+0000] {logging_mixin.py:188} INFO - Title: 2021, will it change in 2022?
+[2024-04-15T17:55:29.426+0000] {logging_mixin.py:188} INFO - Title: Looking for open source projects that use data pipelines and big data flows
+[2024-04-15T17:55:29.427+0000] {logging_mixin.py:188} INFO - Title: Why do job descriptions demand skills that are not at all needed?
+[2024-04-15T17:55:29.428+0000] {logging_mixin.py:188} INFO - Title: Will Airflow become obsolete in coming years?
+[2024-04-15T17:55:29.428+0000] {logging_mixin.py:188} INFO - Title: What’s your opinion on today’s release of Microsoft fabric?
+[2024-04-15T17:55:29.429+0000] {logging_mixin.py:188} INFO - Title: What kind of work can a data engineer do if they can't find employment as a data engineer?
+[2024-04-15T17:55:29.430+0000] {logging_mixin.py:188} INFO - Title: Has anyone built a data warehouse primarily using Databricks?
+[2024-04-15T17:55:29.430+0000] {logging_mixin.py:188} INFO - Title: I've built online resource where aspiring data engineers can learn modern tools in production like env. What are your thoughts?
+[2024-04-15T17:55:29.431+0000] {logging_mixin.py:188} INFO - Title: Open source contributions for a Data Engineer?
+[2024-04-15T17:55:29.431+0000] {logging_mixin.py:188} INFO - Title: Job Market Slightly Better, but Employers are SO PICKY and Hiring Process TOO LONG!!
+[2024-04-15T17:55:29.432+0000] {logging_mixin.py:188} INFO - Title: Marry, F, kill… databricks, snowflake, ms fabric?
+[2024-04-15T17:55:29.433+0000] {logging_mixin.py:188} INFO - Title: Have you ever seen a successful “self-serve” implementation?
+[2024-04-15T17:55:29.433+0000] {logging_mixin.py:188} INFO - Title: Building a simple ETL for personal projects
+[2024-04-15T17:55:30.902+0000] {logging_mixin.py:188} INFO - Title: New courses on distributed systems and elliptic curve cryptography (by Martin Kleppmann)
+[2024-04-15T17:55:30.903+0000] {logging_mixin.py:188} INFO - Title: what is it that you do for work again?
+[2024-04-15T17:55:30.903+0000] {logging_mixin.py:188} INFO - Title: Is SELECT DISTINCT really that bad?
+[2024-04-15T17:55:30.904+0000] {logging_mixin.py:188} INFO - Title: Delta Lake 3.0
+[2024-04-15T17:55:30.904+0000] {logging_mixin.py:188} INFO - Title: What did ETL look like before the "modern data stack" was a thing?
+[2024-04-15T17:55:30.905+0000] {logging_mixin.py:188} INFO - Title: What do you consider "advanced" SQL
+[2024-04-15T17:55:30.905+0000] {logging_mixin.py:188} INFO - Title: Databricks responds to Snowflake (TPC-DS)
+[2024-04-15T17:55:30.905+0000] {logging_mixin.py:188} INFO - Title: Data Engineering Mentor Network
+[2024-04-15T17:55:30.906+0000] {logging_mixin.py:188} INFO - Title: Useful resources for Data Engineers
+[2024-04-15T17:55:30.906+0000] {logging_mixin.py:188} INFO - Title: Talend is no longer free
+[2024-04-15T17:55:30.906+0000] {logging_mixin.py:188} INFO - Title: What whitepapers should every data engineer read?
+[2024-04-15T17:55:30.907+0000] {logging_mixin.py:188} INFO - Title: Books that made you become a better engineer
+[2024-04-15T17:55:30.907+0000] {logging_mixin.py:188} INFO - Title: What skill would you learn after Python and SQL?
+[2024-04-15T17:55:30.907+0000] {logging_mixin.py:188} INFO - Title: Data architecture diagram tools
+[2024-04-15T17:55:30.908+0000] {logging_mixin.py:188} INFO - Title: Reality check: How good are you at the skills in your tech stack?
+[2024-04-15T17:55:30.908+0000] {logging_mixin.py:188} INFO - Title: PyGWalker: a Python library for data engineer that turns your dataframe into tableau-like data app.
+[2024-04-15T17:55:30.908+0000] {logging_mixin.py:188} INFO - Title: Streaming data engineering project: Apache Flink, Apache Kafka, Prometheus, & Graphana running on Docker.
+[2024-04-15T17:55:30.909+0000] {logging_mixin.py:188} INFO - Title: Is it a data structure and algorithm a must for data engineering roles
+[2024-04-15T17:55:30.909+0000] {logging_mixin.py:188} INFO - Title: Build Awesome Data Engineering Portfolio from Scratch in 2022 | Complete Guide
+[2024-04-15T17:55:30.909+0000] {logging_mixin.py:188} INFO - Title: CMV: Data Engineers should code, not build ad-hoc dashboards
+[2024-04-15T17:55:30.910+0000] {logging_mixin.py:188} INFO - Title: Is it me or are beginner-friendly ETL pipeline guides that explain from the ground-up how to incorporate the use of various technologies notoriously difficult to find.
+[2024-04-15T17:55:30.910+0000] {logging_mixin.py:188} INFO - Title: Want to learn Data Engineering? Here are some Example Projects to get your hands dirty.
+[2024-04-15T17:55:30.910+0000] {logging_mixin.py:188} INFO - Title: Rockstar Data Engineers making big bucks: what are you doing exactly?
+[2024-04-15T17:55:30.911+0000] {logging_mixin.py:188} INFO - Title: What are your favourite data buzzwords? I.e. Terms or words or sayings that make you want to barf or roll your eyes every time you hear it.
+[2024-04-15T17:55:30.911+0000] {logging_mixin.py:188} INFO - Title: Have you seen any examples of “serious” companies using anything other than Power BI or Tableau for their data viz, including customer facing analytics? Example: pro-code tools like Shiny, Python Dash, or D3.
+[2024-04-15T17:55:30.911+0000] {logging_mixin.py:188} INFO - Title: What do you personally do to improve as a DE?
+[2024-04-15T17:55:30.912+0000] {logging_mixin.py:188} INFO - Title: Feel a bit burned from a take-home assignment I completed during an interview
+[2024-04-15T17:55:30.912+0000] {logging_mixin.py:188} INFO - Title: What parts of "the data warehouse toolkit" and "designing data intensive applications" are important to read?
+[2024-04-15T17:55:30.912+0000] {logging_mixin.py:188} INFO - Title: Snowflake syntax now supports EXCLUDE & RENAME syntax
+[2024-04-15T17:55:30.913+0000] {logging_mixin.py:188} INFO - Title: I start my first day as a Data Engineer next Monday, any tips?
+[2024-04-15T17:55:30.913+0000] {logging_mixin.py:188} INFO - Title: What is the role of Kubernetes in Data Engineering?
+[2024-04-15T17:55:30.913+0000] {logging_mixin.py:188} INFO - Title: best books on data engineering? (not necessarily technical ones)
+[2024-04-15T17:55:30.914+0000] {logging_mixin.py:188} INFO - Title: ETL Pipeline Testing
+[2024-04-15T17:55:30.914+0000] {logging_mixin.py:188} INFO - Title: Wrote a post about how we implemented The Modern Data Stack at ManyPets
+[2024-04-15T17:55:30.914+0000] {logging_mixin.py:188} INFO - Title: Data Engineering from the Ground Up - Part 2: Better Pipelines with Python and Idempotency
+[2024-04-15T17:55:30.915+0000] {logging_mixin.py:188} INFO - Title: Databricks SQL Warehouse is too expensive (for leadership)
+[2024-04-15T17:55:30.915+0000] {logging_mixin.py:188} INFO - Title: I created an open-source microsite to help analysts and SQL-heavy devs get started with Spark
+[2024-04-15T17:55:30.915+0000] {logging_mixin.py:188} INFO - Title: My whole team hates DLTs and I don't blame them.
+[2024-04-15T17:55:30.916+0000] {logging_mixin.py:188} INFO - Title: Why would I choose Snowflake over BigQuery?
+[2024-04-15T17:55:30.916+0000] {logging_mixin.py:188} INFO - Title: Data Engineering Competition!
+[2024-04-15T17:55:30.916+0000] {logging_mixin.py:188} INFO - Title: Leetcode for Spark and PySpark at Zillacode.com
+[2024-04-15T17:55:30.917+0000] {logging_mixin.py:188} INFO - Title: End to End Pyspark Testing CI/CD Example Repo
+[2024-04-15T17:55:30.917+0000] {logging_mixin.py:188} INFO - Title: Rust for Data Engineering—what's the hype about? 🦀
+[2024-04-15T17:55:30.917+0000] {logging_mixin.py:188} INFO - Title: Databricks Vs Snowflake - User Experience
+[2024-04-15T17:55:30.918+0000] {logging_mixin.py:188} INFO - Title: The Data Stack Show: A Podcast on Data Engineering
+[2024-04-15T17:55:30.918+0000] {logging_mixin.py:188} INFO - Title: Some Production SQL Database schemas for a few different businesses. (inc Airbnb and Twitter) as an example of some real world data models.
+[2024-04-15T17:55:30.918+0000] {logging_mixin.py:188} INFO - Title: Flat file with over 5,000 columns…
+[2024-04-15T17:55:30.919+0000] {logging_mixin.py:188} INFO - Title: How do I future proof my career as a Data Engineer?
+[2024-04-15T17:55:30.919+0000] {logging_mixin.py:188} INFO - Title: Where does the career go from Data Engineering?
+[2024-04-15T17:55:30.919+0000] {logging_mixin.py:188} INFO - Title: I attempted to create the Ultimate Guide to dbt
+[2024-04-15T17:55:30.920+0000] {logging_mixin.py:188} INFO - Title: What did data engineering teach you about companies and businesses that most people don’t know?
+[2024-04-15T17:55:30.920+0000] {logging_mixin.py:188} INFO - Title: Any examples of DE projects that you feel are the gold standard for how DE projects should be organized?
+[2024-04-15T17:55:30.920+0000] {logging_mixin.py:188} INFO - Title: Why does everyone on this sub hate to use Azure?
+[2024-04-15T17:55:30.921+0000] {logging_mixin.py:188} INFO - Title: How are you incrementally testing your data pipelines as you develop them?
+[2024-04-15T17:55:30.921+0000] {logging_mixin.py:188} INFO - Title: How to not be exhausted after work?
+[2024-04-15T17:55:30.921+0000] {logging_mixin.py:188} INFO - Title: What is your salary and where are you from?
+[2024-04-15T17:55:30.922+0000] {logging_mixin.py:188} INFO - Title: Data teams right now
+[2024-04-15T17:55:30.922+0000] {logging_mixin.py:188} INFO - Title: why is Apache Pyspark documentation so...sparse?
+[2024-04-15T17:55:30.922+0000] {logging_mixin.py:188} INFO - Title: Dozer: The Future of Data APIs
+[2024-04-15T17:55:30.923+0000] {logging_mixin.py:188} INFO - Title: The SQL Murder Mystery
+[2024-04-15T17:55:30.923+0000] {logging_mixin.py:188} INFO - Title: What is the hype around duckDB that I don’t seem to understand?
+[2024-04-15T17:55:30.923+0000] {logging_mixin.py:188} INFO - Title: What are the things that you want to know but it’s too late now to ask…?
+[2024-04-15T17:55:30.924+0000] {logging_mixin.py:188} INFO - Title: Do you think this AWS based personal project would be suitable and complex enough for a resume?
+[2024-04-15T17:55:30.924+0000] {logging_mixin.py:188} INFO - Title: Kimball vs. Inmon vs. Vault
+[2024-04-15T17:55:30.924+0000] {logging_mixin.py:188} INFO - Title: Data Engineering course - UC Berkeley, Spring 2021
+[2024-04-15T17:55:30.925+0000] {logging_mixin.py:188} INFO - Title: How to gain practical experience in Data engineering ?
+[2024-04-15T17:55:30.925+0000] {logging_mixin.py:188} INFO - Title: Azure Data Factory sucks
+[2024-04-15T17:55:30.925+0000] {logging_mixin.py:188} INFO - Title: Which tools are worth learning for an aspiring data engineer?
+[2024-04-15T17:55:30.926+0000] {logging_mixin.py:188} INFO - Title: What are the skills of an advance Data Engineer?
+[2024-04-15T17:55:30.926+0000] {logging_mixin.py:188} INFO - Title: LeetCode for Data Engineers?
+[2024-04-15T17:55:30.926+0000] {logging_mixin.py:188} INFO - Title: Catching cheaters in CS:GO using data
+[2024-04-15T17:55:30.926+0000] {logging_mixin.py:188} INFO - Title: Do you backup your S3 data?
+[2024-04-15T17:55:30.927+0000] {logging_mixin.py:188} INFO - Title: I have a final job interview in a few days and I’m scared.
+[2024-04-15T17:55:30.927+0000] {logging_mixin.py:188} INFO - Title: I'm a one man data team (pretty much). How can I be successful and as future proof as possible?
+[2024-04-15T17:55:30.927+0000] {logging_mixin.py:188} INFO - Title: What has been your career path?
+[2024-04-15T17:55:30.928+0000] {logging_mixin.py:188} INFO - Title: Ideal Data Stack - architecture , whats your view?
+[2024-04-15T17:55:30.928+0000] {logging_mixin.py:188} INFO - Title: Why there are few data engineering blogs/bloggers out there?
+[2024-04-15T17:55:30.928+0000] {logging_mixin.py:188} INFO - Title: a curated list of docker-compose files prepared for testing data engineering tools, databases, and open-source libraries.
+[2024-04-15T17:55:30.929+0000] {logging_mixin.py:188} INFO - Title: How the fuck did I land this?
+[2024-04-15T17:55:30.929+0000] {logging_mixin.py:188} INFO - Title: Have you been able to use your Data Engineering skills to successfully start your own business?
+[2024-04-15T17:55:30.929+0000] {logging_mixin.py:188} INFO - Title: A short and clean example of how to create memory efficient data pipelines with basic Python generators
+[2024-04-15T17:55:30.930+0000] {logging_mixin.py:188} INFO - Title: What exactly does being proficient in SQL entail?
+[2024-04-15T17:55:30.930+0000] {logging_mixin.py:188} INFO - Title: What would you learn if you were to start all  DE again ?
+[2024-04-15T17:55:30.930+0000] {logging_mixin.py:188} INFO - Title: Follow up to last post on Management shaming me for not knowing Data engineering
+[2024-04-15T17:55:30.931+0000] {logging_mixin.py:188} INFO - Title: What is the hardest interview question you got asked?
+[2024-04-15T17:55:30.931+0000] {logging_mixin.py:188} INFO - Title: Any Data Engineering Podcasts?
+[2024-04-15T17:55:30.931+0000] {logging_mixin.py:188} INFO - Title: How Do You Bring Your DE Team Out of The Shadows?
+[2024-04-15T17:55:30.932+0000] {logging_mixin.py:188} INFO - Title: Anything else to read
+[2024-04-15T17:55:30.932+0000] {logging_mixin.py:188} INFO - Title: I'm not getting it...what's the point of DBT?
+[2024-04-15T17:55:30.932+0000] {logging_mixin.py:188} INFO - Title: Recently laid off, please review my Resume and throw me some hard truths! Interested in Data Engineer/Science roles. Thanks! (~1 Year of FT experience)
+[2024-04-15T17:55:30.933+0000] {logging_mixin.py:188} INFO - Title: Hot Take : QA is the most tedious part of Data Engineering
+[2024-04-15T17:55:30.933+0000] {logging_mixin.py:188} INFO - Title: Do programmers like it when someone asks you to code on spot while they are watching?
+[2024-04-15T17:55:30.933+0000] {logging_mixin.py:188} INFO - Title: Thinking of starting a Youtube channel on Data Engineering. Ideas?
+[2024-04-15T17:55:30.934+0000] {logging_mixin.py:188} INFO - Title: Update to interview posts
+[2024-04-15T17:55:30.934+0000] {logging_mixin.py:188} INFO - Title: Anyone migrating away from Snowflake and back to AWS?
+[2024-04-15T17:55:30.934+0000] {logging_mixin.py:188} INFO - Title: 1 year since I started data engineer and I found the job of my dreams while you guys were gone 😭
+[2024-04-15T17:55:30.935+0000] {logging_mixin.py:188} INFO - Title: Is it me or is the AWS Glue documentation kind of bad
+[2024-04-15T17:55:30.935+0000] {logging_mixin.py:188} INFO - Title: What are some of the big problems Data Engineering currently faces / will face in the next 5-10 years?
+[2024-04-15T17:55:30.935+0000] {logging_mixin.py:188} INFO - Title: Thoughts on the resume? Been looking for 6 months & no offers I'm happy with, yet.
+[2024-04-15T17:55:30.936+0000] {logging_mixin.py:188} INFO - Title: "The best" Data Engineering BootCamp
+[2024-04-15T17:55:32.421+0000] {logging_mixin.py:188} INFO - Title: Is Python + SQL + Spark enough to enter DE role?
+[2024-04-15T17:55:32.422+0000] {logging_mixin.py:188} INFO - Title: Loading 261GB of reddit comments into Snowflake
+[2024-04-15T17:55:32.422+0000] {logging_mixin.py:188} INFO - Title: Are data engineers, architects and programmers in general getting older?
+[2024-04-15T17:55:32.423+0000] {logging_mixin.py:188} INFO - Title: Microsoft Fabric: Should Databricks be Worried?
+[2024-04-15T17:55:32.423+0000] {logging_mixin.py:188} INFO - Title: Layoffs for Data Engineers
+[2024-04-15T17:55:32.423+0000] {logging_mixin.py:188} INFO - Title: Celebrating my first Data Engineering Project -- Fitbit data with PySpark, GCP, prefect, and terraform!
+[2024-04-15T17:55:32.424+0000] {logging_mixin.py:188} INFO - Title: Data Engineer Salaries - Did they suddenly jump up?
+[2024-04-15T17:55:32.424+0000] {logging_mixin.py:188} INFO - Title: Ask Martin Kleppmann - the author of Designing Data-Intensive Applications
+[2024-04-15T17:55:32.424+0000] {logging_mixin.py:188} INFO - Title: Building a personal data warehouse in Snowflake for fun and no profit.
+[2024-04-15T17:55:32.425+0000] {logging_mixin.py:188} INFO - Title: Introducing Amazon Managed Workflows for Apache Airflow
+[2024-04-15T17:55:32.425+0000] {logging_mixin.py:188} INFO - Title: 8 Billion Files
+[2024-04-15T17:55:32.425+0000] {logging_mixin.py:188} INFO - Title: Polars — Accelerating Polars DataFrames. Polars and NVIDIA engineers are collaborating to bring GPU acceleration to Polars DataFrames in the near future.
+[2024-04-15T17:55:32.426+0000] {logging_mixin.py:188} INFO - Title: Zendesk Moves from DynamoDB to MySQL and S3 to Save over 80% in Costs
+[2024-04-15T17:55:32.426+0000] {logging_mixin.py:188} INFO - Title: How is Airflow really used in real practice?
+[2024-04-15T17:55:32.426+0000] {logging_mixin.py:188} INFO - Title: What are some common data engineering mistakes you’ve seen in your career?
+[2024-04-15T17:55:32.427+0000] {logging_mixin.py:188} INFO - Title: Why are there no junior or regular data engineer positions?
+[2024-04-15T17:55:32.427+0000] {logging_mixin.py:188} INFO - Title: Polars cookbook (Jupyter)
+[2024-04-15T17:55:32.427+0000] {logging_mixin.py:188} INFO - Title: What is that one skill you would wanna master at work?
+[2024-04-15T17:55:32.428+0000] {logging_mixin.py:188} INFO - Title: what does your company's current data landscape look like? Which tools and technologies did you go for and why?
+[2024-04-15T17:55:32.428+0000] {logging_mixin.py:188} INFO - Title: For engineers who primarily work in a data warehouse environment mainly using SQL (and very little python), what are your career goals?
+[2024-04-15T17:55:32.428+0000] {logging_mixin.py:188} INFO - Title: AWS
+[2024-04-15T17:55:32.429+0000] {logging_mixin.py:188} INFO - Title: Imposter Syndrome
+[2024-04-15T17:55:32.429+0000] {logging_mixin.py:188} INFO - Title: Offered DE Job... Feeling under-qualified
+[2024-04-15T17:55:32.429+0000] {logging_mixin.py:188} INFO - Title: Diary of a Data Engineer
+[2024-04-15T17:55:32.430+0000] {logging_mixin.py:188} INFO - Title: Optimizing a One Billion Row Challenge in with Rust and Python with Polars
+[2024-04-15T17:55:32.430+0000] {logging_mixin.py:188} INFO - Title: What are some things that have radically improved your data engineering skills?
+[2024-04-15T17:55:32.431+0000] {logging_mixin.py:188} INFO - Title: Can washing machines be used for parallel processing?
+[2024-04-15T17:55:32.431+0000] {logging_mixin.py:188} INFO - Title: Quarterly Salary Discussion - Jun 2023
+[2024-04-15T17:55:32.431+0000] {logging_mixin.py:188} INFO - Title: Are SQL query optimizations skills important for an exceptional data engineer?
+[2024-04-15T17:55:32.432+0000] {logging_mixin.py:188} INFO - Title: Interviewer wants me to go into detail about current company's architecture
+[2024-04-15T17:55:32.432+0000] {logging_mixin.py:188} INFO - Title: Is dbt really necessary?
+[2024-04-15T17:55:32.432+0000] {logging_mixin.py:188} INFO - Title: Using Polars over Pandas or PySpark
+[2024-04-15T17:55:32.433+0000] {logging_mixin.py:188} INFO - Title: How do you keep yourself updated about latest DE news?
+[2024-04-15T17:55:32.433+0000] {logging_mixin.py:188} INFO - Title: SQL Workshop recording: Making SQL more efficient, readable, and easier to debug
+[2024-04-15T17:55:32.433+0000] {logging_mixin.py:188} INFO - Title: Data Lake vs Data Warehouse
+[2024-04-15T17:55:32.434+0000] {logging_mixin.py:188} INFO - Title: What is Kubernetes used for in data engineering?
+[2024-04-15T17:55:32.434+0000] {logging_mixin.py:188} INFO - Title: Databricks raises $1B at $28B valuation as it reaches $425M ARR
+[2024-04-15T17:55:32.434+0000] {logging_mixin.py:188} INFO - Title: Accepted Data Eng offer, seems more like BI Engineer
+[2024-04-15T17:55:32.435+0000] {logging_mixin.py:188} INFO - Title: Spark/databricks seems amazing?
+[2024-04-15T17:55:32.435+0000] {logging_mixin.py:188} INFO - Title: How do i become a data engineer?
+[2024-04-15T17:55:32.435+0000] {logging_mixin.py:188} INFO - Title: What is difference between data warehouse and data lake
+[2024-04-15T17:55:32.436+0000] {logging_mixin.py:188} INFO - Title: M1 macs are still riddled with compatibility issues
+[2024-04-15T17:55:32.436+0000] {logging_mixin.py:188} INFO - Title: Data Engineering Landscape in 2021 with Tobias Macey
+[2024-04-15T17:55:32.436+0000] {logging_mixin.py:188} INFO - Title: Is it true that DEs don't get much recognition for their work as other roles do?
+[2024-04-15T17:55:32.437+0000] {logging_mixin.py:188} INFO - Title: A year into building a data project
+[2024-04-15T17:55:32.437+0000] {logging_mixin.py:188} INFO - Title: SQL versus Python?
+[2024-04-15T17:55:32.438+0000] {logging_mixin.py:188} INFO - Title: Just got certified! - Databricks Certified Data Engineer Associate
+[2024-04-15T17:55:32.438+0000] {logging_mixin.py:188} INFO - Title: What I have learned by solving (almost) all the SQL problems in Leetcode
+[2024-04-15T17:55:32.438+0000] {logging_mixin.py:188} INFO - Title: Tracking the Fake Stars Market with Dagster, BigQuery and dbt
+[2024-04-15T17:55:32.439+0000] {logging_mixin.py:188} INFO - Title: Data engineers, how do you approach ambiguity in your work?
+[2024-04-15T17:55:32.439+0000] {logging_mixin.py:188} INFO - Title: Why FAANG+
+[2024-04-15T17:55:32.439+0000] {logging_mixin.py:188} INFO - Title: Been working as a Jr. DE, but worried I am at a dead end.
+[2024-04-15T17:55:32.440+0000] {logging_mixin.py:188} INFO - Title: What problems is Snowflake and co. trying to solve?
+[2024-04-15T17:55:32.440+0000] {logging_mixin.py:188} INFO - Title: Tell us your Position / industry / rates / salaries / location?
+[2024-04-15T17:55:32.440+0000] {logging_mixin.py:188} INFO - Title: Is being a data engineer just a specialised software engineer?
+[2024-04-15T17:55:32.441+0000] {logging_mixin.py:188} INFO - Title: My team's code gives me anxiety
+[2024-04-15T17:55:32.441+0000] {logging_mixin.py:188} INFO - Title: Data engineering project on Github
+[2024-04-15T17:55:32.441+0000] {logging_mixin.py:188} INFO - Title: Anyone else struggling to keep up?
+[2024-04-15T17:55:32.442+0000] {logging_mixin.py:188} INFO - Title: I am planning to use Postgre as a data warehouse
+[2024-04-15T17:55:32.442+0000] {logging_mixin.py:188} INFO - Title: Discussion: Data Engineering has a title problem
+[2024-04-15T17:55:32.442+0000] {logging_mixin.py:188} INFO - Title: Is our dbt project as bad as I think?
+[2024-04-15T17:55:32.443+0000] {logging_mixin.py:188} INFO - Title: There is no Data Engineering roadmap
+[2024-04-15T17:55:32.443+0000] {logging_mixin.py:188} INFO - Title: Is Redpanda going to replace Apache Kafka?
+[2024-04-15T17:55:32.443+0000] {logging_mixin.py:188} INFO - Title: Why do people re-invent wrappers for Airflow?
+[2024-04-15T17:55:32.444+0000] {logging_mixin.py:188} INFO - Title: A Few Pointers for Boot Camp Grads and Uni Students From a Sr. Engineer
+[2024-04-15T17:55:32.444+0000] {logging_mixin.py:188} INFO - Title: OOP in python ETL?
+[2024-04-15T17:55:32.445+0000] {logging_mixin.py:188} INFO - Title: How do you test your pipelines?
+[2024-04-15T17:55:32.445+0000] {logging_mixin.py:188} INFO - Title: Curious to know what a typical day in the life of a DE at FB look like
+[2024-04-15T17:55:32.445+0000] {logging_mixin.py:188} INFO - Title: How To Use Window Functions in SQL
+[2024-04-15T17:55:32.446+0000] {logging_mixin.py:188} INFO - Title: [Updated] Personal End-End ETL data pipeline(GCP, SPARK, AIRFLOW, TERRAFORM, DOCKER, DL, D3.JS)
+[2024-04-15T17:55:32.446+0000] {logging_mixin.py:188} INFO - Title: Adidas Sales data pipeline
+[2024-04-15T17:55:32.446+0000] {logging_mixin.py:188} INFO - Title: I recently passed the DP-203, here are my notes to prepare
+[2024-04-15T17:55:32.447+0000] {logging_mixin.py:188} INFO - Title: How to build experience in Kafka and Spark if not in a data engineering job?
+[2024-04-15T17:55:32.447+0000] {logging_mixin.py:188} INFO - Title: I've been trying to wrap my head around the use of Snowflake
+[2024-04-15T17:55:32.447+0000] {logging_mixin.py:188} INFO - Title: For those of you who were self taught, what was your path into data engineering
+[2024-04-15T17:55:32.448+0000] {logging_mixin.py:188} INFO - Title: Writing a Python SQL engine from scratch
+[2024-04-15T17:55:32.448+0000] {logging_mixin.py:188} INFO - Title: Quarterly Salary Discussion
+[2024-04-15T17:55:32.448+0000] {logging_mixin.py:188} INFO - Title: Is Data Modelling still an expected part of a Data Engineer skillset?
+[2024-04-15T17:55:32.449+0000] {logging_mixin.py:188} INFO - Title: Data Engineering O’Reilly Humble Bundle
+[2024-04-15T17:55:32.449+0000] {logging_mixin.py:188} INFO - Title: Can someone explain the big deal with dbt?
+[2024-04-15T17:55:32.449+0000] {logging_mixin.py:188} INFO - Title: Is our coding challenge too hard?
+[2024-04-15T17:55:32.450+0000] {logging_mixin.py:188} INFO - Title: What do you want to see in a 6-month Data Engineering course?
+[2024-04-15T17:55:32.450+0000] {logging_mixin.py:188} INFO - Title: Metaflow, Netflix's Python framework for data science, is now open source
+[2024-04-15T17:55:32.450+0000] {logging_mixin.py:188} INFO - Title: Companies without low code?
+[2024-04-15T17:55:32.451+0000] {logging_mixin.py:188} INFO - Title: How do you make working with SQL enjoyable (or less tedious)
+[2024-04-15T17:55:32.451+0000] {logging_mixin.py:188} INFO - Title: My team only uses Excel to manage all of our critical data and I’m struggling to fix it
+[2024-04-15T17:55:32.451+0000] {logging_mixin.py:188} INFO - Title: Is it a must to be very good at SQL for a data engineer position?
+[2024-04-15T17:55:32.452+0000] {logging_mixin.py:188} INFO - Title: Is it hard to find Data Engineers with good SWE skills?
+[2024-04-15T17:55:32.452+0000] {logging_mixin.py:188} INFO - Title: Is traditional data modeling dead?
+[2024-04-15T17:55:32.452+0000] {logging_mixin.py:188} INFO - Title: Data analyst/engineer at Tesla
+[2024-04-15T17:55:32.453+0000] {logging_mixin.py:188} INFO - Title: What have you learned the hard way?
+[2024-04-15T17:55:32.453+0000] {logging_mixin.py:188} INFO - Title: Are there database design Standards out there? As in, formal documents listing exact best practices for OLTP database design?
+[2024-04-15T17:55:32.454+0000] {logging_mixin.py:188} INFO - Title: Manager denying use of Git
+[2024-04-15T17:55:32.454+0000] {logging_mixin.py:188} INFO - Title: From /recruitinghell - (Name and Shame: NielsenIQ - Interviewer ends interview 12 mins in.)
+[2024-04-15T17:55:32.454+0000] {logging_mixin.py:188} INFO - Title: Snowflake Architecture Overview
+[2024-04-15T17:55:32.455+0000] {logging_mixin.py:188} INFO - Title: Data Engineering Concepts: Definitions, Backlinks, and Graph View
+[2024-04-15T17:55:32.455+0000] {logging_mixin.py:188} INFO - Title: What’s the best paid courses to prepare for DE and certifications?
+[2024-04-15T17:55:32.456+0000] {logging_mixin.py:188} INFO - Title: I want to move from startup to big company. where I'm always seeing spark as a requirement how to learn it in home I want a local setup but seems very resource extensive ?
+[2024-04-15T17:55:32.456+0000] {logging_mixin.py:188} INFO - Title: Why is Snowflake so popular?
+[2024-04-15T17:55:32.456+0000] {logging_mixin.py:188} INFO - Title: Monte Carlo Banned from Locally Optimistic Data Community
+[2024-04-15T17:55:34.063+0000] {logging_mixin.py:188} INFO - Title: [AMA] From FAANG Data/Software Engineer to YC-Backed Startup Founder - Ask Me Anything!
+[2024-04-15T17:55:34.063+0000] {logging_mixin.py:188} INFO - Title: vendor confession: there's just too many ETL/ELT tools
+[2024-04-15T17:55:34.064+0000] {logging_mixin.py:188} INFO - Title: How do you "know" your architecture is correct?
+[2024-04-15T17:55:34.064+0000] {logging_mixin.py:188} INFO - Title: Which are the most inefficient, ineffective, expensive tools in your data stack?
+[2024-04-15T17:55:34.064+0000] {logging_mixin.py:188} INFO - Title: Any good resources to learn Apache spark?
+[2024-04-15T17:55:34.065+0000] {logging_mixin.py:188} INFO - Title: How do you use Airflow 'properly'?
+[2024-04-15T17:55:34.065+0000] {logging_mixin.py:188} INFO - Title: Do you need to code in your job?
+[2024-04-15T17:55:34.065+0000] {logging_mixin.py:188} INFO - Title: Great Expectations is annoyingly cumbersome
+[2024-04-15T17:55:34.066+0000] {logging_mixin.py:188} INFO - Title: Data Modelling part of Data Engineering?
+[2024-04-15T17:55:34.066+0000] {logging_mixin.py:188} INFO - Title: How are you guys validating your data?
+[2024-04-15T17:55:34.066+0000] {logging_mixin.py:188} INFO - Title: You have total freedom for developing the data platform of your company, what tools do you choose?
+[2024-04-15T17:55:34.067+0000] {logging_mixin.py:188} INFO - Title: DE interview horror stories
+[2024-04-15T17:55:34.067+0000] {logging_mixin.py:188} INFO - Title: dbt Coalesce 2021 takeaways
+[2024-04-15T17:55:34.067+0000] {logging_mixin.py:188} INFO - Title: Lesson learned: meme good, watermark bad. Here's another DE-flavored meme as compensation.
+[2024-04-15T17:55:34.068+0000] {logging_mixin.py:188} INFO - Title: What made you choose DE over DS?
+[2024-04-15T17:55:34.068+0000] {logging_mixin.py:188} INFO - Title: [META] We're Building a Wiki. Now what?
+[2024-04-15T17:55:34.068+0000] {logging_mixin.py:188} INFO - Title: If you restarted your career - what would you do differently?
+[2024-04-15T17:55:34.069+0000] {logging_mixin.py:188} INFO - Title: When to use Spark vs Pandas?
+[2024-04-15T17:55:34.069+0000] {logging_mixin.py:188} INFO - Title: I'm a beginner in the data engineering field with 1.5 years of experience in developing pipelines on ADF and working with SQL & Pyspark on databricks. Would you recommend this book for me?
+[2024-04-15T17:55:34.070+0000] {logging_mixin.py:188} INFO - Title: What are your weekend side projects?
+[2024-04-15T17:55:34.070+0000] {logging_mixin.py:188} INFO - Title: Experience with Data engineering Influencers on Linkedin.
+[2024-04-15T17:55:34.071+0000] {logging_mixin.py:188} INFO - Title: Recommendations for having Fundamentasl of Data Engineering
+[2024-04-15T17:55:34.071+0000] {logging_mixin.py:188} INFO - Title: Introduction to Snowflake's Micro-Partitions
+[2024-04-15T17:55:34.071+0000] {logging_mixin.py:188} INFO - Title: Whats something that you don’t understand but are too afraid to admit because you don’t want to look like an imposter?
+[2024-04-15T17:55:34.072+0000] {logging_mixin.py:188} INFO - Title: How are you maintaining data fidelity throughout your data integration and transformation pipelines?
+[2024-04-15T17:55:34.072+0000] {logging_mixin.py:188} INFO - Title: Is all data engineering moving into SQL warehouses, or is there still a need for general purpose programming languages and systems?
+[2024-04-15T17:55:34.072+0000] {logging_mixin.py:188} INFO - Title: What did you guys wish you knew before implementing everything for your company?
+[2024-04-15T17:55:34.073+0000] {logging_mixin.py:188} INFO - Title: If you could go back in time and tell yourself one thing before building your first pipeline, what would that be?
+[2024-04-15T17:55:34.073+0000] {logging_mixin.py:188} INFO - Title: Any mid-career coaches for people like me?
+[2024-04-15T17:55:34.073+0000] {logging_mixin.py:188} INFO - Title: What are the Golden Rules of Data Engineering?
+[2024-04-15T17:55:34.074+0000] {logging_mixin.py:188} INFO - Title: What are the most commond advanced SQL interview questions asked at FAANG?
+[2024-04-15T17:55:34.074+0000] {logging_mixin.py:188} INFO - Title: How Airbnb trained 5K+ Employees to use data in their day to day job
+[2024-04-15T17:55:34.074+0000] {logging_mixin.py:188} INFO - Title: Ibis: The last dataframe API you'll need to learn? I hope...
+[2024-04-15T17:55:34.075+0000] {logging_mixin.py:188} INFO - Title: Any self-taught data engineers here who feel like there are a lot of people who are focused on discrediting you?
+[2024-04-15T17:55:34.075+0000] {logging_mixin.py:188} INFO - Title: What's the toughest DE problem you faced in your work career?
+[2024-04-15T17:55:34.076+0000] {logging_mixin.py:188} INFO - Title: Why Doesn’t the Modern Data Stack Result in a Modern Data Experience?
+[2024-04-15T17:55:34.076+0000] {logging_mixin.py:188} INFO - Title: What did you screw up this year
+[2024-04-15T17:55:34.076+0000] {logging_mixin.py:188} INFO - Title: Data pipeline project for beginners
+[2024-04-15T17:55:34.077+0000] {logging_mixin.py:188} INFO - Title: Appreciation❤️
+[2024-04-15T17:55:34.077+0000] {logging_mixin.py:188} INFO - Title: Let’s study together!!
+[2024-04-15T17:55:34.077+0000] {logging_mixin.py:188} INFO - Title: Biggest debates in the industry?
+[2024-04-15T17:55:34.078+0000] {logging_mixin.py:188} INFO - Title: Quarterly Salary Discussion
+[2024-04-15T17:55:34.078+0000] {logging_mixin.py:188} INFO - Title: Do most salary’s cap at around 120-150k?
+[2024-04-15T17:55:34.078+0000] {logging_mixin.py:188} INFO - Title: Hot take: You (probably) don't need high availability
+[2024-04-15T17:55:34.079+0000] {logging_mixin.py:188} INFO - Title: How to become a good engineer ?
+[2024-04-15T17:55:34.079+0000] {logging_mixin.py:188} INFO - Title: DBT Testing for Lazy People: dbt-testgen
+[2024-04-15T17:55:34.079+0000] {logging_mixin.py:188} INFO - Title: One company wants me to attend 5 interview rounds in 2 days. Even worth it?
+[2024-04-15T17:55:34.080+0000] {logging_mixin.py:188} INFO - Title: Company wanted both Databricks and Snowflake so we have them (Airflow for data orchestration). Any advice on how best leverage these two platforms?
+[2024-04-15T17:55:34.080+0000] {logging_mixin.py:188} INFO - Title: What tools do you “need” to do your job?
+[2024-04-15T17:55:34.080+0000] {logging_mixin.py:188} INFO - Title: Which Data jargon or concept did you have a hard time grasping?
+[2024-04-15T17:55:34.081+0000] {logging_mixin.py:188} INFO - Title: A short tutorial on running Spark with Jupyter using Docker
+[2024-04-15T17:55:34.081+0000] {logging_mixin.py:188} INFO - Title: Has anyone here transitioned from Data Scientist to Data Engineer? What was your motivation, and do you regret the move now, or are you happier as a Data Engineer?
+[2024-04-15T17:55:34.081+0000] {logging_mixin.py:188} INFO - Title: What are some questions you would ask a DE Team in an interview to see how advanced the team is?
+[2024-04-15T17:55:34.082+0000] {logging_mixin.py:188} INFO - Title: Senior data engineers! What should junior data engineers know?
+[2024-04-15T17:55:34.082+0000] {logging_mixin.py:188} INFO - Title: Design, Development and Deployment of a simple Data Pipeline
+[2024-04-15T17:55:34.082+0000] {logging_mixin.py:188} INFO - Title: Designing a whole data infrastructure from scratch
+[2024-04-15T17:55:34.083+0000] {logging_mixin.py:188} INFO - Title: What made you struggle as a beginner?
+[2024-04-15T17:55:34.083+0000] {logging_mixin.py:188} INFO - Title: Reasonable experience requirement
+[2024-04-15T17:55:34.083+0000] {logging_mixin.py:188} INFO - Title: how did you learn about writing "optimized" and "clean" SQL queries?
+[2024-04-15T17:55:34.084+0000] {logging_mixin.py:188} INFO - Title: Suggested courses / material / books to start working as an DE
+[2024-04-15T17:55:34.084+0000] {logging_mixin.py:188} INFO - Title: Spark (Python particularly) learning materials
+[2024-04-15T17:55:34.084+0000] {logging_mixin.py:188} INFO - Title: Favorite SQL patterns?
+[2024-04-15T17:55:34.085+0000] {logging_mixin.py:188} INFO - Title: Quarterly Salary Discussion - Dec 2023
+[2024-04-15T17:55:34.085+0000] {logging_mixin.py:188} INFO - Title: Is the reason SFTP file transfer in banks, healthcare, etc is so ubiquitous just because they are using older systems without robust REST APIs...?
+[2024-04-15T17:55:34.085+0000] {logging_mixin.py:188} INFO - Title: Do you truly enjoy data engineering?
+[2024-04-15T17:55:34.086+0000] {logging_mixin.py:188} INFO - Title: Is your boss technical in that he/she can help you with difficult problems or non technical?
+[2024-04-15T17:55:34.086+0000] {logging_mixin.py:188} INFO - Title: Organization wants to use SharePoint as a "database"
+[2024-04-15T17:55:34.086+0000] {logging_mixin.py:188} INFO - Title: Do you like your job as a DE?
+[2024-04-15T17:55:34.087+0000] {logging_mixin.py:188} INFO - Title: We Don't Need Data Engineers, Data Scientist Need Better Tools - A Data Engineers Response To A Data Scientist
+[2024-04-15T17:55:34.087+0000] {logging_mixin.py:188} INFO - Title: I LOVE BEING A DE. But I also hate it..
+[2024-04-15T17:55:34.087+0000] {logging_mixin.py:188} INFO - Title: ETL Pipelines Learning Resources
+[2024-04-15T17:55:34.088+0000] {logging_mixin.py:188} INFO - Title: Udacity Data Engineering Nanodegree Course Review
+[2024-04-15T17:55:34.088+0000] {logging_mixin.py:188} INFO - Title: When NOT to use PostgreSQL? 
+[2024-04-15T17:55:34.088+0000] {logging_mixin.py:188} INFO - Title: How do you prep for SQL heavy technical rounds?
+[2024-04-15T17:55:34.089+0000] {logging_mixin.py:188} INFO - Title: Blog 1 - Structured Way to Study and Get into Azure DE role
+[2024-04-15T17:55:34.089+0000] {logging_mixin.py:188} INFO - Title: Should I be offended? Project manager send me a code from Chatgpt
+[2024-04-15T17:55:34.089+0000] {logging_mixin.py:188} INFO - Title: How to earn the big bucks in Data Engineering?
+[2024-04-15T17:55:34.090+0000] {logging_mixin.py:188} INFO - Title: I've got a DE Interview, but they're not letting me use libraries or SQL?
+[2024-04-15T17:55:34.090+0000] {logging_mixin.py:188} INFO - Title: interview: this a red flag?
+[2024-04-15T17:55:34.090+0000] {logging_mixin.py:188} INFO - Title: I want to practice my skills in Airflow, AWS cloud provider, and Snowflake by working on a project, and I came across this project pipeline. Do you think this is a good project to enhance my skills and include on my resume? I am aiming to find an end-of-study internship at a reputable company.
+[2024-04-15T17:55:34.091+0000] {logging_mixin.py:188} INFO - Title: How old were you when you landed your first real data engineering job?
+[2024-04-15T17:55:34.091+0000] {logging_mixin.py:188} INFO - Title: Future of DE
+[2024-04-15T17:55:34.091+0000] {logging_mixin.py:188} INFO - Title: Are there any other platforms like Kaggle, but for data engineers instead of data scientists?
+[2024-04-15T17:55:34.092+0000] {logging_mixin.py:188} INFO - Title: Boss wants a data mesh
+[2024-04-15T17:55:34.092+0000] {logging_mixin.py:188} INFO - Title: HUGE imposter syndrome as a junior. What do I do?
+[2024-04-15T17:55:34.092+0000] {logging_mixin.py:188} INFO - Title: What should a data engineer’s GitHub look like?
+[2024-04-15T17:55:34.092+0000] {logging_mixin.py:188} INFO - Title: Where can I get the hot or latest news about data lakehouse or dataengineering？ Are there blogs, websites, or media to recommend it?
+[2024-04-15T17:55:34.093+0000] {logging_mixin.py:188} INFO - Title: Is it worth me applying to Data Engineering roles with this Resume/CV?
+[2024-04-15T17:55:34.093+0000] {logging_mixin.py:188} INFO - Title: Designing a Data Platform, when to choose Databricks over other DWH tools
+[2024-04-15T17:55:34.093+0000] {logging_mixin.py:188} INFO - Title: Your default tool for ETL
+[2024-04-15T17:55:34.094+0000] {logging_mixin.py:188} INFO - Title: I'm a Data Engineer. How do I become a better Software Engineer?
+[2024-04-15T17:55:34.094+0000] {logging_mixin.py:188} INFO - Title: Is this group moderated actively? Can it be improved?
+[2024-04-15T17:55:34.094+0000] {logging_mixin.py:188} INFO - Title: Trigger a data engineer with one sentence ? ( Fun )
+[2024-04-15T17:55:34.095+0000] {logging_mixin.py:188} INFO - Title: “Data Engineering is the new Data Science” DS Interviews: -15% DE Interviews: +40% 🚀🚀🚀
+[2024-04-15T17:55:34.095+0000] {logging_mixin.py:188} INFO - Title: How To Become a Data Engineer in 2021
+[2024-04-15T17:55:34.095+0000] {logging_mixin.py:188} INFO - Title: Celebrating my first Data Engineering Project
+[2024-04-15T17:55:34.096+0000] {logging_mixin.py:188} INFO - Title: What was your DE job from hell?
+[2024-04-15T17:55:34.096+0000] {logging_mixin.py:188} INFO - Title: Small Group of Data Engineering Learners
+[2024-04-15T17:55:34.096+0000] {logging_mixin.py:188} INFO - Title: What do data engineers want for christmas?
+[2024-04-15T17:55:34.097+0000] {logging_mixin.py:188} INFO - Title: i'm seeing less star schemas
+[2024-04-15T17:55:35.847+0000] {logging_mixin.py:188} INFO - Title: Got The Job!
+[2024-04-15T17:55:35.847+0000] {logging_mixin.py:188} INFO - Title: Where to Practice Complex SQL questions?
+[2024-04-15T17:55:35.848+0000] {logging_mixin.py:188} INFO - Title: Layoffs?
+[2024-04-15T17:55:35.848+0000] {logging_mixin.py:188} INFO - Title: Just landed my first role as a DE
+[2024-04-15T17:55:35.848+0000] {logging_mixin.py:188} INFO - Title: What should i practice for the PySpark Interview round?
+[2024-04-15T17:55:35.849+0000] {logging_mixin.py:188} INFO - Title: Do data engineer's write a lot of code? Thinking of switching from SWE, but don't want to use GUI tools / drag and drop.
+[2024-04-15T17:55:35.849+0000] {logging_mixin.py:188} INFO - Title: Beginner mistakes to avoid in building Data Pipeline
+[2024-04-15T17:55:35.849+0000] {logging_mixin.py:188} INFO - Title: I am looking for a roadmap on getting into Data Engineering. I can't hope to follow the popular roadmap shared on this sub.
+[2024-04-15T17:55:35.850+0000] {logging_mixin.py:188} INFO - Title: Steam Prices ETL (Personal Project)
+[2024-04-15T17:55:35.850+0000] {logging_mixin.py:188} INFO - Title: GPT4 doing data analysis by writing and running python scripts, plotting charts and all. Experimental but promising. What should I test this on?
+[2024-04-15T17:55:35.850+0000] {logging_mixin.py:188} INFO - Title: Data Engineer offer retracted after I moved cities.
+[2024-04-15T17:55:35.851+0000] {logging_mixin.py:188} INFO - Title: Non-technical boss, wanting to micromanage and kills our team
+[2024-04-15T17:55:35.851+0000] {logging_mixin.py:188} INFO - Title: What stack do the small players have here?
+[2024-04-15T17:55:35.851+0000] {logging_mixin.py:188} INFO - Title: 8 Key Data Structures That Power Modern Databases
+[2024-04-15T17:55:35.852+0000] {logging_mixin.py:188} INFO - Title: You guys ever puzzled by how some organizations are generating petabytes of data?
+[2024-04-15T17:55:35.852+0000] {logging_mixin.py:188} INFO - Title: Am I a Data Engineer?
+[2024-04-15T17:55:35.852+0000] {logging_mixin.py:188} INFO - Title: GCP Data Engineer Certification Courses available for free (for a month)
+[2024-04-15T17:55:35.853+0000] {logging_mixin.py:188} INFO - Title: [Novice here] For an internship is this too much? Or just a bit challenging
+[2024-04-15T17:55:35.853+0000] {logging_mixin.py:188} INFO - Title: Data Engineering Jargon - Part 5 (Final)
+[2024-04-15T17:55:35.853+0000] {logging_mixin.py:188} INFO - Title: Is using pandas considered terrible practice in ELT?
+[2024-04-15T17:55:35.854+0000] {logging_mixin.py:188} INFO - Title: Data Analyst transitioning to Data Engineering: Need some tips on the courses and a few other things!
+[2024-04-15T17:55:35.854+0000] {logging_mixin.py:188} INFO - Title: Article/Tutorial: How to develop data pipeline in Airflow through TDD (test-driven development)
+[2024-04-15T17:55:35.854+0000] {logging_mixin.py:188} INFO - Title: An Awesome List of Open-Source Data Engineering Projects
+[2024-04-15T17:55:35.855+0000] {logging_mixin.py:188} INFO - Title: As a data engineer, what do you find the most challenging task in modern data engineering?
+[2024-04-15T17:55:35.855+0000] {logging_mixin.py:188} INFO - Title: I built an open-source CLI tool to ingest/copy data between any databases
+[2024-04-15T17:55:35.855+0000] {logging_mixin.py:188} INFO - Title: None of what I learned is a job requirement. I am essentially skill-less.
+[2024-04-15T17:55:35.856+0000] {logging_mixin.py:188} INFO - Title: Spark, Dask, DuckDB, Polars: TPC-H Benchmarks at Scale
+[2024-04-15T17:55:35.856+0000] {logging_mixin.py:188} INFO - Title: Process 250TB in 20 minutes for $25 using a 200 VM cluster
+[2024-04-15T17:55:35.857+0000] {logging_mixin.py:188} INFO - Title: Does anyone regret moving to Data Engineering
+[2024-04-15T17:55:35.857+0000] {logging_mixin.py:188} INFO - Title: Just picked up this big boy for $1 at good will. Worth keeping? Wanted to get a refresher on Hive and cluster scaling for an interview, but this seems overkill and maybe outdated (4th edition is latest)
+[2024-04-15T17:55:35.857+0000] {logging_mixin.py:188} INFO - Title: How much SQL do you use as a DE?
+[2024-04-15T17:55:35.858+0000] {logging_mixin.py:188} INFO - Title: Best way to execute Python scripts on a schedule?
+[2024-04-15T17:55:35.858+0000] {logging_mixin.py:188} INFO - Title: Is data engineering the next data science?
+[2024-04-15T17:55:35.858+0000] {logging_mixin.py:188} INFO - Title: Introducing English as the New Programming Language for Apache Spark
+[2024-04-15T17:55:35.859+0000] {logging_mixin.py:188} INFO - Title: The Dagster Master Plan
+[2024-04-15T17:55:35.859+0000] {logging_mixin.py:188} INFO - Title: Sr. Data Analyst -> Data Engineer
+[2024-04-15T17:55:35.859+0000] {logging_mixin.py:188} INFO - Title: "ingestion is a solved problem"
+[2024-04-15T17:55:35.860+0000] {logging_mixin.py:188} INFO - Title: Dataframes vs SQL for ETL/ELT
+[2024-04-15T17:55:35.860+0000] {logging_mixin.py:188} INFO - Title: How do data engineering interviews work?
+[2024-04-15T17:55:35.860+0000] {logging_mixin.py:188} INFO - Title: Made a post about weird hybrid titles coming out. Who can guess the job duties without reading the full posting (which can be Easily found on LinkedIN for anyone interested)
+[2024-04-15T17:55:35.861+0000] {logging_mixin.py:188} INFO - Title: Why is Data Engineering considered “not as attractive” compared to DS?
+[2024-04-15T17:55:35.861+0000] {logging_mixin.py:188} INFO - Title: My first DE project about flight punctuality in Europe
+[2024-04-15T17:55:35.861+0000] {logging_mixin.py:188} INFO - Title: Those who transitioned from data analytics to data engineering, why?
+[2024-04-15T17:55:35.862+0000] {logging_mixin.py:188} INFO - Title: What's the coolest problem you've ever solved?
+[2024-04-15T17:55:35.862+0000] {logging_mixin.py:188} INFO - Title: How and where did you learn SQL from and become good at it?
+[2024-04-15T17:55:35.862+0000] {logging_mixin.py:188} INFO - Title: Data Engineer Interview at Amazon
+[2024-04-15T17:55:35.863+0000] {logging_mixin.py:188} INFO - Title: Asking for more RAM for Data Engineering jobs
+[2024-04-15T17:55:35.863+0000] {logging_mixin.py:188} INFO - Title: What's that one WTF moment you had that made you leave a company?
+[2024-04-15T17:55:35.863+0000] {logging_mixin.py:188} INFO - Title: Landing a data engineering role with the help of this group
+[2024-04-15T17:55:35.864+0000] {logging_mixin.py:188} INFO - Title: Preparing for DE Interviews at FAANG+ companies
+[2024-04-15T17:55:35.864+0000] {logging_mixin.py:188} INFO - Title: Running Python Jobs in cloud
+[2024-04-15T17:55:35.864+0000] {logging_mixin.py:188} INFO - Title: Does anyone else hate the idea of writing code for job scheduling like ***?
+[2024-04-15T17:55:35.865+0000] {logging_mixin.py:188} INFO - Title: What is your background education?
+[2024-04-15T17:55:35.865+0000] {logging_mixin.py:188} INFO - Title: Huge influx of recruiters messaging me on LinkedIn starting September 1st despite nothing changing on my LinkedIn… anyone else?
+[2024-04-15T17:55:35.866+0000] {logging_mixin.py:188} INFO - Title: Ok to not really use any python as a DE?
+[2024-04-15T17:55:35.866+0000] {logging_mixin.py:188} INFO - Title: Is Kimball’s data modeling really functional?
+[2024-04-15T17:55:35.866+0000] {logging_mixin.py:188} INFO - Title: Seeking Guidance: Roadmap for Becoming a Competent Junior Data Engineer in 3 Months
+[2024-04-15T17:55:35.867+0000] {logging_mixin.py:188} INFO - Title: I have been recently promoted to Data Architect Role. I need help on learning resources/pointers
+[2024-04-15T17:55:35.867+0000] {logging_mixin.py:188} INFO - Title: Best Place for Transformations: Python or SQL?
+[2024-04-15T17:55:35.867+0000] {logging_mixin.py:188} INFO - Title: What would you want to hear and learn about in a PySpark workshop?
+[2024-04-15T17:55:35.868+0000] {logging_mixin.py:188} INFO - Title: Overwhelmed by sheer amount of resources
+[2024-04-15T17:55:35.868+0000] {logging_mixin.py:188} INFO - Title: layoffs in tech
+[2024-04-15T17:55:35.868+0000] {logging_mixin.py:188} INFO - Title: Being a Data Engineer: are we destined to do less coding in the future?
+[2024-04-15T17:55:35.869+0000] {logging_mixin.py:188} INFO - Title: 100+ Cheat Sheets for Data Science and Machine Learning
+[2024-04-15T17:55:35.869+0000] {logging_mixin.py:188} INFO - Title: A book like "Cracking The Coding Interview" for Data Engineer Interview?
+[2024-04-15T17:55:35.869+0000] {logging_mixin.py:188} INFO - Title: Is there a SQL set of questions equivalent to the 75 Leetcode questions for FAANG interviews?
+[2024-04-15T17:55:35.870+0000] {logging_mixin.py:188} INFO - Title: We built a public PostgreSQL proxy to 40k+ open government datasets
+[2024-04-15T17:55:35.870+0000] {logging_mixin.py:188} INFO - Title: Data Engineering Apprenticeship
+[2024-04-15T17:55:35.870+0000] {logging_mixin.py:188} INFO - Title: Freelance data engineers - what's your story?
+[2024-04-15T17:55:35.871+0000] {logging_mixin.py:188} INFO - Title: I feel like such a fraud
+[2024-04-15T17:55:35.871+0000] {logging_mixin.py:188} INFO - Title: Data Engineering vs Data Engineering
+[2024-04-15T17:55:35.871+0000] {logging_mixin.py:188} INFO - Title: Data Engineer - What's the best course, certification or degree of all time?
+[2024-04-15T17:55:35.872+0000] {logging_mixin.py:188} INFO - Title: 2024 Data Engineering Top Skills that you will prepare for
+[2024-04-15T17:55:35.872+0000] {logging_mixin.py:188} INFO - Title: dbt Labs to add usage-based pricing on top of their seat costs for dbt Cloud. $0.01 per model after free tier.
+[2024-04-15T17:55:35.872+0000] {logging_mixin.py:188} INFO - Title: At what point do you give up on training a co-worker?
+[2024-04-15T17:55:35.873+0000] {logging_mixin.py:188} INFO - Title: Do Right Joins even matter?
+[2024-04-15T17:55:35.873+0000] {logging_mixin.py:188} INFO - Title: Interview coding question that I couldn't solve
+[2024-04-15T17:55:35.873+0000] {logging_mixin.py:188} INFO - Title: Wanted to share my open source incremental ETL framework: Meerschaum
+[2024-04-15T17:55:35.874+0000] {logging_mixin.py:188} INFO - Title: Update: Journey to Data Engineering
+[2024-04-15T17:55:35.874+0000] {logging_mixin.py:188} INFO - Title: What data tools are you using for your daily work?
+[2024-04-15T17:55:35.874+0000] {logging_mixin.py:188} INFO - Title: What is a pipeline really ?
+[2024-04-15T17:55:35.874+0000] {logging_mixin.py:188} INFO - Title: Repeated interview question: what do you if your ETL fails?
+[2024-04-15T17:55:35.875+0000] {logging_mixin.py:188} INFO - Title: What tools will be a must-have for the data engineering stack in 5 years?
+[2024-04-15T17:55:35.875+0000] {logging_mixin.py:188} INFO - Title: Are DEs “Second Class Citizens” to Data Scientists in Most Orgs?
+[2024-04-15T17:55:35.875+0000] {logging_mixin.py:188} INFO - Title: Dealing With the Sunk Cost Fallacy of Giving up on Data Career?
+[2024-04-15T17:55:35.876+0000] {logging_mixin.py:188} INFO - Title: What was your biggest challenge getting into data engineering?
+[2024-04-15T17:55:35.876+0000] {logging_mixin.py:188} INFO - Title: is programming in data engineering as complex as in software engineering?
+[2024-04-15T17:55:35.876+0000] {logging_mixin.py:188} INFO - Title: You've just joined a new company who do everything in Excel, but....
+[2024-04-15T17:55:35.877+0000] {logging_mixin.py:188} INFO - Title: How did you go about learning K8s
+[2024-04-15T17:55:35.877+0000] {logging_mixin.py:188} INFO - Title: Is *** better for triggering jobs in a data pipeline, or actually running the jobs itself?
+[2024-04-15T17:55:35.878+0000] {logging_mixin.py:188} INFO - Title: Noob question, but how do you deploy and automate a data pipeline?
+[2024-04-15T17:55:35.878+0000] {logging_mixin.py:188} INFO - Title: Is it normal for companies to retain all raw data?
+[2024-04-15T17:55:35.878+0000] {logging_mixin.py:188} INFO - Title: The SQL Unit Testing Landscape: 2023
+[2024-04-15T17:55:35.879+0000] {logging_mixin.py:188} INFO - Title: Which certification to get, Snowflake or Databricks?
+[2024-04-15T17:55:35.879+0000] {logging_mixin.py:188} INFO - Title: [Interview prep] Anyone in Zach wilson's data engineering bootcamp?
+[2024-04-15T17:55:35.879+0000] {logging_mixin.py:188} INFO - Title: What lakehouse stack do you use
+[2024-04-15T17:55:35.880+0000] {logging_mixin.py:188} INFO - Title: DW toolkit book by Ralph Kimball
+[2024-04-15T17:55:35.880+0000] {logging_mixin.py:188} INFO - Title: A step-by-step tutorial on how to build a Web application, combining the Streamlit Python library and Versatile Data Kit
+[2024-04-15T17:55:35.880+0000] {logging_mixin.py:188} INFO - Title: What do you all think of vendors on this sub low-key trying to push their products
+[2024-04-15T17:55:35.880+0000] {logging_mixin.py:188} INFO - Title: Red flags to look out for when joining a Data team?
+[2024-04-15T17:55:37.340+0000] {logging_mixin.py:188} INFO - Title: Can someone help me understand why data batch processing and data streaming processing pose such different challenges in data management?
+[2024-04-15T17:55:37.340+0000] {logging_mixin.py:188} INFO - Title: Data warehouse interview question
+[2024-04-15T17:55:37.341+0000] {logging_mixin.py:188} INFO - Title: Airflow: how and when to use it
+[2024-04-15T17:55:37.341+0000] {logging_mixin.py:188} INFO - Title: As data engineer, how much non-programming work do you do at work and what type of work it is?
+[2024-04-15T17:55:37.342+0000] {logging_mixin.py:188} INFO - Title: I recorded a crash course on Polars library of Python (Great library for working with big data) and uploaded it on Youtube
+[2024-04-15T17:55:37.342+0000] {logging_mixin.py:188} INFO - Title: How do you sell the value of Data Engineering at your org?
+[2024-04-15T17:55:37.342+0000] {logging_mixin.py:188} INFO - Title: What the fuck *actually is* a Data Mart and why should I build one?
+[2024-04-15T17:55:37.343+0000] {logging_mixin.py:188} INFO - Title: It's all gone... in a sec
+[2024-04-15T17:55:37.343+0000] {logging_mixin.py:188} INFO - Title: My company has around 400 tables in production and only 80 of them have a unique identifier (PK). What do I do?
+[2024-04-15T17:55:37.343+0000] {logging_mixin.py:188} INFO - Title: Advice on how to keep learning?
+[2024-04-15T17:55:37.344+0000] {logging_mixin.py:188} INFO - Title: Is a masters worth it?
+[2024-04-15T17:55:37.344+0000] {logging_mixin.py:188} INFO - Title: What tools and technologies do you use the most as a data engineer?
+[2024-04-15T17:55:37.344+0000] {logging_mixin.py:188} INFO - Title: Bad coding practices followed in team
+[2024-04-15T17:55:37.344+0000] {logging_mixin.py:188} INFO - Title: Curated Github repository on how organizations around the world use dbt
+[2024-04-15T17:55:37.345+0000] {logging_mixin.py:188} INFO - Title: Start writing better DAGs by discovering Apache Airflow Best Practices!
+[2024-04-15T17:55:37.345+0000] {logging_mixin.py:188} INFO - Title: Data Engineering Youtube Channel!
+[2024-04-15T17:55:37.345+0000] {logging_mixin.py:188} INFO - Title: How often do you write complex SQL solutions that eat at your soul?
+[2024-04-15T17:55:37.346+0000] {logging_mixin.py:188} INFO - Title: Game plan to become a data architect
+[2024-04-15T17:55:37.346+0000] {logging_mixin.py:188} INFO - Title: History of questions asked on stack over flow from 2008-2024
+[2024-04-15T17:55:37.346+0000] {logging_mixin.py:188} INFO - Title: How many hours do you work a week?
+[2024-04-15T17:55:37.347+0000] {logging_mixin.py:188} INFO - Title: I created a chart to explain why 90% of data setups contain custom data pipelines
+[2024-04-15T17:55:37.347+0000] {logging_mixin.py:188} INFO - Title: What is the most impressive thing you’ve ever done as a data engineer?
+[2024-04-15T17:55:37.347+0000] {logging_mixin.py:188} INFO - Title: What are some of the sticky problems in your data pipelines?
+[2024-04-15T17:55:37.348+0000] {logging_mixin.py:188} INFO - Title: I got certified recently and prepared some notes while preparing for Azure DP-203
+[2024-04-15T17:55:37.348+0000] {logging_mixin.py:188} INFO - Title: A good writeup on the newly-announced semantic layer for dbt
+[2024-04-15T17:55:37.348+0000] {logging_mixin.py:188} INFO - Title: Data Quality Comparison on AWS Glue and Great Expectations/Updated with V3 API
+[2024-04-15T17:55:37.349+0000] {logging_mixin.py:188} INFO - Title: Getting hired as a DE (Advice from someone who tried to get hired as a DE, and failed.)
+[2024-04-15T17:55:37.349+0000] {logging_mixin.py:188} INFO - Title: Live Data Engineering sessions and workshops next week at Summer Community Days!
+[2024-04-15T17:55:37.350+0000] {logging_mixin.py:188} INFO - Title: Streaming the Reddit API with Pyspark + Kafka on Docker.
+[2024-04-15T17:55:37.350+0000] {logging_mixin.py:188} INFO - Title: What are your thoughts on Data Lakehouses and Open Architecture?
+[2024-04-15T17:55:37.350+0000] {logging_mixin.py:188} INFO - Title: Handbook for commom pipelines?
+[2024-04-15T17:55:37.350+0000] {logging_mixin.py:188} INFO - Title: Learning basics Python and SQL: what's next?
+[2024-04-15T17:55:37.351+0000] {logging_mixin.py:188} INFO - Title: Python and ETL
+[2024-04-15T17:55:37.351+0000] {logging_mixin.py:188} INFO - Title: How would you design a pipeline that ingests and processes TERABYTES of data every hour and delivers the data to DWH?
+[2024-04-15T17:55:37.352+0000] {logging_mixin.py:188} INFO - Title: DataCamp is completely free through 5/22, no credit card is required! There are 330+ courses on Python, SQL, Scala, and all the technologies you need mastery of as a data engineer. No risk, all reward!
+[2024-04-15T17:55:37.352+0000] {logging_mixin.py:188} INFO - Title: Every DE must be a DA first?
+[2024-04-15T17:55:37.353+0000] {logging_mixin.py:188} INFO - Title: Guiding others to transition into Azure DE Role.
+[2024-04-15T17:55:37.353+0000] {logging_mixin.py:188} INFO - Title: What is DuckDB Used For?
+[2024-04-15T17:55:37.353+0000] {logging_mixin.py:188} INFO - Title: Fellow DEs how do you manage data quality?
+[2024-04-15T17:55:37.354+0000] {logging_mixin.py:188} INFO - Title: Any tool, you regret buying or deploying in the data infrastructure?
+[2024-04-15T17:55:37.354+0000] {logging_mixin.py:188} INFO - Title: Is data lake just a theoretical construct? How does it look on a code level when we say implement in GCP?
+[2024-04-15T17:55:37.355+0000] {logging_mixin.py:188} INFO - Title: The roast of the modern data stack?
+[2024-04-15T17:55:37.355+0000] {logging_mixin.py:188} INFO - Title: Mountpoint for S3
+[2024-04-15T17:55:37.355+0000] {logging_mixin.py:188} INFO - Title: Difference between Data Warehouse and Data Lake?
+[2024-04-15T17:55:37.356+0000] {logging_mixin.py:188} INFO - Title: Data Engineering Project - Gmail Manager
+[2024-04-15T17:55:37.356+0000] {logging_mixin.py:188} INFO - Title: Understanding the Snowflake Query Optimizer (one of the best article I’ve read in a long time)
+[2024-04-15T17:55:37.357+0000] {logging_mixin.py:188} INFO - Title: 5 things I wish I knew about Databricks … before I started.
+[2024-04-15T17:55:37.357+0000] {logging_mixin.py:188} INFO - Title: What are your hottest dbt repositories in 2022 so far? Here are mine!
+[2024-04-15T17:55:37.357+0000] {logging_mixin.py:188} INFO - Title: Is Kimball's Dimensional Modelling dead in 2022? Is OBT ("one big table") the way to go?
+[2024-04-15T17:55:37.358+0000] {logging_mixin.py:188} INFO - Title: MLOps Zoomcamp from DataTalks.Club - free course about productionizing ML
+[2024-04-15T17:55:37.358+0000] {logging_mixin.py:188} INFO - Title: Quarterly Salary Discussion
+[2024-04-15T17:55:37.358+0000] {logging_mixin.py:188} INFO - Title: The Missing Semester of Your CS Education
+[2024-04-15T17:55:37.359+0000] {logging_mixin.py:188} INFO - Title: /r/dataengineering hit 20k subscribers yesterday
+[2024-04-15T17:55:37.359+0000] {logging_mixin.py:188} INFO - Title: What personal projects would you guys recommend for somebody who wants to do more data engineering?
+[2024-04-15T17:55:37.359+0000] {logging_mixin.py:188} INFO - Title: Transforming data with DuckDB in under 3 minutes!
+[2024-04-15T17:55:37.359+0000] {logging_mixin.py:188} INFO - Title: Stop Paying Snowflake for Failing Workloads
+[2024-04-15T17:55:37.360+0000] {logging_mixin.py:188} INFO - Title: Was I unprofessional when I said I needed help?
+[2024-04-15T17:55:37.360+0000] {logging_mixin.py:188} INFO - Title: What is data engineering *not*?
+[2024-04-15T17:55:37.360+0000] {logging_mixin.py:188} INFO - Title: Leetcode and System Design for data engineers vs. software engineers?
+[2024-04-15T17:55:37.361+0000] {logging_mixin.py:188} INFO - Title: ELI5, what are the main differences between software engineers and data engineers?
+[2024-04-15T17:55:37.361+0000] {logging_mixin.py:188} INFO - Title: Thoughts on the data janitor (youtube)?
+[2024-04-15T17:55:37.361+0000] {logging_mixin.py:188} INFO - Title: Checking in: lake houses don't seem to be replacing data warehouses
+[2024-04-15T17:55:37.362+0000] {logging_mixin.py:188} INFO - Title: If dbt is the "T" part of an "ELT", what do you use for "EL"?
+[2024-04-15T17:55:37.362+0000] {logging_mixin.py:188} INFO - Title: Building a better local dbt experience
+[2024-04-15T17:55:37.362+0000] {logging_mixin.py:188} INFO - Title: Uber Interview Experience/Asking Suggestions
+[2024-04-15T17:55:37.362+0000] {logging_mixin.py:188} INFO - Title: What mistake have you vowed never to repeat?
+[2024-04-15T17:55:37.363+0000] {logging_mixin.py:188} INFO - Title: Are you using an orchestrator like Airflow or Prefect for your project? Why?
+[2024-04-15T17:55:37.363+0000] {logging_mixin.py:188} INFO - Title: How to move from BI to DE?
+[2024-04-15T17:55:37.363+0000] {logging_mixin.py:188} INFO - Title: My list of the best Data Eng podcasts
+[2024-04-15T17:55:37.364+0000] {logging_mixin.py:188} INFO - Title: Is your job comprised of a lot of batch ETL work? How are you managing your workflows? How are you handling your parameters?
+[2024-04-15T17:55:37.364+0000] {logging_mixin.py:188} INFO - Title: How much of python should I know to get a DE junior role?
+[2024-04-15T17:55:37.364+0000] {logging_mixin.py:188} INFO - Title: Have any of you done Data Engineering for small businesses?
+[2024-04-15T17:55:37.365+0000] {logging_mixin.py:188} INFO - Title: Dbt Tests Vs Great Expectations
+[2024-04-15T17:55:37.365+0000] {logging_mixin.py:188} INFO - Title: Change Data Capture (CDC)
+[2024-04-15T17:55:37.365+0000] {logging_mixin.py:188} INFO - Title: What percent of your work would you say is done using Python, SQL, etc.?
+[2024-04-15T17:55:37.365+0000] {logging_mixin.py:188} INFO - Title: ETL guy trying to be Data Engineer
+[2024-04-15T17:55:37.366+0000] {logging_mixin.py:188} INFO - Title: Is it just me or ELT seems over hyped?
+[2024-04-15T17:55:37.366+0000] {logging_mixin.py:188} INFO - Title: Almost done with my DE Project. Mind Taking a look?
+[2024-04-15T17:55:37.366+0000] {logging_mixin.py:188} INFO - Title: Why GitLab is building Meltano, an open source platform for ELT pipelines
+[2024-04-15T17:55:37.367+0000] {logging_mixin.py:188} INFO - Title: From DA to DE unintentionally 
+[2024-04-15T17:55:37.367+0000] {logging_mixin.py:188} INFO - Title: Data Processing in 21st Century 
+[2024-04-15T17:55:37.367+0000] {logging_mixin.py:188} INFO - Title: A Definitive Guide to Using BigQuery Efficiently
+[2024-04-15T17:55:37.367+0000] {logging_mixin.py:188} INFO - Title: Why you're not getting hired -- Tips for those looking for a new job.
+[2024-04-15T17:55:37.368+0000] {logging_mixin.py:188} INFO - Title: Been working as a data engineer for 2 years
+[2024-04-15T17:55:37.368+0000] {logging_mixin.py:188} INFO - Title: Dashboards best practices - how much transformation should PowerBI or Tableau be doing?
+[2024-04-15T17:55:37.368+0000] {logging_mixin.py:188} INFO - Title: How do I get better in SQL
+[2024-04-15T17:55:37.369+0000] {logging_mixin.py:188} INFO - Title: This reeks of "we need free work."
+[2024-04-15T17:55:37.369+0000] {logging_mixin.py:188} INFO - Title: Datasets for data engineering projects
+[2024-04-15T17:55:37.369+0000] {logging_mixin.py:188} INFO - Title: Expectations Vs Reality
+[2024-04-15T17:55:37.370+0000] {logging_mixin.py:188} INFO - Title: What's the cheapest online Masters Data Engineering degree?
+[2024-04-15T17:55:37.370+0000] {logging_mixin.py:188} INFO - Title: [Azure] Company is telling me not to use open-source tools because they are "unreliable"
+[2024-04-15T17:55:37.370+0000] {logging_mixin.py:188} INFO - Title: When To Use Object Oriented Programming in DE
+[2024-04-15T17:55:37.371+0000] {logging_mixin.py:188} INFO - Title: Useful libraries for data engineering in various programming languages
+[2024-04-15T17:55:37.371+0000] {logging_mixin.py:188} INFO - Title: SCARED!! after first interaction with my manager.
+[2024-04-15T17:55:37.371+0000] {logging_mixin.py:188} INFO - Title: Sharing my data engineering project/idea, using jinja, docker, k8s, react UI.
+[2024-04-15T17:55:37.371+0000] {logging_mixin.py:188} INFO - Title: Responsibilities of a Data Engineering Manager
+[2024-04-15T17:55:37.372+0000] {logging_mixin.py:188} INFO - Title: Dbt Vs python scripts
+[2024-04-15T17:55:37.372+0000] {logging_mixin.py:188} INFO - Title: Improving DataOps with Dynamic Indexing in Data Lake
+[2024-04-15T17:55:37.372+0000] {logging_mixin.py:188} INFO - Title: Data Engineering Jargon - Part 3
+[2024-04-15T17:55:37.373+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-04-15T17:55:37.380+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=reddit_api_dag, task_id=get_reddit_data, execution_date=20240415T175510, start_date=20240415T175518, end_date=20240415T175537
+[2024-04-15T17:55:37.442+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-15T17:55:37.456+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

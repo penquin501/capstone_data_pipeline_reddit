@@ -1,0 +1,459 @@
+[2024-04-20T06:02:50.025+0000] {processor.py:161} INFO - Started process (PID=173) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:02:50.026+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:02:50.027+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:02:50.027+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:02:54.013+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:02:54.013+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-gha53dn5 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:02:54.912+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:02:54.911+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:02:55.511+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:02:55.732+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:02:55.731+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:02:55.758+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:02:55.758+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-19T00:00:00+00:00, run_after=2024-04-20T00:00:00+00:00
+[2024-04-20T06:02:55.784+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 5.764 seconds
+[2024-04-20T06:03:26.156+0000] {processor.py:161} INFO - Started process (PID=233) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:03:26.157+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:03:26.157+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:03:26.157+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:03:26.594+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:03:26.594+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-29pfxmbm because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:03:26.765+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:03:26.765+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:03:26.968+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:03:26.995+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:03:26.994+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:03:27.014+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:03:27.013+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:03:27.046+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.892 seconds
+[2024-04-20T06:03:57.374+0000] {processor.py:161} INFO - Started process (PID=280) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:03:57.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:03:57.375+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:03:57.375+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:03:57.815+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:03:57.815+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-ox111h0o because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:03:58.002+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:03:58.001+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:03:58.234+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:03:58.252+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:03:58.252+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:03:58.270+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:03:58.270+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:03:58.288+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.916 seconds
+[2024-04-20T06:04:29.096+0000] {processor.py:161} INFO - Started process (PID=319) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:04:29.096+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:04:29.097+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:04:29.097+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:04:29.555+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:04:29.555+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-8qzn5hxm because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:04:29.804+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:04:29.803+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:04:30.001+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:04:30.027+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:04:30.026+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:04:30.053+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:04:30.053+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:04:30.076+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.983 seconds
+[2024-04-20T06:05:00.281+0000] {processor.py:161} INFO - Started process (PID=365) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:05:00.282+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:05:00.282+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:05:00.282+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:05:00.721+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:05:00.721+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-5hj6gyzf because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:05:00.893+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:05:00.893+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:05:01.089+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:05:01.107+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:05:01.107+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:05:01.126+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:05:01.125+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:05:01.144+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.866 seconds
+[2024-04-20T06:05:31.492+0000] {processor.py:161} INFO - Started process (PID=404) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:05:31.493+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:05:31.493+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:05:31.493+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:05:31.914+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:05:31.914+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-01zlkosm because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:05:32.088+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:05:32.088+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:05:32.280+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:05:32.301+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:05:32.301+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:05:32.319+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:05:32.319+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:05:32.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.852 seconds
+[2024-04-20T06:06:02.813+0000] {processor.py:161} INFO - Started process (PID=450) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:06:02.814+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:06:02.815+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:06:02.814+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:06:03.254+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:06:03.253+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-4y4zbhp0 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:06:03.428+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:06:03.428+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:06:03.636+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:06:03.655+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:06:03.654+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:06:03.673+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:06:03.673+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:06:03.692+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.881 seconds
+[2024-04-20T06:06:33.834+0000] {processor.py:161} INFO - Started process (PID=488) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:06:33.835+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:06:33.835+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:06:33.835+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:06:34.286+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:06:34.285+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-aamq8af8 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:06:34.465+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:06:34.465+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:06:34.663+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:06:34.683+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:06:34.682+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:06:34.700+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:06:34.700+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:06:34.719+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.887 seconds
+[2024-04-20T06:07:04.835+0000] {processor.py:161} INFO - Started process (PID=535) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:07:04.836+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:07:04.836+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:07:04.836+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:07:05.265+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:07:05.265+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-hjuoyboy because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:07:05.452+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:07:05.452+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:07:05.641+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:07:05.659+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:07:05.658+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:07:05.677+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:07:05.677+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:07:05.694+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.862 seconds
+[2024-04-20T06:07:36.035+0000] {processor.py:161} INFO - Started process (PID=573) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:07:36.035+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:07:36.036+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:07:36.036+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:07:36.461+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:07:36.461+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-zsu23vde because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:07:36.633+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:07:36.632+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:07:36.821+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:07:36.840+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:07:36.839+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:07:36.857+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:07:36.857+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:07:36.875+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.843 seconds
+[2024-04-20T06:08:07.573+0000] {processor.py:161} INFO - Started process (PID=620) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:08:07.573+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:08:07.574+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:08:07.574+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:08:08.013+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:08:08.013+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-a0mvey0o because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:08:08.185+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:08:08.184+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:08:08.375+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:08:08.395+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:08:08.394+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:08:08.413+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:08:08.413+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:08:08.437+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.867 seconds
+[2024-04-20T06:08:38.579+0000] {processor.py:161} INFO - Started process (PID=658) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:08:38.580+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:08:38.580+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:08:38.580+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:08:39.017+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:08:39.017+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-v_to8pru because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:08:39.274+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:08:39.274+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:08:39.461+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:08:39.480+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:08:39.480+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:08:39.497+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:08:39.497+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:08:39.515+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.939 seconds
+[2024-04-20T06:09:10.151+0000] {processor.py:161} INFO - Started process (PID=704) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:09:10.152+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:09:10.152+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:09:10.152+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:09:10.602+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:09:10.602+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-d6errzto because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:09:10.780+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:09:10.780+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:09:10.970+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:09:10.990+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:09:10.989+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:09:11.008+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:09:11.008+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:09:11.029+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.881 seconds
+[2024-04-20T06:09:41.092+0000] {processor.py:161} INFO - Started process (PID=742) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:09:41.093+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:09:41.094+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:09:41.093+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:09:41.527+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:09:41.527+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-nmc2z3ns because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:09:41.707+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:09:41.706+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:09:41.895+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:09:41.916+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:09:41.915+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:09:41.934+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:09:41.933+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:09:41.956+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.866 seconds
+[2024-04-20T06:10:12.110+0000] {processor.py:161} INFO - Started process (PID=783) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:10:12.110+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:10:12.111+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:10:12.111+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:10:12.543+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:10:12.543+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-n302xvu_ because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:10:12.733+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:10:12.732+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:10:12.993+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:10:13.019+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:10:13.019+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:10:13.043+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:10:13.042+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:10:13.067+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.960 seconds
+[2024-04-20T06:10:43.116+0000] {processor.py:161} INFO - Started process (PID=830) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:10:43.117+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:10:43.118+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:10:43.118+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:10:43.580+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:10:43.580+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-8zxvydst because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:10:43.749+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:10:43.749+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:10:43.941+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:10:43.961+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:10:43.960+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:10:43.980+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:10:43.980+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:10:44.001+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.887 seconds
+[2024-04-20T06:12:05.346+0000] {processor.py:161} INFO - Started process (PID=177) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:12:05.347+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:12:05.348+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:12:05.347+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:12:07.043+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:12:07.042+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-2r9pk2g8 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:12:07.348+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:12:07.348+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:12:07.709+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:12:08.056+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:12:08.055+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:12:08.092+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:12:08.092+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:12:08.118+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 2.775 seconds
+[2024-04-20T06:12:38.916+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:12:38.916+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:12:38.917+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:12:38.917+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:12:39.339+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:12:39.339+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-nk7blum1 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:12:39.528+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:12:39.528+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:12:39.752+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:12:39.771+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:12:39.770+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:12:39.789+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:12:39.789+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:12:39.807+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.894 seconds
+[2024-04-20T06:13:10.075+0000] {processor.py:161} INFO - Started process (PID=265) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:13:10.076+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:13:10.077+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:13:10.076+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:13:10.492+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:13:10.492+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-gflgx2ab because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:13:10.667+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:13:10.666+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:13:10.857+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:13:10.875+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:13:10.874+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:13:10.893+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:13:10.892+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:13:10.911+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.838 seconds
+[2024-04-20T06:13:41.055+0000] {processor.py:161} INFO - Started process (PID=303) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:13:41.056+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:13:41.056+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:13:41.056+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:13:41.481+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:13:41.481+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-crag4vy4 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:13:41.660+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:13:41.660+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:13:41.850+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:13:41.875+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:13:41.874+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:13:41.893+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:13:41.892+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:13:41.918+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.865 seconds
+[2024-04-20T06:14:12.182+0000] {processor.py:161} INFO - Started process (PID=350) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:14:12.183+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:14:12.184+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:14:12.184+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:14:12.642+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:14:12.641+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-88xxyace because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:14:12.815+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:14:12.815+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:14:13.005+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:14:13.024+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:14:13.024+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:14:13.041+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:14:13.041+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:14:13.061+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.881 seconds
+[2024-04-20T06:14:43.135+0000] {processor.py:161} INFO - Started process (PID=388) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:14:43.136+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:14:43.136+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:14:43.136+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:14:43.574+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:14:43.574+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-cuhe2_lc because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:14:43.754+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:14:43.754+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:14:43.948+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:14:43.969+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:14:43.969+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:14:43.990+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:14:43.990+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:14:44.009+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.876 seconds
+[2024-04-20T06:15:14.377+0000] {processor.py:161} INFO - Started process (PID=447) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:15:14.378+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:15:14.379+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:15:14.379+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:15:14.912+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:15:14.912+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-ddl9ox7i because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:15:15.089+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:15:15.088+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:15:15.313+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:15:15.333+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:15:15.333+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:15:15.352+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:15:15.351+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:15:15.371+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.998 seconds
+[2024-04-20T06:15:45.508+0000] {processor.py:161} INFO - Started process (PID=487) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:15:45.509+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:15:45.509+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:15:45.509+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:15:45.959+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:15:45.959+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-760v2rsn because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:15:46.132+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:15:46.132+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:15:46.338+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:15:46.360+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:15:46.359+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:15:46.379+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:15:46.379+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:15:46.400+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.894 seconds
+[2024-04-20T06:16:16.528+0000] {processor.py:161} INFO - Started process (PID=533) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:16:16.529+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:16:16.529+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:16:16.529+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:16:16.988+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:16:16.988+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-5a3etmop because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:16:17.172+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:16:17.172+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:16:17.412+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:16:17.441+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:16:17.440+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:16:17.467+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:16:17.466+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:16:17.492+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.968 seconds
+[2024-04-20T06:16:47.667+0000] {processor.py:161} INFO - Started process (PID=571) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:16:47.667+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:16:47.668+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:16:47.668+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:16:48.152+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:16:48.151+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-z5s8kn00 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:16:48.365+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:16:48.365+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:16:48.551+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:16:48.573+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:16:48.572+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:16:48.590+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:16:48.590+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:16:48.608+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.944 seconds
+[2024-04-20T06:17:19.054+0000] {processor.py:161} INFO - Started process (PID=617) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:17:19.054+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:17:19.055+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:17:19.055+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:17:19.505+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:17:19.504+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-801njc2g because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:17:19.742+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:17:19.742+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:17:20.004+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:17:20.023+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:17:20.023+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:17:20.041+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:17:20.040+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:17:20.062+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 1.011 seconds
+[2024-04-20T06:17:50.200+0000] {processor.py:161} INFO - Started process (PID=656) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:17:50.201+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:17:50.201+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:17:50.201+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:17:50.655+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:17:50.655+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-bhzcdnv0 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:17:50.830+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:17:50.829+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:17:51.018+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:17:51.036+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:17:51.036+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:17:51.055+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:17:51.054+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:17:51.072+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.875 seconds
+[2024-04-20T06:18:21.170+0000] {processor.py:161} INFO - Started process (PID=702) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:18:21.171+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:18:21.171+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:18:21.171+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:18:21.609+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:18:21.608+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-5e3te5b7 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:18:21.784+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:18:21.784+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:18:21.983+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:18:22.002+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:18:22.001+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:18:22.020+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:18:22.020+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:18:22.039+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.873 seconds
+[2024-04-20T06:18:52.684+0000] {processor.py:161} INFO - Started process (PID=740) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:18:52.685+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:18:52.685+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:18:52.685+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:18:53.148+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:18:53.148+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-e3mg_im_ because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:18:53.322+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:18:53.321+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:18:53.516+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:18:53.543+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:18:53.542+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:18:53.571+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:18:53.571+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:18:53.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.912 seconds
+[2024-04-20T06:19:23.807+0000] {processor.py:161} INFO - Started process (PID=786) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:19:23.808+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:19:23.809+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:19:23.808+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:19:24.302+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:19:24.302+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-121xtslh because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:19:24.580+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:19:24.579+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:19:24.782+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:19:24.806+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:19:24.806+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:19:24.832+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:19:24.832+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:19:24.854+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 1.051 seconds
+[2024-04-20T06:19:55.465+0000] {processor.py:161} INFO - Started process (PID=824) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:19:55.465+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:19:55.466+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:19:55.466+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:19:55.901+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:19:55.900+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-d3hka68l because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:19:56.073+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:19:56.072+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:19:56.295+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:19:56.317+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:19:56.317+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:19:56.339+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:19:56.339+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:19:56.361+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.899 seconds
+[2024-04-20T06:20:26.601+0000] {processor.py:161} INFO - Started process (PID=870) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:20:26.602+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:20:26.602+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:20:26.602+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:20:27.135+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:20:27.135+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-63g5ckgt because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:20:27.311+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:20:27.311+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:20:27.526+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:20:27.546+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:20:27.546+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:20:27.563+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:20:27.563+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:20:27.582+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.984 seconds
+[2024-04-20T06:20:58.047+0000] {processor.py:161} INFO - Started process (PID=903) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:20:58.048+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:20:58.048+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:20:58.048+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:20:58.520+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:20:58.520+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-6b86t320 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:20:58.796+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:20:58.795+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:20:59.025+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:20:59.046+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:20:59.046+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:20:59.066+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:20:59.066+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:20:59.090+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 1.045 seconds
+[2024-04-20T06:21:29.241+0000] {processor.py:161} INFO - Started process (PID=945) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:21:29.242+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:21:29.243+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:21:29.243+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:21:29.702+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:21:29.702+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-zasyzyhy because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:21:29.876+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:21:29.876+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:21:30.086+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:21:30.112+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:21:30.111+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:21:30.137+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:21:30.136+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:21:30.158+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.921 seconds
+[2024-04-20T06:22:00.503+0000] {processor.py:161} INFO - Started process (PID=983) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:22:00.503+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:22:00.504+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:22:00.504+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:22:00.943+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:22:00.943+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-7uw4j738 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:22:01.120+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:22:01.120+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:22:01.309+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:22:01.328+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:22:01.327+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:22:01.346+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:22:01.346+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:22:01.366+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.866 seconds
+[2024-04-20T06:22:31.728+0000] {processor.py:161} INFO - Started process (PID=1029) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:22:31.729+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:22:31.729+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:22:31.729+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:22:32.202+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:22:32.202+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-1_kyet5u because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:22:32.421+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:22:32.420+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:22:32.661+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:22:32.680+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:22:32.680+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:22:32.698+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:22:32.698+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:22:32.718+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.994 seconds
+[2024-04-20T06:23:02.862+0000] {processor.py:161} INFO - Started process (PID=1067) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:23:02.863+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:23:02.863+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:23:02.863+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:23:03.309+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:23:03.309+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-0ys3_zg3 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:23:03.494+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:23:03.494+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:23:03.681+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:23:03.700+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:23:03.699+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:23:03.717+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:23:03.716+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:23:03.735+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.876 seconds
+[2024-04-20T06:23:34.059+0000] {processor.py:161} INFO - Started process (PID=1113) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:23:34.059+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:23:34.060+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:23:34.060+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:23:34.552+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:23:34.552+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-hv3xl1v5 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:23:34.746+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:23:34.745+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:23:35.022+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:23:35.050+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:23:35.049+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:23:35.072+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:23:35.071+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:23:35.092+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 1.037 seconds
+[2024-04-20T06:24:05.223+0000] {processor.py:161} INFO - Started process (PID=1151) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:24:05.224+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:24:05.224+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:24:05.224+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:24:05.707+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:24:05.707+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-gn32cefp because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:24:05.882+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:24:05.882+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:24:06.070+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:24:06.089+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:24:06.089+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:24:06.106+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:24:06.106+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:24:06.124+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.904 seconds
+[2024-04-20T06:24:36.445+0000] {processor.py:161} INFO - Started process (PID=1197) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:24:36.446+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:24:36.447+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:24:36.447+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:24:36.927+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:24:36.927+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-ixfkk86v because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:24:37.105+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:24:37.105+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:24:37.315+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:24:37.340+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:24:37.339+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:24:37.365+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:24:37.365+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:24:37.385+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.943 seconds
+[2024-04-20T06:25:07.856+0000] {processor.py:161} INFO - Started process (PID=1235) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:25:07.856+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:25:07.857+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:25:07.857+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:25:08.281+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:25:08.281+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-o4dj7ouv because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:25:08.459+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:25:08.459+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:25:08.648+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:25:08.666+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:25:08.666+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:25:08.683+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:25:08.683+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:25:08.702+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.849 seconds
+[2024-04-20T06:25:38.846+0000] {processor.py:161} INFO - Started process (PID=1281) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:25:38.847+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:25:38.848+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:25:38.847+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:25:39.303+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:25:39.303+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-_8d59jz3 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:25:39.489+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:25:39.489+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:25:39.684+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:25:39.702+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:25:39.702+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:25:39.722+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:25:39.722+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:25:39.740+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.898 seconds
+[2024-04-20T06:26:43.779+0000] {processor.py:161} INFO - Started process (PID=176) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:26:43.779+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:26:43.780+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:26:43.780+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:26:45.572+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:26:45.571+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-uen5rpqg because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:26:45.979+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:26:45.979+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:26:46.299+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:26:46.512+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:26:46.511+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:26:46.529+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:26:46.529+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:26:46.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 2.776 seconds
+[2024-04-20T06:27:16.907+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:27:16.908+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:27:16.908+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:27:16.908+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:27:17.381+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:27:17.381+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-a6c6hk5o because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:27:17.554+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:27:17.554+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:27:17.746+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:27:17.765+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:27:17.764+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:27:17.782+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:27:17.781+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:27:17.802+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.897 seconds
+[2024-04-20T06:27:48.251+0000] {processor.py:161} INFO - Started process (PID=264) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:27:48.252+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:27:48.253+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:27:48.253+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:27:48.755+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:27:48.755+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-_ygqh0_1 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:27:48.971+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:27:48.971+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:27:49.161+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:27:49.180+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:27:49.180+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:27:49.199+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:27:49.198+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:27:49.219+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.972 seconds
+[2024-04-20T06:28:19.552+0000] {processor.py:161} INFO - Started process (PID=303) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:28:19.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:28:19.554+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:28:19.554+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:28:20.036+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:28:20.036+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-kf40kfxx because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:28:20.216+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:28:20.215+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:28:20.404+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:28:20.424+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:28:20.424+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:28:20.442+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:28:20.442+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:28:20.464+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.914 seconds
+[2024-04-20T06:28:50.510+0000] {processor.py:161} INFO - Started process (PID=350) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:28:50.512+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:28:50.512+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:28:50.512+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:28:51.019+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:28:51.019+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-0i_mym43 because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:28:51.264+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:28:51.264+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:28:51.457+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:28:51.477+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:28:51.476+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:28:51.495+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:28:51.495+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:28:51.515+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 1.009 seconds
+[2024-04-20T06:29:46.074+0000] {processor.py:161} INFO - Started process (PID=177) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:29:46.075+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:29:46.076+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:29:46.076+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:29:47.999+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:29:47.998+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-ctqbvwlb because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:29:48.273+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:29:48.273+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:29:48.477+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:29:48.691+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:29:48.691+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:29:48.718+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:29:48.718+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:29:48.791+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 2.720 seconds
+[2024-04-20T06:30:19.302+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:30:19.302+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:30:19.303+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:30:19.303+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:30:19.724+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:30:19.724+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-k1jpcqxp because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:30:19.900+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:30:19.899+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:30:20.091+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:30:20.109+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:30:20.109+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:30:20.126+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:30:20.126+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:30:20.145+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.846 seconds
+[2024-04-20T06:30:50.705+0000] {processor.py:161} INFO - Started process (PID=263) to work on /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:30:50.705+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_visualization.py for tasks to queue
+[2024-04-20T06:30:50.706+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:30:50.706+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:30:51.152+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:30:51.152+0000] {__init__.py:531} WARNING - Matplotlib created a temporary cache directory at /tmp/matplotlib-e85880__ because the default path (/home/airflow/.cache/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2024-04-20T06:30:51.332+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:30:51.332+0000] {font_manager.py:1547} INFO - generated new fontManager
+[2024-04-20T06:30:51.603+0000] {processor.py:840} INFO - DAG(s) 'dbt_visualization' retrieved from /opt/airflow/dags/dbt_visualization.py
+[2024-04-20T06:30:51.635+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:30:51.635+0000] {dag.py:3033} INFO - Sync 1 DAGs
+[2024-04-20T06:30:51.664+0000] {logging_mixin.py:188} INFO - [2024-04-20T06:30:51.663+0000] {dag.py:3820} INFO - Setting next_dagrun for dbt_visualization to 2024-04-20T00:00:00+00:00, run_after=2024-04-21T00:00:00+00:00
+[2024-04-20T06:30:51.691+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_visualization.py took 0.988 seconds

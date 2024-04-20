@@ -1,0 +1,112 @@
+[2024-04-16T03:29:43.139+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_visualization.generate_visualizations scheduled__2024-04-15T00:00:00+00:00 [queued]>
+[2024-04-16T03:29:43.149+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_visualization.generate_visualizations scheduled__2024-04-15T00:00:00+00:00 [queued]>
+[2024-04-16T03:29:43.150+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2024-04-16T03:29:43.185+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): generate_visualizations> on 2024-04-15 00:00:00+00:00
+[2024-04-16T03:29:43.213+0000] {standard_task_runner.py:60} INFO - Started process 188 to run task
+[2024-04-16T03:29:43.221+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dbt_visualization', 'generate_visualizations', 'scheduled__2024-04-15T00:00:00+00:00', '--job-id', '127', '--raw', '--subdir', 'DAGS_FOLDER/dbt_visualization.py', '--cfg-path', '/tmp/tmpn2pjug1o']
+[2024-04-16T03:29:43.252+0000] {standard_task_runner.py:88} INFO - Job 127: Subtask generate_visualizations
+[2024-04-16T03:29:43.329+0000] {task_command.py:423} INFO - Running <TaskInstance: dbt_visualization.generate_visualizations scheduled__2024-04-15T00:00:00+00:00 [running]> on host ec3d883e7b78
+[2024-04-16T03:29:43.497+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='66130047@dpu.ac.th' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_visualization' AIRFLOW_CTX_TASK_ID='generate_visualizations' AIRFLOW_CTX_EXECUTION_DATE='2024-04-15T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-15T00:00:00+00:00'
+[2024-04-16T03:29:43.532+0000] {base.py:83} INFO - Using connection ID 'my_***_conn' for task execution.
+[2024-04-16T03:29:43.590+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dbt_visualization.py", line 20, in _generate_visualizations
+    connection = pg_hook.get_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/postgres/hooks/postgres.py", line 158, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "mydb" to address: Name or service not known
+
+[2024-04-16T03:29:43.629+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dbt_visualization, task_id=generate_visualizations, execution_date=20240415T000000, start_date=20240416T032943, end_date=20240416T032943
+[2024-04-16T03:29:43.657+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-04-16T03:29:43.658+0000] {configuration.py:1046} WARNING - section/key [smtp/smtp_user] not found in config
+[2024-04-16T03:29:43.658+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-04-16T03:29:43.746+0000] {configuration.py:1046} WARNING - section/key [smtp/smtp_user] not found in config
+[2024-04-16T03:29:43.746+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-04-16T03:29:43.794+0000] {taskinstance.py:826} ERROR - Failed to send email to: ['66130047@dpu.ac.th']
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2335, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode, session=session)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2500, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2517, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dbt_visualization.py", line 20, in _generate_visualizations
+    connection = pg_hook.get_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/postgres/hooks/postgres.py", line 158, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "mydb" to address: Name or service not known
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1000, in _email_alert
+    send_email(task.email, subject, html_content)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 154, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 272, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 316, in _get_smtp_connection
+    return smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/local/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/local/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 824, in _handle_failure
+    task_instance.email_alert(error, failure_context["task"])
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 2947, in email_alert
+    _email_alert(task_instance=self, exception=exception, task=task)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1002, in _email_alert
+    send_email(task.email, subject, html_content_err)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 154, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 272, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/email.py", line 316, in _get_smtp_connection
+    return smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/usr/local/lib/python3.8/smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/usr/local/lib/python3.8/smtplib.py", line 310, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/usr/local/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/local/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+[2024-04-16T03:29:43.828+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 127 for task generate_visualizations (could not translate host name "mydb" to address: Name or service not known
+; 188)
+[2024-04-16T03:29:43.861+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-16T03:29:43.886+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

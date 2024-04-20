@@ -1,0 +1,29 @@
+[2024-04-15T16:36:20.561+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_visualization.generate_visualizations scheduled__2024-04-14T00:00:00+00:00 [queued]>
+[2024-04-15T16:36:20.567+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_visualization.generate_visualizations scheduled__2024-04-14T00:00:00+00:00 [queued]>
+[2024-04-15T16:36:20.567+0000] {taskinstance.py:2171} INFO - Starting attempt 16 of 17
+[2024-04-15T16:36:20.582+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): generate_visualizations> on 2024-04-14 00:00:00+00:00
+[2024-04-15T16:36:20.588+0000] {standard_task_runner.py:60} INFO - Started process 3736 to run task
+[2024-04-15T16:36:20.590+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dbt_visualization', 'generate_visualizations', 'scheduled__2024-04-14T00:00:00+00:00', '--job-id', '111', '--raw', '--subdir', 'DAGS_FOLDER/dbt_visualization.py', '--cfg-path', '/tmp/tmpapqyugbv']
+[2024-04-15T16:36:20.592+0000] {standard_task_runner.py:88} INFO - Job 111: Subtask generate_visualizations
+[2024-04-15T16:36:20.632+0000] {task_command.py:423} INFO - Running <TaskInstance: dbt_visualization.generate_visualizations scheduled__2024-04-14T00:00:00+00:00 [running]> on host ec3d883e7b78
+[2024-04-15T16:36:20.700+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='66130047@dpu.ac.th' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_visualization' AIRFLOW_CTX_TASK_ID='generate_visualizations' AIRFLOW_CTX_EXECUTION_DATE='2024-04-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='16' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-14T00:00:00+00:00'
+[2024-04-15T16:36:20.707+0000] {base.py:83} INFO - Using connection ID 'my_***_conn' for task execution.
+[2024-04-15T16:36:20.717+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/dbt_visualization.py:27 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2024-04-15T16:36:20.726+0000] {logging_mixin.py:188} INFO - my df       post_date  posts_count
+0    2022-10-10            1
+1    2023-06-08            3
+2    2022-10-28            2
+3    2022-07-14            1
+4    2023-06-10            2
+..          ...          ...
+724  2023-10-19            1
+725  2022-04-22            2
+726  2023-07-02            1
+727  2023-05-04            1
+728  2022-12-25            1
+
+[729 rows x 2 columns]
+[2024-04-15T16:36:22.067+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-04-15T16:36:22.076+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dbt_visualization, task_id=generate_visualizations, execution_date=20240414T000000, start_date=20240415T163620, end_date=20240415T163622
+[2024-04-15T16:36:22.125+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-15T16:36:22.141+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

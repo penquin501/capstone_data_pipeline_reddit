@@ -1,0 +1,287 @@
+[2024-04-15T15:00:01.966+0000] {processor.py:161} INFO - Started process (PID=1949) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:01.967+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:00:01.967+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:00:01.967+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:02.312+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:00:02.311+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 5, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-15T15:00:02.312+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:02.330+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.366 seconds
+[2024-04-15T15:00:19.292+0000] {processor.py:161} INFO - Started process (PID=1976) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:19.293+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:00:19.294+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:00:19.293+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:19.706+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:00:19.705+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 5, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-15T15:00:19.707+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:19.725+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.435 seconds
+[2024-04-15T15:00:33.378+0000] {processor.py:161} INFO - Started process (PID=1997) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:33.379+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:00:33.379+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:00:33.379+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:33.834+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:00:33.833+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 5, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-15T15:00:33.834+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:33.855+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.480 seconds
+[2024-04-15T15:00:43.923+0000] {processor.py:161} INFO - Started process (PID=2013) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:43.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:00:43.924+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:00:43.924+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:44.334+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:00:44.333+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 3, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-15T15:00:44.334+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:44.354+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.434 seconds
+[2024-04-15T15:00:47.439+0000] {processor.py:161} INFO - Started process (PID=2024) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:47.439+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:00:47.440+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:00:47.440+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:47.767+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:00:47.766+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 2, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-15T15:00:47.767+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:00:47.786+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.350 seconds
+[2024-04-15T15:01:11.890+0000] {processor.py:161} INFO - Started process (PID=2055) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:01:11.891+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:01:11.891+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:01:11.891+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:01:12.256+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:01:12.255+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 2, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-15T15:01:12.256+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:01:12.274+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.387 seconds
+[2024-04-15T15:01:13.121+0000] {processor.py:161} INFO - Started process (PID=2061) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:01:13.122+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:01:13.122+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:01:13.122+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:01:13.482+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:01:13.480+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 2, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-15T15:01:13.482+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:01:13.502+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.383 seconds
+[2024-04-15T15:01:39.644+0000] {processor.py:161} INFO - Started process (PID=2095) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:01:39.644+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:01:39.645+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:01:39.645+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:01:39.997+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:01:39.996+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 2, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-15T15:01:39.998+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:01:40.018+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.376 seconds
+[2024-04-15T15:01:58.126+0000] {processor.py:161} INFO - Started process (PID=2124) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:01:58.127+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:01:58.128+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:01:58.127+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:01:58.469+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:01:58.468+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 2, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-15T15:01:58.469+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:01:58.490+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.366 seconds
+[2024-04-15T15:02:03.171+0000] {processor.py:161} INFO - Started process (PID=2130) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:03.172+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:02:03.172+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:02:03.172+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:03.502+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:02:03.501+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 2, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-15T15:02:03.503+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:03.521+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.353 seconds
+[2024-04-15T15:02:34.366+0000] {processor.py:161} INFO - Started process (PID=2174) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:34.366+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:02:34.367+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:02:34.367+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:34.720+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:02:34.719+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 2, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-15T15:02:34.720+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:34.741+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.377 seconds
+[2024-04-15T15:02:37.780+0000] {processor.py:161} INFO - Started process (PID=2180) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:37.781+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:02:37.781+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:02:37.781+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:38.113+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:02:38.112+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 2, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-15T15:02:38.113+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:38.134+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.357 seconds
+[2024-04-15T15:02:49.454+0000] {processor.py:161} INFO - Started process (PID=2208) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:49.454+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:02:49.455+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:02:49.455+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:49.457+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:02:49.457+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 51
+    dbt_run = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-04-15T15:02:49.458+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:49.477+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.026 seconds
+[2024-04-15T15:02:57.518+0000] {processor.py:161} INFO - Started process (PID=2213) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:57.519+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:02:57.519+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:02:57.519+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:57.522+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:02:57.521+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 51
+    dbt_run = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-04-15T15:02:57.522+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:02:57.542+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.026 seconds
+[2024-04-15T15:03:03.555+0000] {processor.py:161} INFO - Started process (PID=2226) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:03.556+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:03:03.557+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:03:03.556+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:03.559+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:03:03.558+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 51
+    dbt_run = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-04-15T15:03:03.559+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:03.579+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.026 seconds
+[2024-04-15T15:03:09.598+0000] {processor.py:161} INFO - Started process (PID=2231) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:09.599+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:03:09.600+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:03:09.599+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:09.602+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:03:09.601+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 51
+    dbt_run = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-04-15T15:03:09.602+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:09.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.026 seconds
+[2024-04-15T15:03:15.633+0000] {processor.py:161} INFO - Started process (PID=2244) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:15.633+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:03:15.634+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:03:15.634+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:15.636+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:03:15.635+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 51
+    dbt_run = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-04-15T15:03:15.636+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:15.655+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.025 seconds
+[2024-04-15T15:03:19.301+0000] {processor.py:161} INFO - Started process (PID=2263) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:19.302+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:03:19.303+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:03:19.302+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:19.305+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:03:19.304+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 45
+    dbt_run = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-04-15T15:03:19.305+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:19.328+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.029 seconds
+[2024-04-15T15:03:21.314+0000] {processor.py:161} INFO - Started process (PID=2268) to work on /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:21.315+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/reddit_data_visualization.py for tasks to queue
+[2024-04-15T15:03:21.315+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:03:21.315+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:21.318+0000] {logging_mixin.py:188} INFO - [2024-04-15T15:03:21.317+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/reddit_data_visualization.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/reddit_data_visualization.py", line 44
+    dbt_run = BashOperator(
+    ^
+IndentationError: expected an indented block
+[2024-04-15T15:03:21.318+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/reddit_data_visualization.py
+[2024-04-15T15:03:21.338+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/reddit_data_visualization.py took 0.026 seconds

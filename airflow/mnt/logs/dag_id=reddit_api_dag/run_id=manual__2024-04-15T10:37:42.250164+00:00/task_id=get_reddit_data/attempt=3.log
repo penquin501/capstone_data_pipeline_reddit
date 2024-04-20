@@ -1,0 +1,37 @@
+[2024-04-15T10:39:16.417+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_api_dag.get_reddit_data manual__2024-04-15T10:37:42.250164+00:00 [queued]>
+[2024-04-15T10:39:16.423+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_api_dag.get_reddit_data manual__2024-04-15T10:37:42.250164+00:00 [queued]>
+[2024-04-15T10:39:16.423+0000] {taskinstance.py:2171} INFO - Starting attempt 3 of 4
+[2024-04-15T10:39:16.438+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): get_reddit_data> on 2024-04-15 10:37:42.250164+00:00
+[2024-04-15T10:39:16.447+0000] {standard_task_runner.py:60} INFO - Started process 348 to run task
+[2024-04-15T10:39:16.449+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'reddit_api_dag', 'get_reddit_data', 'manual__2024-04-15T10:37:42.250164+00:00', '--job-id', '82', '--raw', '--subdir', 'DAGS_FOLDER/reddit_api_dag.py', '--cfg-path', '/tmp/tmp6_woj6qo']
+[2024-04-15T10:39:16.450+0000] {standard_task_runner.py:88} INFO - Job 82: Subtask get_reddit_data
+[2024-04-15T10:39:16.489+0000] {task_command.py:423} INFO - Running <TaskInstance: reddit_api_dag.get_reddit_data manual__2024-04-15T10:37:42.250164+00:00 [running]> on host 0f6dc4f57929
+[2024-04-15T10:39:16.567+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='66130047@dpu.ac.th' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='reddit_api_dag' AIRFLOW_CTX_TASK_ID='get_reddit_data' AIRFLOW_CTX_EXECUTION_DATE='2024-04-15T10:37:42.250164+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-15T10:37:42.250164+00:00'
+[2024-04-15T10:39:16.570+0000] {warnings.py:109} WARNING - /opt/***/dags/reddit_api_dag.py:62: AirflowProviderDeprecationWarning: The "schema" arg has been renamed to "database" as it contained the database name.Please use "database" to set the database name.
+  pg_hook = PostgresHook(
+
+[2024-04-15T10:39:16.576+0000] {base.py:83} INFO - Using connection ID 'my_***_conn' for task execution.
+[2024-04-15T10:39:19.112+0000] {logging_mixin.py:188} INFO - title: 1301
+[2024-04-15T10:39:19.112+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/reddit_api_dag.py", line 33, in _get_reddit_data
+    _save_to_database(top_posts)
+  File "/opt/airflow/dags/reddit_api_dag.py", line 87, in _save_to_database
+    cursor.execute(insert_query, data_tuple)
+TypeError: not all arguments converted during string formatting
+[2024-04-15T10:39:19.119+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=reddit_api_dag, task_id=get_reddit_data, execution_date=20240415T103742, start_date=20240415T103916, end_date=20240415T103919
+[2024-04-15T10:39:19.129+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154: RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+  send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+
+[2024-04-15T10:39:19.129+0000] {configuration.py:1046} WARNING - section/key [smtp/smtp_user] not found in config
+[2024-04-15T10:39:19.129+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-04-15T10:39:19.130+0000] {email.py:281} INFO - Sent an alert email to ['66130047@dpu.ac.th']
+[2024-04-15T10:39:19.150+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 82 for task get_reddit_data (not all arguments converted during string formatting; 348)
+[2024-04-15T10:39:19.186+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-15T10:39:19.205+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

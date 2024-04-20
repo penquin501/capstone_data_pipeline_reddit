@@ -1,0 +1,32 @@
+[2024-04-14T15:48:23.011+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: reddit_api_dag.get_reddit_data manual__2024-04-14T15:48:15.347167+00:00 [queued]>
+[2024-04-14T15:48:23.017+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: reddit_api_dag.get_reddit_data manual__2024-04-14T15:48:15.347167+00:00 [queued]>
+[2024-04-14T15:48:23.017+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2024-04-14T15:48:23.033+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): get_reddit_data> on 2024-04-14 15:48:15.347167+00:00
+[2024-04-14T15:48:23.042+0000] {standard_task_runner.py:60} INFO - Started process 580 to run task
+[2024-04-14T15:48:23.044+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'reddit_api_dag', 'get_reddit_data', 'manual__2024-04-14T15:48:15.347167+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/reddit_api_dag.py', '--cfg-path', '/tmp/tmp2m0xc3li']
+[2024-04-14T15:48:23.045+0000] {standard_task_runner.py:88} INFO - Job 65: Subtask get_reddit_data
+[2024-04-14T15:48:23.090+0000] {task_command.py:423} INFO - Running <TaskInstance: reddit_api_dag.get_reddit_data manual__2024-04-14T15:48:15.347167+00:00 [running]> on host f383f10413fd
+[2024-04-14T15:48:23.186+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='66130047@dpu.ac.th' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='reddit_api_dag' AIRFLOW_CTX_TASK_ID='get_reddit_data' AIRFLOW_CTX_EXECUTION_DATE='2024-04-14T15:48:15.347167+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-14T15:48:15.347167+00:00'
+[2024-04-14T15:48:23.189+0000] {warnings.py:109} WARNING - /opt/***/dags/reddit_api_dag.py:61: AirflowProviderDeprecationWarning: The "schema" arg has been renamed to "database" as it contained the database name.Please use "database" to set the database name.
+  pg_hook = PostgresHook(
+
+[2024-04-14T15:48:23.196+0000] {base.py:83} INFO - Using connection ID 'my_***_conn' for task execution.
+[2024-04-14T15:48:24.185+0000] {logging_mixin.py:188} INFO - title: Are take-home assignments for Data Engineering roles getting out of hand?
+[2024-04-14T15:48:24.186+0000] {logging_mixin.py:188} INFO - title: questions asked at Amazon's L4-L5 Data Engineering
+[2024-04-14T15:48:24.187+0000] {logging_mixin.py:188} INFO - title: Just thanks to you all here
+[2024-04-14T15:48:24.187+0000] {logging_mixin.py:188} INFO - title: Data modelling - can dimension tables reference each other?
+[2024-04-14T15:48:24.187+0000] {logging_mixin.py:188} INFO - title: Making an free ETL tool.
+[2024-04-14T15:48:24.188+0000] {logging_mixin.py:188} INFO - title: When to use a Lakehouse Table Format like Iceberg/Delta/Hudi?
+[2024-04-14T15:48:24.188+0000] {logging_mixin.py:188} INFO - title: Explain data engineering to non data oriented 
+[2024-04-14T15:48:24.188+0000] {logging_mixin.py:188} INFO - title: Should I complain when data's ultimate destination is ADLS Gen 2?
+[2024-04-14T15:48:24.189+0000] {logging_mixin.py:188} INFO - title: Tools or techniques for reducing unnecessary data reports 
+[2024-04-14T15:48:24.189+0000] {logging_mixin.py:188} INFO - title: SCD Type 2 Dimension Question
+[2024-04-14T15:48:24.190+0000] {logging_mixin.py:188} INFO - title: Do you work with AWS govcloud?
+[2024-04-14T15:48:24.190+0000] {logging_mixin.py:188} INFO - title: Not sure if I am using duckdb properly in my streamlit application
+[2024-04-14T15:48:24.191+0000] {logging_mixin.py:188} INFO - title: Career Guidance 
+[2024-04-14T15:48:24.191+0000] {logging_mixin.py:188} INFO - title: Open Source High-Scale Data Pipeline Platform for Enterprise Data, Analytics, and Machine Learning Applications
+[2024-04-14T15:48:24.191+0000] {logging_mixin.py:188} INFO - title: Data Pipeline - Incremental vs Full Load 
+[2024-04-14T15:48:24.199+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-04-14T15:48:24.206+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=reddit_api_dag, task_id=get_reddit_data, execution_date=20240414T154815, start_date=20240414T154823, end_date=20240414T154824
+[2024-04-14T15:48:24.258+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-14T15:48:24.273+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

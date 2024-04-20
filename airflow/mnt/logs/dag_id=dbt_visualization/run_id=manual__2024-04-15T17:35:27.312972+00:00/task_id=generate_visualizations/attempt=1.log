@@ -1,0 +1,31 @@
+[2024-04-15T17:35:29.678+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_visualization.generate_visualizations manual__2024-04-15T17:35:27.312972+00:00 [queued]>
+[2024-04-15T17:35:29.684+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_visualization.generate_visualizations manual__2024-04-15T17:35:27.312972+00:00 [queued]>
+[2024-04-15T17:35:29.684+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2024-04-15T17:35:29.699+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): generate_visualizations> on 2024-04-15 17:35:27.312972+00:00
+[2024-04-15T17:35:29.704+0000] {standard_task_runner.py:60} INFO - Started process 8633 to run task
+[2024-04-15T17:35:29.707+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dbt_visualization', 'generate_visualizations', 'manual__2024-04-15T17:35:27.312972+00:00', '--job-id', '121', '--raw', '--subdir', 'DAGS_FOLDER/dbt_visualization.py', '--cfg-path', '/tmp/tmpjiffg31z']
+[2024-04-15T17:35:29.708+0000] {standard_task_runner.py:88} INFO - Job 121: Subtask generate_visualizations
+[2024-04-15T17:35:29.746+0000] {task_command.py:423} INFO - Running <TaskInstance: dbt_visualization.generate_visualizations manual__2024-04-15T17:35:27.312972+00:00 [running]> on host ec3d883e7b78
+[2024-04-15T17:35:29.825+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='66130047@dpu.ac.th' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_visualization' AIRFLOW_CTX_TASK_ID='generate_visualizations' AIRFLOW_CTX_EXECUTION_DATE='2024-04-15T17:35:27.312972+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-15T17:35:27.312972+00:00'
+[2024-04-15T17:35:29.832+0000] {base.py:83} INFO - Using connection ID 'my_***_conn' for task execution.
+[2024-04-15T17:35:29.842+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/dbt_visualization.py:28 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2024-04-15T17:35:29.923+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/dbt_visualization.py:37 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2024-04-15T17:35:29.928+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dbt_visualization.py", line 43, in _generate_visualizations
+    axs[0, 0].xaxis.set_major_locator(MaxNLocator(5))
+NameError: name 'MaxNLocator' is not defined
+[2024-04-15T17:35:29.935+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dbt_visualization, task_id=generate_visualizations, execution_date=20240415T173527, start_date=20240415T173529, end_date=20240415T173529
+[2024-04-15T17:35:29.946+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-04-15T17:35:29.946+0000] {configuration.py:1046} WARNING - section/key [smtp/smtp_user] not found in config
+[2024-04-15T17:35:29.946+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-04-15T17:35:29.948+0000] {email.py:281} INFO - Sent an alert email to ['66130047@dpu.ac.th']
+[2024-04-15T17:35:29.967+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 121 for task generate_visualizations (name 'MaxNLocator' is not defined; 8633)
+[2024-04-15T17:35:29.999+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-15T17:35:30.016+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

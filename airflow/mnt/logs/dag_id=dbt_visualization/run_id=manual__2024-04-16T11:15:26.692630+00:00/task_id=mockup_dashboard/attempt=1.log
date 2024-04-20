@@ -1,0 +1,30 @@
+[2024-04-16T11:15:28.893+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_visualization.mockup_dashboard manual__2024-04-16T11:15:26.692630+00:00 [queued]>
+[2024-04-16T11:15:28.904+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_visualization.mockup_dashboard manual__2024-04-16T11:15:26.692630+00:00 [queued]>
+[2024-04-16T11:15:28.905+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2024-04-16T11:15:28.924+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): mockup_dashboard> on 2024-04-16 11:15:26.692630+00:00
+[2024-04-16T11:15:28.933+0000] {standard_task_runner.py:60} INFO - Started process 1547 to run task
+[2024-04-16T11:15:28.939+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dbt_visualization', 'mockup_dashboard', 'manual__2024-04-16T11:15:26.692630+00:00', '--job-id', '156', '--raw', '--subdir', 'DAGS_FOLDER/dbt_visualization.py', '--cfg-path', '/tmp/tmpt_cncscl']
+[2024-04-16T11:15:28.941+0000] {standard_task_runner.py:88} INFO - Job 156: Subtask mockup_dashboard
+[2024-04-16T11:15:28.991+0000] {task_command.py:423} INFO - Running <TaskInstance: dbt_visualization.mockup_dashboard manual__2024-04-16T11:15:26.692630+00:00 [running]> on host 230f31539b3c
+[2024-04-16T11:15:29.075+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='66130047@dpu.ac.th' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_visualization' AIRFLOW_CTX_TASK_ID='mockup_dashboard' AIRFLOW_CTX_EXECUTION_DATE='2024-04-16T11:15:26.692630+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-04-16T11:15:26.692630+00:00'
+[2024-04-16T11:15:29.088+0000] {base.py:83} INFO - Using connection ID 'my_***_conn' for task execution.
+[2024-04-16T11:15:29.107+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/dbt_visualization.py:63 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2024-04-16T11:15:29.177+0000] {logging_mixin.py:188} INFO - df_avg_score       post_date  posts_count
+0    2022-10-10            1
+1    2023-06-08            3
+2    2022-10-28            2
+3    2022-07-14            1
+4    2023-06-10            2
+..          ...          ...
+724  2023-10-19            1
+725  2022-04-22            2
+726  2023-07-02            1
+727  2023-05-04            1
+728  2022-12-25            1
+
+[729 rows x 2 columns]
+[2024-04-16T11:15:29.177+0000] {logging_mixin.py:188} INFO - Dashboard has been created: /opt/***/dags/output/dashboard.html
+[2024-04-16T11:15:29.178+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-04-16T11:15:29.189+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dbt_visualization, task_id=mockup_dashboard, execution_date=20240416T111526, start_date=20240416T111528, end_date=20240416T111529
+[2024-04-16T11:15:29.228+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-04-16T11:15:29.256+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

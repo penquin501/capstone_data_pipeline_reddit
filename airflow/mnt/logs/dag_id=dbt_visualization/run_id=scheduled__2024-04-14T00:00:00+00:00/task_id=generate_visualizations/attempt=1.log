@@ -1,0 +1,28 @@
+[2024-04-15T15:42:34.677+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_visualization.generate_visualizations scheduled__2024-04-14T00:00:00+00:00 [queued]>
+[2024-04-15T15:42:34.683+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_visualization.generate_visualizations scheduled__2024-04-14T00:00:00+00:00 [queued]>
+[2024-04-15T15:42:34.683+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2024-04-15T15:42:34.698+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): generate_visualizations> on 2024-04-14 00:00:00+00:00
+[2024-04-15T15:42:34.704+0000] {standard_task_runner.py:60} INFO - Started process 347 to run task
+[2024-04-15T15:42:34.706+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dbt_visualization', 'generate_visualizations', 'scheduled__2024-04-14T00:00:00+00:00', '--job-id', '95', '--raw', '--subdir', 'DAGS_FOLDER/dbt_visualization.py', '--cfg-path', '/tmp/tmp53zfbw5e']
+[2024-04-15T15:42:34.708+0000] {standard_task_runner.py:88} INFO - Job 95: Subtask generate_visualizations
+[2024-04-15T15:42:34.749+0000] {task_command.py:423} INFO - Running <TaskInstance: dbt_visualization.generate_visualizations scheduled__2024-04-14T00:00:00+00:00 [running]> on host ec3d883e7b78
+[2024-04-15T15:42:34.826+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='66130047@dpu.ac.th' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_visualization' AIRFLOW_CTX_TASK_ID='generate_visualizations' AIRFLOW_CTX_EXECUTION_DATE='2024-04-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-04-14T00:00:00+00:00'
+[2024-04-15T15:42:34.828+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/dbt_visualization.py", line 18, in _generate_visualizations
+    engine = create_engine(DB_CONNECTION_STRING)
+NameError: name 'create_engine' is not defined
+[2024-04-15T15:42:34.834+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=dbt_visualization, task_id=generate_visualizations, execution_date=20240414T000000, start_date=20240415T154234, end_date=20240415T154234
+[2024-04-15T15:42:34.846+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-04-15T15:42:34.846+0000] {configuration.py:1046} WARNING - section/key [smtp/smtp_user] not found in config
+[2024-04-15T15:42:34.847+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2024-04-15T15:42:34.848+0000] {email.py:281} INFO - Sent an alert email to ['66130047@dpu.ac.th']
+[2024-04-15T15:42:34.867+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 95 for task generate_visualizations (name 'create_engine' is not defined; 347)
+[2024-04-15T15:42:34.878+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-04-15T15:42:34.896+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
