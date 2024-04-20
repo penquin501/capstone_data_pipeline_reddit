@@ -24,10 +24,9 @@ def _mockup_dashboard(**kwargs):
     # Mock data for the dashboard
     data = {
         'total_posts': 150,
-        'average_score': 4.5,
+        'average_score': get_average_score().average_score.item(),
         'total_comments': 200,
         'trending_topics': ['Data Engineering', 'Machine Learning', 'Data Visualization'],
-        # Add more mock data as needed for your dashboard
     }
 
     # Render the template with the mock data
@@ -43,10 +42,30 @@ def _mockup_dashboard(**kwargs):
         file.write(rendered_html)
 
     print(f'Dashboard has been created: {output_file_path}')
-
-    # Push the URL to XCom for other tasks to use
-    # kwargs['ti'].xcom_push(key='dashboard_url', value=f"http://localhost:8080/static/{output_file_path}")
     
+def get_average_score():
+    pg_hook = PostgresHook(
+        postgres_conn_id="my_postgres_conn",
+        schema="postgres"
+    )
+    connection = pg_hook.get_conn()
+    cursor = connection.cursor()
+
+    sql = """
+        select average_score from dbt_nattharee.average_score
+    """
+    cursor.execute(sql)
+    connection.commit()
+    
+    df = pd.read_sql_query(sql, connection)
+    
+    connection.commit()
+    cursor.close()
+    connection.close()
+
+    return df
+
+
 
 def _generate_visualizations(**context):
     pg_hook = PostgresHook(
@@ -69,29 +88,8 @@ def _generate_visualizations(**context):
         fig, axs = plt.subplots(3, 2, figsize=(15, 15))  # Adjust the layout as needed
         fig.suptitle('DBT Models Dashboard', fontsize=20)
 
-        # Query and plot for the first model
-        sql1 = "SELECT * FROM dbt_nattharee.posts_per_day"
-        df1 = pd.read_sql(sql1, connection)
-        if not df1.empty:
-            df1['post_date'] = pd.to_datetime(df1['post_date'])
-            df1.set_index('post_date', inplace=True)
-            axs[0, 0].plot(df1.index, df1['posts_count'])
-            axs[0, 0].set_title('Posts Per Day')
-            axs[0, 0].xaxis.set_major_locator(MaxNLocator(5))
-            axs[0, 0].grid(True)
+        
 
-        # Repeat the process for other models
-        # Make sure to replace `model_name` with your actual model names
-        models = ['average_score', 'total_authors', 'total_posts', 'avg_comments_per_day', 'trending_topics']
-        for i, model_name in enumerate(models, start=1):
-            sql = f"SELECT * FROM dbt_nattharee.{model_name}"
-            df = pd.read_sql(sql, connection)
-            if not df.empty:
-                ax = axs[i // 2, i % 2]
-                ax.plot(df['metric1'], df['metric2'])  # Replace metric1 and metric2 with actual column names
-                ax.set_title(model_name.replace('_', ' ').title())
-                ax.xaxis.set_major_locator(MaxNLocator(5))
-                ax.grid(True)
 
         # Tight layout with top title space
         plt.tight_layout(rect=[0, 0.03, 1, 0.95])
