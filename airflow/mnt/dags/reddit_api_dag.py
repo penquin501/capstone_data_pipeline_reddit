@@ -28,9 +28,13 @@ def _get_reddit_data(**context):
     )
 
     subreddit = reddit.subreddit('dataengineering')
-    top_posts = subreddit.top(limit=None)
+    all_posts = []
+    for post in subreddit.new(limit=None):
+        all_posts.append(post)
+        if len(all_posts) >= 1000:
+            break
 
-    _save_to_database(top_posts)
+    _save_to_database(all_posts)
 
 
 def _create_reddit_table(**context):
@@ -45,13 +49,29 @@ def _create_reddit_table(**context):
         CREATE TABLE IF NOT EXISTS reddit_posts (
             post_id TEXT PRIMARY KEY,
             title TEXT NOT NULL,
-            ups INTEGER NOT NULL,
-            author_fullname TEXT,
-            subreddit TEXT,
-            selftext TEXT,
+            author TEXT,
             url TEXT,
             num_comments INTEGER,
             score INTEGER,
+            created_utc TIMESTAMP
+        )
+    """
+    cursor.execute(sql)
+    connection.commit()
+
+def _create_reddit_comment_table(**context):
+    pg_hook = PostgresHook(
+        postgres_conn_id="my_postgres_conn",
+        schema="postgres"
+    )
+    connection = pg_hook.get_conn()
+    cursor = connection.cursor()
+
+    sql = """
+        CREATE TABLE IF NOT EXISTS reddit_comment_posts (
+            post_id TEXT PRIMARY KEY,
+            content TEXT NOT NULL,
+            author TEXT,
             created_utc TIMESTAMP
         )
     """
@@ -67,24 +87,37 @@ def _save_to_database(data):
     cursor = connection.cursor()
 
     insert_query = """
-    INSERT INTO reddit_posts (post_id, title, ups, author_fullname, subreddit, selftext, url, num_comments, score, created_utc)
-    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s) ON CONFLICT (post_id) DO NOTHING;
+        INSERT INTO reddit_posts (post_id, title, author, url, num_comments, score, created_utc)
+        VALUES (%s, %s, %s, %s, %s, %s, %s) ON CONFLICT (post_id) DO NOTHING;
     """
     for post in data:
         print(f"Title: {post.title}")
         data_tuple = (
             post.id, 
             post.title, 
-            post.ups, 
-            post.name,
-            post.subreddit.display_name, 
-            post.selftext, 
+            post.author.name if post.author else None,
             post.url,
             post.num_comments, 
             post.score,
             datetime.fromtimestamp(post.created_utc)
         )
         cursor.execute(insert_query, data_tuple)
+
+        comments = post.comments
+        comments.replace_more(limit=0)
+        for comment in comments[:2]:
+            print(f"comment -> ", comment.body)
+            data_comment = (
+                post.id, 
+                comment.body,
+                comment.author.name if comment.author else None,
+                datetime.fromtimestamp(post.created_utc)
+            )
+            insert_comment_query = """
+                INSERT INTO reddit_comment_posts (post_id, content, author, created_utc)
+                VALUES (%s, %s, %s, %s) ON CONFLICT (post_id) DO NOTHING;
+            """
+            cursor.execute(insert_comment_query, data_comment)
 
     connection.commit()
     cursor.close()
@@ -113,6 +146,11 @@ with DAG(
         python_callable=_create_reddit_table,
     )
 
+    create_reddit_comment_table = PythonOperator(
+        task_id="create_reddit_comment_table",
+        python_callable=_create_reddit_comment_table,
+    )
+
     get_reddit_data = PythonOperator(
         task_id="get_reddit_data",
         python_callable=_get_reddit_data,  # Ensure this function is defined in your DAG's context
@@ -120,4 +158,4 @@ with DAG(
     
     end = EmptyOperator(task_id="end")
 
-    start >> create_reddit_table >> get_reddit_data >> end
+    start >> create_reddit_table >> create_reddit_comment_table >> get_reddit_data >> end
