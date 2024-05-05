@@ -1,0 +1,29 @@
+docker compose up -d --build -- คำสั่งสร้าง container
+docker compose up -- คำสั่งให้ docker run เป็น background
+docker compose down -- คำสั่งลบ container
+
+poetry init -- สร้างโครงสร้าง project ของ python
+poetry add ____ -- เพิ่ม library ที่จะใช้ใน project
+poetry run python ____.py -- คำสั่งให้ run เฉพาะ file ที่ต้องการ
+
+ลำดับการสร้าง/ทำงานกับ dbt
+1. สร้าง folder project ใน airflow
+2. cd <project> > poetry init
+3. poetry add dbt-core dbt-postgres
+4. poetry shell (ใช้เพื่อเข้าไปภายใน poetry) หรือ poetry run ____.py
+   - ติดตั้ง dbt project ด้วยคำสั่ง poetry run dbt init
+5. poetry run dbt debug เอาไว้ตรวจดูว่า dbt ใช้งานได้หรือยัง
+6. เมื่อ dbt ต่อกับ postgres โดยจะติดตั้ง ui เพื่อดูข้อมูลใน postgres ซึ่งจะเพิ่ม service ใน docker-compose.yml
+	adminer:
+    	    image: adminer
+    	    ports:
+      	     - 8090:8080
+7. poetry run dbt run
+
+DBT scheduler ใน airflow
+- ใน python สามารถใช้ Bash operatoer ได้เหมือนกัน
+- "cosmos" คือ library ที่ทำ service กับ dbt
+	- เพิ่ม install "astronomer-cosmos" ใน Dockerfile
+	- เพิ่ม Volumn ที่ airflow-common ให้เห็น dbt ทั้งหมด ถ้าไม่ทำ ที่ docker-compose.yml ให้เขียนที่ Dockerfile แทน(ควรใช้แค่ใน dev)
+
+

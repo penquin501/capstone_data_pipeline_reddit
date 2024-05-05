@@ -36,7 +36,6 @@ def _get_reddit_data(**context):
 
     _save_to_database(all_posts)
 
-
 def _create_reddit_table(**context):
     pg_hook = PostgresHook(
         postgres_conn_id="my_postgres_conn",
@@ -90,38 +89,41 @@ def _save_to_database(data):
         INSERT INTO reddit_posts (post_id, title, author, url, num_comments, score, created_utc)
         VALUES (%s, %s, %s, %s, %s, %s, %s) ON CONFLICT (post_id) DO NOTHING;
     """
-    for post in data:
-        print(f"Title: {post.title}")
-        data_tuple = (
-            post.id, 
-            post.title, 
-            post.author.name if post.author else None,
-            post.url,
-            post.num_comments, 
-            post.score,
-            datetime.fromtimestamp(post.created_utc)
-        )
-        cursor.execute(insert_query, data_tuple)
-
-        comments = post.comments
-        comments.replace_more(limit=0)
-        for comment in comments[:2]:
-            print(f"comment -> ", comment.body)
-            data_comment = (
+    try:
+        for post in data:
+            print(f"Title: {post.title}")
+            data_tuple = (
                 post.id, 
-                comment.body,
-                comment.author.name if comment.author else None,
+                post.title, 
+                post.author.name if post.author else None,
+                post.url,
+                post.num_comments, 
+                post.score,
                 datetime.fromtimestamp(post.created_utc)
             )
-            insert_comment_query = """
-                INSERT INTO reddit_comment_posts (post_id, content, author, created_utc)
-                VALUES (%s, %s, %s, %s) ON CONFLICT (post_id) DO NOTHING;
-            """
-            cursor.execute(insert_comment_query, data_comment)
+            cursor.execute(insert_query, data_tuple)
 
-    connection.commit()
-    cursor.close()
-    connection.close()
+            comments = post.comments
+            comments.replace_more(limit=0)
+            for comment in comments[:2]:
+                print(f"comment -> ", comment.body)
+                data_comment = (
+                    post.id, 
+                    comment.body,
+                    comment.author.name if comment.author else None,
+                    datetime.fromtimestamp(post.created_utc)
+                )
+                insert_comment_query = """
+                    INSERT INTO reddit_comment_posts (post_id, content, author, created_utc)
+                    VALUES (%s, %s, %s, %s) ON CONFLICT (post_id) DO NOTHING;
+                """
+                cursor.execute(insert_comment_query, data_comment)
+    except Exception as e:
+        connection.rollback()
+    finally:
+        connection.commit()
+        cursor.close()
+        connection.close()
 
 
 default_args = {

@@ -25,13 +25,13 @@ To stop Airflow, run:
 docker compose down
 ```
 
-Navigate to the directory containing the HTML files
+Navigate to the directory containing the dashboard.py file
 ```sh
-cd airflow/mnt/dags/output/
+cd airflow/mnt/dags
 ```
-Start a simple HTTP server; use the appropriate Python command
+Start a simple streamlit server; use the appropriate Python command
 ```sh 
-poetry run python -m http.server 8000
+poetry run streamlit run dbt_visualization.py
 ```
 
 Need to use ``` streamlit ``` for visualization 

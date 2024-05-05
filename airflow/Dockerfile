@@ -7,6 +7,7 @@ RUN pip install airflow-provider-great-expectations==0.2.7 \
     dbt-postgres==1.7.9 \
     matplotlib \
     pandas \
-    jinja2
+    jinja2 \
+    streamlit
 
 # RUN dbt init
